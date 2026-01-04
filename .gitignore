@@ -2,45 +2,25 @@
 # LLM Mail Trainer - .gitignore
 # ============================================
 
-# ==================== DATA ====================
-# Raw email data (SENSITIVE - never commit!)
+# ==================== DATA (SENSITIVE) ====================
+# Raw email data - NEVER commit!
 data/raw/
-data/raw/*.mbox
+*.mbox
 
-# Parsed emails (contains personal data)
+# Parsed emails (personal data)
 data/parsed/
-data/parsed/*.json
-
-# Filtered data
 data/filtered/
-data/filtered/*.json
-
-# Training data (may contain personal info)
 data/training/
-data/training/*.jsonl
-
-# Backup data
 data/training_backup*/
 
 # ==================== MODELS ====================
-# Base models (too large for git)
-models/base/
-models/base/**
+# Local model files (too large for git)
+models/
 
-# LoRA adapters (can be large)
-models/adapters/
-models/adapters/**
-
-# Merged models (very large)
-models/merged/
-models/merged/**
-
-# Model checkpoints
-*.safetensors
-*.bin
-*.pt
-*.pth
-*.gguf
+# BUT allow root-level model files for HuggingFace
+!adapters.safetensors
+!adapter_config.json
+!config.json
 
 # ==================== PYTHON ====================
 # Virtual environment
@@ -48,42 +28,36 @@ venv/
 env/
 .venv/
 .env/
+bin/
+lib/
+pyvenv.cfg
+include/
 
-# Python bytecode
+# Python cache
 __pycache__/
 *.py[cod]
 *$py.class
 .Python
+*.so
 
-# Distribution / packaging
+# Distribution
 build/
 dist/
 eggs/
 *.egg-info/
 *.egg
-
-# Installer logs
 pip-log.txt
-pip-delete-this-directory.txt
 
 # ==================== JUPYTER ====================
-# Notebook checkpoints
 .ipynb_checkpoints/
 */.ipynb_checkpoints/
-
-# Jupyter notebook output
 *.ipynb_output/
 
 # ==================== IDE ====================
-# VSCode
 .vscode/
 *.code-workspace
-
-# PyCharm
 .idea/
 *.iml
-
-# Cursor
 .cursor/
 
 # ==================== OS ====================
@@ -95,52 +69,46 @@ pip-delete-this-directory.txt
 
 # Windows
 Thumbs.db
-ehthumbs.db
 Desktop.ini
 
 # Linux
 *~
 .directory
 
-# ==================== MISC ====================
-# Logs
-*.log
-logs/
-
-# Temporary files
-*.tmp
-*.temp
-.temp/
-tmp/
-
-# Cache
-.cache/
-*.cache
-
-# Coverage reports
+# ==================== TESTING ====================
+.pytest_cache/
 htmlcov/
 .coverage
 .coverage.*
 coverage.xml
+.tox/
+.nox/
 
-# Environment variables
+# ==================== LOGS & TEMP ====================
+*.log
+logs/
+*.tmp
+*.temp
+tmp/
+.temp/
+.cache/
+
+# ==================== SECRETS ====================
 .env
 .env.local
 .env.*.local
-
-# Secrets
 secrets/
 *.key
 *.pem
+*.secret
 
-# ==================== PROJECT SPECIFIC ====================
-# MLX cache
-.mlx_cache/
-
-# Experiment tracking
+# ==================== ML TRACKING ====================
 mlruns/
 wandb/
-
-# Output artifacts
+.mlx_cache/
 output/
 results/
+
+# ==================== SCHEDULER ====================
+# Don't commit scheduler logs
+scheduler_logs/
