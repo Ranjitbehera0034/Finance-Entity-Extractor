@@ -23,6 +23,42 @@ library_name: mlx
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Tests](https://img.shields.io/badge/Tests-48%20passed-success.svg)
 
+## ⚡ Quick Start
+
+```python
+# Install dependencies
+# pip install mlx-lm
+
+from mlx_lm import load, generate
+
+# Load the model
+model, tokenizer = load("Ranjit0034/finance-entity-extractor")
+
+# Sample email
+email = """
+Dear Customer, Rs.2500.00 has been debited from account 3545 
+to VPA swiggy@ybl on 28-12-25. Reference: 534567891234.
+"""
+
+# Extract entities
+prompt = f"Extract financial entities from this email:\n\n{email}"
+response = generate(model, tokenizer, prompt=prompt, max_tokens=200)
+print(response)
+```
+
+**Output:**
+```json
+{
+  "amount": "2500.00",
+  "type": "debit",
+  "account": "3545",
+  "date": "28-12-25",
+  "reference": "534567891234"
+}
+```
+
+---
+
 ## 📋 Overview
 
 This project demonstrates how to:
