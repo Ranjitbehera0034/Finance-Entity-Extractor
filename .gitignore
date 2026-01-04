@@ -1,0 +1,146 @@
+# ============================================
+# LLM Mail Trainer - .gitignore
+# ============================================
+
+# ==================== DATA ====================
+# Raw email data (SENSITIVE - never commit!)
+data/raw/
+data/raw/*.mbox
+
+# Parsed emails (contains personal data)
+data/parsed/
+data/parsed/*.json
+
+# Filtered data
+data/filtered/
+data/filtered/*.json
+
+# Training data (may contain personal info)
+data/training/
+data/training/*.jsonl
+
+# Backup data
+data/training_backup*/
+
+# ==================== MODELS ====================
+# Base models (too large for git)
+models/base/
+models/base/**
+
+# LoRA adapters (can be large)
+models/adapters/
+models/adapters/**
+
+# Merged models (very large)
+models/merged/
+models/merged/**
+
+# Model checkpoints
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.gguf
+
+# ==================== PYTHON ====================
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Distribution / packaging
+build/
+dist/
+eggs/
+*.egg-info/
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ==================== JUPYTER ====================
+# Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Jupyter notebook output
+*.ipynb_output/
+
+# ==================== IDE ====================
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Cursor
+.cursor/
+
+# ==================== OS ====================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+.directory
+
+# ==================== MISC ====================
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+.temp/
+tmp/
+
+# Cache
+.cache/
+*.cache
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Secrets
+secrets/
+*.key
+*.pem
+
+# ==================== PROJECT SPECIFIC ====================
+# MLX cache
+.mlx_cache/
+
+# Experiment tracking
+mlruns/
+wandb/
+
+# Output artifacts
+output/
+results/
