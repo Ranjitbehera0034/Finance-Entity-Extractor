@@ -1,3 +1,19 @@
+---
+license: mit
+language:
+- en
+base_model: microsoft/Phi-3-mini-4k-instruct
+pipeline_tag: text-generation
+tags:
+- finance
+- entity-extraction
+- email
+- mlx
+- lora
+- phi-3
+library_name: mlx
+---
+
 # 🧠 LLM Mail Trainer
 
 > Fine-tune a local LLM to extract financial entities from personal emails using Apple Silicon (MLX).
@@ -5,6 +21,7 @@
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![MLX](https://img.shields.io/badge/MLX-Apple%20Silicon-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Tests](https://img.shields.io/badge/Tests-48%20passed-success.svg)
 
 ## 📋 Overview
 
