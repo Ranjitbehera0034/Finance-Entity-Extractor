@@ -80,6 +80,13 @@ main() {
         
         if [ $? -eq 0 ]; then
             log "✅ Pushed to $REMOTE/$BRANCH"
+            
+            # Sync model files to ensure they're always present
+            log "🔄 Syncing model files..."
+            cd "$PROJECT_DIR"
+            source venv/bin/activate 2>/dev/null
+            python scripts/sync_models.py >> "$LOG_FILE" 2>&1
+            log "✅ Model sync complete"
         else
             log "❌ Push failed"
         fi
