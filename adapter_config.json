@@ -1,5 +1,5 @@
 {
-    "adapter_path": "models/adapters/finance-lora-v2",
+    "adapter_path": "models/adapters/finance-lora-v3",
     "batch_size": 1,
     "config": null,
     "data": "data/training",
@@ -31,8 +31,8 @@
     "resume_adapter_file": null,
     "save_every": 100,
     "seed": 0,
-    "steps_per_eval": 200,
-    "steps_per_report": 10,
+    "steps_per_eval": 100,
+    "steps_per_report": 50,
     "test": false,
     "test_batches": 500,
     "train": true,
