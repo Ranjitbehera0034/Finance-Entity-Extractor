@@ -1,0 +1,1362 @@
+[
+  {
+    "bank": "paytm",
+    "subject": "Transaction Alert - PAYTM Bank",
+    "body": "Paytm: Rs.25081 added to wallet from Interest Credit. 22/11/2025",
+    "entities": {
+      "amount": "25081",
+      "type": "credit",
+      "date": "22/11/2025",
+      "account": "5106",
+      "reference": "308892683171"
+    },
+    "raw_text": "Paytm: Rs.25081 added to wallet from Interest Credit. 22/11/2025"
+  },
+  {
+    "bank": "kotak",
+    "subject": "Transaction Alert - KOTAK Bank",
+    "body": "Rs 1421.28 debited via UPI from Kotak Bank A/c XX3749 on 08-11-25. Merchant:Flipkart. If not you call 18002740110",
+    "entities": {
+      "amount": "1421.28",
+      "type": "debit",
+      "date": "08-11-25",
+      "account": "3749",
+      "reference": "507020728093",
+      "merchant": "flipkart",
+      "category": "shopping"
+    },
+    "raw_text": "Rs 1421.28 debited via UPI from Kotak Bank A/c XX3749 on 08-11-25. Merchant:Flipkart. If not you call 18002740110"
+  },
+  {
+    "bank": "paytm",
+    "subject": "Transaction Alert - PAYTM Bank",
+    "body": "Paytm: You sent Rs.2806 to Ola. 08-10-2025. Order ID: 282294211298",
+    "entities": {
+      "amount": "2806",
+      "type": "debit",
+      "date": "08-10-2025",
+      "account": "5906",
+      "reference": "282294211298",
+      "merchant": "ola",
+      "category": "transport"
+    },
+    "raw_text": "Paytm: You sent Rs.2806 to Ola. 08-10-2025. Order ID: 282294211298"
+  },
+  {
+    "bank": "axis",
+    "subject": "Transaction Alert - AXIS Bank",
+    "body": "Dear Customer, INR 523 credited to Axis A/c XX7678 on 18/12/2025. Avl Bal:Rs.5944.00",
+    "entities": {
+      "amount": "523",
+      "type": "credit",
+      "date": "18/12/2025",
+      "account": "7678",
+      "reference": "555542394193"
+    },
+    "raw_text": "Dear Customer, INR 523 credited to Axis A/c XX7678 on 18/12/2025. Avl Bal:Rs.5944.00"
+  },
+  {
+    "bank": "sbi",
+    "subject": "Transaction Alert - SBI Bank",
+    "body": "SBI: Rs.373 debited from a/c XX9666 on 29-10-25. UPI txn to zomato@paytm. If not done by you,call 1800112211",
+    "entities": {
+      "amount": "373",
+      "type": "debit",
+      "date": "29-10-25",
+      "account": "9666",
+      "reference": "989003396697",
+      "merchant": "zomato",
+      "category": "food"
+    },
+    "raw_text": "SBI: Rs.373 debited from a/c XX9666 on 29-10-25. UPI txn to zomato@paytm. If not done by you,call 1800112211"
+  },
+  {
+    "bank": "paytm",
+    "subject": "Transaction Alert - PAYTM Bank",
+    "body": "Paid Rs.817 to Uber via Paytm UPI. 06122025. Txn ID: 720245039395",
+    "entities": {
+      "amount": "817",
+      "type": "debit",
+      "date": "06122025",
+      "account": "3950",
+      "reference": "720245039395",
+      "merchant": "uber",
+      "category": "transport"
+    },
+    "raw_text": "Paid Rs.817 to Uber via Paytm UPI. 06122025. Txn ID: 720245039395"
+  },
+  {
+    "bank": "paytm",
+    "subject": "Transaction Alert - PAYTM Bank",
+    "body": "Rs 1258 debited from your PAYTM Bank a/c XX8486 to zomato@paytm. Paytm Ref: 675953876146",
+    "entities": {
+      "amount": "1258",
+      "type": "debit",
+      "date": "25 Dec 2025",
+      "account": "8486",
+      "reference": "675953876146",
+      "merchant": "zomato",
+      "category": "food"
+    },
+    "raw_text": "Rs 1258 debited from your PAYTM Bank a/c XX8486 to zomato@paytm. Paytm Ref: 675953876146"
+  },
+  {
+    "bank": "hdfc",
+    "subject": "Transaction Alert - HDFC Bank",
+    "body": "Rs 838 credited to HDFC Bank A/c XX2876 on 08112025. UPI Ref 112637644335. Thank you for banking with us.",
+    "entities": {
+      "amount": "838",
+      "type": "credit",
+      "date": "08112025",
+      "account": "2876",
+      "reference": "112637644335"
+    },
+    "raw_text": "Rs 838 credited to HDFC Bank A/c XX2876 on 08112025. UPI Ref 112637644335. Thank you for banking with us."
+  },
+  {
+    "bank": "kotak",
+    "subject": "Transaction Alert - KOTAK Bank",
+    "body": "INR 1552 credited to Kotak A/c 9817 on 15-10-25 from Amit Kumar. Ref:987408586371",
+    "entities": {
+      "amount": "1552",
+      "type": "credit",
+      "date": "15-10-25",
+      "account": "9817",
+      "reference": "987408586371"
+    },
+    "raw_text": "INR 1552 credited to Kotak A/c 9817 on 15-10-25 from Amit Kumar. Ref:987408586371"
+  },
+  {
+    "bank": "gpay",
+    "subject": "Transaction Alert - GPAY Bank",
+    "body": "\u20b91470 sent to zomato@paytm from GPAY Bank XX1601. Txn: 936717894940. 14 Oct 2025",
+    "entities": {
+      "amount": "1470",
+      "type": "debit",
+      "date": "14 Oct 2025",
+      "account": "1601",
+      "reference": "936717894940",
+      "merchant": "zomato",
+      "category": "food"
+    },
+    "raw_text": "\u20b91470 sent to zomato@paytm from GPAY Bank XX1601. Txn: 936717894940. 14 Oct 2025"
+  },
+  {
+    "bank": "axis",
+    "subject": "Transaction Alert - AXIS Bank",
+    "body": "Rs.6756 debited from Axis Bank A/c 8119 on 04-12-2025 to VPA swiggy@ybl. UPI Ref:753300614396",
+    "entities": {
+      "amount": "6756",
+      "type": "debit",
+      "date": "04-12-2025",
+      "account": "8119",
+      "reference": "753300614396",
+      "merchant": "swiggy",
+      "category": "food"
+    },
+    "raw_text": "Rs.6756 debited from Axis Bank A/c 8119 on 04-12-2025 to VPA swiggy@ybl. UPI Ref:753300614396"
+  },
+  {
+    "bank": "axis",
+    "subject": "Transaction Alert - AXIS Bank",
+    "body": "Axis Bank Acct XX4185 debited for Rs.2378.61 on 20-10-2025. UPI:Ola. Ref 557222530916. Not you? SMS FREEZE to 5676782",
+    "entities": {
+      "amount": "2378.61",
+      "type": "debit",
+      "date": "20-10-2025",
+      "account": "4185",
+      "reference": "557222530916",
+      "merchant": "ola",
+      "category": "transport"
+    },
+    "raw_text": "Axis Bank Acct XX4185 debited for Rs.2378.61 on 20-10-2025. UPI:Ola. Ref 557222530916. Not you? SMS FREEZE to 5676782"
+  },
+  {
+    "bank": "hdfc",
+    "subject": "Transaction Alert - HDFC Bank",
+    "body": "Dear Customer, INR 555 credited to A/c 8019 on 30-10-25. Info: UPI-Amit Kumar. Ref: 743158526982",
+    "entities": {
+      "amount": "555",
+      "type": "credit",
+      "date": "30-10-25",
+      "account": "8019",
+      "reference": "743158526982"
+    },
+    "raw_text": "Dear Customer, INR 555 credited to A/c 8019 on 30-10-25. Info: UPI-Amit Kumar. Ref: 743158526982"
+  },
+  {
+    "bank": "axis",
+    "subject": "Transaction Alert - AXIS Bank",
+    "body": "Rs.480 debited from Axis Bank A/c 8618 on 24102025 to VPA zepto@ybl. UPI Ref:454999257514",
+    "entities": {
+      "amount": "480",
+      "type": "debit",
+      "date": "24102025",
+      "account": "8618",
+      "reference": "454999257514",
+      "merchant": "zepto",
+      "category": "grocery"
+    },
+    "raw_text": "Rs.480 debited from Axis Bank A/c 8618 on 24102025 to VPA zepto@ybl. UPI Ref:454999257514"
+  },
+  {
+    "bank": "icici",
+    "subject": "Transaction Alert - ICICI Bank",
+    "body": "INR 1399 debited from ICICI Bank A/c 2612 on 13 Nov 2025 to Jio via UPI. Ref: 158965931802",
+    "entities": {
+      "amount": "1399",
+      "type": "debit",
+      "date": "13 Nov 2025",
+      "account": "2612",
+      "reference": "158965931802",
+      "merchant": "jio",
+      "category": "bills"
+    },
+    "raw_text": "INR 1399 debited from ICICI Bank A/c 2612 on 13 Nov 2025 to Jio via UPI. Ref: 158965931802"
+  },
+  {
+    "bank": "phonepe",
+    "subject": "Transaction Alert - PHONEPE Bank",
+    "body": "You received Rs.15582 from Amit Kumar to PHONEPE Bank a/c XX4697. 22122025. Txn ID: 558549792976",
+    "entities": {
+      "amount": "15582",
+      "type": "credit",
+      "date": "22122025",
+      "account": "4697",
+      "reference": "558549792976"
+    },
+    "raw_text": "You received Rs.15582 from Amit Kumar to PHONEPE Bank a/c XX4697. 22122025. Txn ID: 558549792976"
+  },
+  {
+    "bank": "icici",
+    "subject": "Transaction Alert - ICICI Bank",
+    "body": "Dear Customer, Rs.1425 is debited from A/c XX5061 for UPI txn to VPA-bigbasket@ybl on 11112025. Ref:230788137103",
+    "entities": {
+      "amount": "1425",
+      "type": "debit",
+      "date": "11112025",
+      "account": "5061",
+      "reference": "230788137103",
+      "merchant": "bigbasket",
+      "category": "shopping"
+    },
+    "raw_text": "Dear Customer, Rs.1425 is debited from A/c XX5061 for UPI txn to VPA-bigbasket@ybl on 11112025. Ref:230788137103"
+  },
+  {
+    "bank": "axis",
+    "subject": "Transaction Alert - AXIS Bank",
+    "body": "Dear Customer, INR 193 debited from Axis A/c XX3041 on 25112025. Info:UPI-Blinkit. Bal:Rs.5306.00",
+    "entities": {
+      "amount": "193",
+      "type": "debit",
+      "date": "25112025",
+      "account": "3041",
+      "reference": "827197730438",
+      "merchant": "blinkit",
+      "category": "grocery"
+    },
+    "raw_text": "Dear Customer, INR 193 debited from Axis A/c XX3041 on 25112025. Info:UPI-Blinkit. Bal:Rs.5306.00"
+  },
+  {
+    "bank": "icici",
+    "subject": "Transaction Alert - ICICI Bank",
+    "body": "INR 3569.58 credited to ICICI Bank A/c 8579 on 20 Dec 2025 from Refund - Amazon. UPI Ref: 405730753142",
+    "entities": {
+      "amount": "3569.58",
+      "type": "credit",
+      "date": "20 Dec 2025",
+      "account": "8579",
+      "reference": "405730753142"
+    },
+    "raw_text": "INR 3569.58 credited to ICICI Bank A/c 8579 on 20 Dec 2025 from Refund - Amazon. UPI Ref: 405730753142"
+  },
+  {
+    "bank": "sbi",
+    "subject": "Transaction Alert - SBI Bank",
+    "body": "Dear SBI User, Rs 8033 credited to A/c X2771 on 15/11/2025. UPI Ref 272944613643.",
+    "entities": {
+      "amount": "8033",
+      "type": "credit",
+      "date": "15/11/2025",
+      "account": "2771",
+      "reference": "272944613643"
+    },
+    "raw_text": "Dear SBI User, Rs 8033 credited to A/c X2771 on 15/11/2025. UPI Ref 272944613643."
+  },
+  {
+    "bank": "phonepe",
+    "subject": "Transaction Alert - PHONEPE Bank",
+    "body": "Payment of Rs.1062 to BigBazaar successful! 14 Dec 2025. UPI Ref: 487458104455",
+    "entities": {
+      "amount": "1062",
+      "type": "debit",
+      "date": "14 Dec 2025",
+      "account": "5232",
+      "reference": "487458104455",
+      "merchant": "bigbazaar",
+      "category": "grocery"
+    },
+    "raw_text": "Payment of Rs.1062 to BigBazaar successful! 14 Dec 2025. UPI Ref: 487458104455"
+  },
+  {
+    "bank": "hdfc",
+    "subject": "Transaction Alert - HDFC Bank",
+    "body": "Dear Customer, INR 6392.49 debited from A/c 6925 on 27122025. Info: UPI-DMart. If not done by you, call 18002586161",
+    "entities": {
+      "amount": "6392.49",
+      "type": "debit",
+      "date": "27122025",
+      "account": "6925",
+      "reference": "781304820142",
+      "merchant": "dmart",
+      "category": "grocery"
+    },
+    "raw_text": "Dear Customer, INR 6392.49 debited from A/c 6925 on 27122025. Info: UPI-DMart. If not done by you, call 18002586161"
+  },
+  {
+    "bank": "icici",
+    "subject": "Transaction Alert - ICICI Bank",
+    "body": "Dear Customer, Rs.1050.47 is debited from A/c XX2290 for UPI txn to VPA-zepto@ybl on 28/11/2025. Ref:362241791770",
+    "entities": {
+      "amount": "1050.47",
+      "type": "debit",
+      "date": "28/11/2025",
+      "account": "2290",
+      "reference": "362241791770",
+      "merchant": "zepto",
+      "category": "grocery"
+    },
+    "raw_text": "Dear Customer, Rs.1050.47 is debited from A/c XX2290 for UPI txn to VPA-zepto@ybl on 28/11/2025. Ref:362241791770"
+  },
+  {
+    "bank": "sbi",
+    "subject": "Transaction Alert - SBI Bank",
+    "body": "Rs 9193.15 debited from SBI A/c 5616 on 24122025 via UPI. Ref No 397020387114. Balance: Rs.335491.00",
+    "entities": {
+      "amount": "9193.15",
+      "type": "debit",
+      "date": "24122025",
+      "account": "5616",
+      "reference": "397020387114",
+      "merchant": "dmart",
+      "category": "grocery"
+    },
+    "raw_text": "Rs 9193.15 debited from SBI A/c 5616 on 24122025 via UPI. Ref No 397020387114. Balance: Rs.335491.00"
+  },
+  {
+    "bank": "kotak",
+    "subject": "Transaction Alert - KOTAK Bank",
+    "body": "INR 4640 credited to Kotak A/c 4995 on 26-12-25 from Cashback. Ref:597707816158",
+    "entities": {
+      "amount": "4640",
+      "type": "credit",
+      "date": "26-12-25",
+      "account": "4995",
+      "reference": "597707816158"
+    },
+    "raw_text": "INR 4640 credited to Kotak A/c 4995 on 26-12-25 from Cashback. Ref:597707816158"
+  },
+  {
+    "bank": "gpay",
+    "subject": "Transaction Alert - GPAY Bank",
+    "body": "Google Pay: Payment of \u20b91248 to Electricity successful. 05-11-2025. Ref 484270768628",
+    "entities": {
+      "amount": "1248",
+      "type": "debit",
+      "date": "05-11-2025",
+      "account": "7690",
+      "reference": "484270768628",
+      "merchant": "electricity",
+      "category": "bills"
+    },
+    "raw_text": "Google Pay: Payment of \u20b91248 to Electricity successful. 05-11-2025. Ref 484270768628"
+  },
+  {
+    "bank": "sbi",
+    "subject": "Transaction Alert - SBI Bank",
+    "body": "Rs 1759 credited to SBI A/c 1685 on 28/10/2025. IMPS from Amit Kumar. Balance: Rs.21961.00",
+    "entities": {
+      "amount": "1759",
+      "type": "credit",
+      "date": "28/10/2025",
+      "account": "1685",
+      "reference": "239284873367"
+    },
+    "raw_text": "Rs 1759 credited to SBI A/c 1685 on 28/10/2025. IMPS from Amit Kumar. Balance: Rs.21961.00"
+  },
+  {
+    "bank": "sbi",
+    "subject": "Transaction Alert - SBI Bank",
+    "body": "SBI: Rs.1203 debited from a/c XX5345 on 28122025. UPI txn to swiggy@ybl. If not done by you,call 1800112211",
+    "entities": {
+      "amount": "1203",
+      "type": "debit",
+      "date": "28122025",
+      "account": "5345",
+      "reference": "654966271979",
+      "merchant": "swiggy",
+      "category": "food"
+    },
+    "raw_text": "SBI: Rs.1203 debited from a/c XX5345 on 28122025. UPI txn to swiggy@ybl. If not done by you,call 1800112211"
+  },
+  {
+    "bank": "axis",
+    "subject": "Transaction Alert - AXIS Bank",
+    "body": "Dear Customer, INR 1191.16 credited to Axis A/c XX9702 on 09/11/2025. Avl Bal:Rs.21985.00",
+    "entities": {
+      "amount": "1191.16",
+      "type": "credit",
+      "date": "09/11/2025",
+      "account": "9702",
+      "reference": "610248199023"
+    },
+    "raw_text": "Dear Customer, INR 1191.16 credited to Axis A/c XX9702 on 09/11/2025. Avl Bal:Rs.21985.00"
+  },
+  {
+    "bank": "hdfc",
+    "subject": "Transaction Alert - HDFC Bank",
+    "body": "Dear Customer, INR 3273.98 debited from A/c 2584 on 24-11-2025. Info: UPI-Zomato. If not done by you, call 18002586161",
+    "entities": {
+      "amount": "3273.98",
+      "type": "debit",
+      "date": "24-11-2025",
+      "account": "2584",
+      "reference": "517010168081",
+      "merchant": "zomato",
+      "category": "food"
+    },
+    "raw_text": "Dear Customer, INR 3273.98 debited from A/c 2584 on 24-11-2025. Info: UPI-Zomato. If not done by you, call 18002586161"
+  },
+  {
+    "bank": "phonepe",
+    "subject": "Transaction Alert - PHONEPE Bank",
+    "body": "You received Rs.1266 from Cashback to PHONEPE Bank a/c XX5632. 02/01/2026. Txn ID: 874331514343",
+    "entities": {
+      "amount": "1266",
+      "type": "credit",
+      "date": "02/01/2026",
+      "account": "5632",
+      "reference": "874331514343"
+    },
+    "raw_text": "You received Rs.1266 from Cashback to PHONEPE Bank a/c XX5632. 02/01/2026. Txn ID: 874331514343"
+  },
+  {
+    "bank": "kotak",
+    "subject": "Transaction Alert - KOTAK Bank",
+    "body": "INR 738 debited from Kotak A/c 3091 on 16/11/2025 to VPA:bwssb@sbi. Ref No.614711052552",
+    "entities": {
+      "amount": "738",
+      "type": "debit",
+      "date": "16/11/2025",
+      "account": "3091",
+      "reference": "614711052552",
+      "merchant": "water",
+      "category": "bills"
+    },
+    "raw_text": "INR 738 debited from Kotak A/c 3091 on 16/11/2025 to VPA:bwssb@sbi. Ref No.614711052552"
+  },
+  {
+    "bank": "icici",
+    "subject": "Transaction Alert - ICICI Bank",
+    "body": "ICICI Bank Acct XX4872 credited with INR 16416.70 on 05-01-2026. IMPS Ref 928612436713.",
+    "entities": {
+      "amount": "16416.70",
+      "type": "credit",
+      "date": "05-01-2026",
+      "account": "4872",
+      "reference": "928612436713"
+    },
+    "raw_text": "ICICI Bank Acct XX4872 credited with INR 16416.70 on 05-01-2026. IMPS Ref 928612436713."
+  },
+  {
+    "bank": "hdfc",
+    "subject": "Transaction Alert - HDFC Bank",
+    "body": "HDFC Bank: Rs.1282.26 has been debited from A/c **8359 on 15102025 to VPA zomato@paytm (UPI Ref No 342319992484). Avl Bal Rs.41182.00",
+    "entities": {
+      "amount": "1282.26",
+      "type": "debit",
+      "date": "15102025",
+      "account": "8359",
+      "reference": "342319992484",
+      "merchant": "zomato",
+      "category": "food"
+    },
+    "raw_text": "HDFC Bank: Rs.1282.26 has been debited from A/c **8359 on 15102025 to VPA zomato@paytm (UPI Ref No 342319992484). Avl Bal Rs.41182.00"
+  },
+  {
+    "bank": "sbi",
+    "subject": "Transaction Alert - SBI Bank",
+    "body": "Dear SBI User, Rs 8072 debited from A/c X2832 on 08 Oct 2025 by UPI Ola. Ref 110999011248. If not you, fwd SMS to 9223766666",
+    "entities": {
+      "amount": "8072",
+      "type": "debit",
+      "date": "08 Oct 2025",
+      "account": "2832",
+      "reference": "110999011248",
+      "merchant": "ola",
+      "category": "transport"
+    },
+    "raw_text": "Dear SBI User, Rs 8072 debited from A/c X2832 on 08 Oct 2025 by UPI Ola. Ref 110999011248. If not you, fwd SMS to 9223766666"
+  },
+  {
+    "bank": "kotak",
+    "subject": "Transaction Alert - KOTAK Bank",
+    "body": "Rs 7304 credited to Kotak Bank A/c XX6934 on 14 Nov 2025. Info:Cashback. Balance:Rs.173918.00",
+    "entities": {
+      "amount": "7304",
+      "type": "credit",
+      "date": "14 Nov 2025",
+      "account": "6934",
+      "reference": "572899688547"
+    },
+    "raw_text": "Rs 7304 credited to Kotak Bank A/c XX6934 on 14 Nov 2025. Info:Cashback. Balance:Rs.173918.00"
+  },
+  {
+    "bank": "hdfc",
+    "subject": "Transaction Alert - HDFC Bank",
+    "body": "Dear Customer, INR 6562.42 debited from A/c 6168 on 30/12/2025. Info: UPI-Electricity. If not done by you, call 18002586161",
+    "entities": {
+      "amount": "6562.42",
+      "type": "debit",
+      "date": "30/12/2025",
+      "account": "6168",
+      "reference": "137889353643",
+      "merchant": "electricity",
+      "category": "bills"
+    },
+    "raw_text": "Dear Customer, INR 6562.42 debited from A/c 6168 on 30/12/2025. Info: UPI-Electricity. If not done by you, call 18002586161"
+  },
+  {
+    "bank": "gpay",
+    "subject": "Transaction Alert - GPAY Bank",
+    "body": "You paid \u20b91632 to Rapido. 02-11-2025. UPI Ref: 609136562669. -Google Pay",
+    "entities": {
+      "amount": "1632",
+      "type": "debit",
+      "date": "02-11-2025",
+      "account": "7770",
+      "reference": "609136562669",
+      "merchant": "rapido",
+      "category": "transport"
+    },
+    "raw_text": "You paid \u20b91632 to Rapido. 02-11-2025. UPI Ref: 609136562669. -Google Pay"
+  },
+  {
+    "bank": "sbi",
+    "subject": "Transaction Alert - SBI Bank",
+    "body": "Dear SBI User, Rs 1432 debited from A/c X1651 on 16-11-2025 by UPI Amazon. Ref 373029676920. If not you, fwd SMS to 9223766666",
+    "entities": {
+      "amount": "1432",
+      "type": "debit",
+      "date": "16-11-2025",
+      "account": "1651",
+      "reference": "373029676920",
+      "merchant": "amazon",
+      "category": "shopping"
+    },
+    "raw_text": "Dear SBI User, Rs 1432 debited from A/c X1651 on 16-11-2025 by UPI Amazon. Ref 373029676920. If not you, fwd SMS to 9223766666"
+  },
+  {
+    "bank": "phonepe",
+    "subject": "Transaction Alert - PHONEPE Bank",
+    "body": "Payment of Rs.4426.23 to DMart successful! 29-11-2025. UPI Ref: 687156468494",
+    "entities": {
+      "amount": "4426.23",
+      "type": "debit",
+      "date": "29-11-2025",
+      "account": "3073",
+      "reference": "687156468494",
+      "merchant": "dmart",
+      "category": "grocery"
+    },
+    "raw_text": "Payment of Rs.4426.23 to DMart successful! 29-11-2025. UPI Ref: 687156468494"
+  },
+  {
+    "bank": "axis",
+    "subject": "Transaction Alert - AXIS Bank",
+    "body": "Rs.1907 credited to Axis Bank A/c 5050 on 17 Dec 2025 from Dividend - Mutual Fund. Ref:385400876441",
+    "entities": {
+      "amount": "1907",
+      "type": "credit",
+      "date": "17 Dec 2025",
+      "account": "5050",
+      "reference": "385400876441"
+    },
+    "raw_text": "Rs.1907 credited to Axis Bank A/c 5050 on 17 Dec 2025 from Dividend - Mutual Fund. Ref:385400876441"
+  },
+  {
+    "bank": "kotak",
+    "subject": "Transaction Alert - KOTAK Bank",
+    "body": "Kotak Bank: Rs.37460 debited from A/c XX8999 on 29102025 towards UPI-Rapido. Avl Bal Rs.535080.00. Ref 344374238950",
+    "entities": {
+      "amount": "37460",
+      "type": "debit",
+      "date": "29102025",
+      "account": "8999",
+      "reference": "344374238950",
+      "merchant": "rapido",
+      "category": "transport"
+    },
+    "raw_text": "Kotak Bank: Rs.37460 debited from A/c XX8999 on 29102025 towards UPI-Rapido. Avl Bal Rs.535080.00. Ref 344374238950"
+  },
+  {
+    "bank": "phonepe",
+    "subject": "Transaction Alert - PHONEPE Bank",
+    "body": "You paid Rs.85.29 to Water from PHONEPE Bank a/c XX7046. Txn ID: 827164617915. 16/11/2025",
+    "entities": {
+      "amount": "85.29",
+      "type": "debit",
+      "date": "16/11/2025",
+      "account": "7046",
+      "reference": "827164617915",
+      "merchant": "water",
+      "category": "bills"
+    },
+    "raw_text": "You paid Rs.85.29 to Water from PHONEPE Bank a/c XX7046. Txn ID: 827164617915. 16/11/2025"
+  },
+  {
+    "bank": "hdfc",
+    "subject": "Transaction Alert - HDFC Bank",
+    "body": "Dear Customer, INR 1981 credited to A/c 7482 on 27/11/2025. Info: UPI-Priya Singh. Ref: 648275934229",
+    "entities": {
+      "amount": "1981",
+      "type": "credit",
+      "date": "27/11/2025",
+      "account": "7482",
+      "reference": "648275934229"
+    },
+    "raw_text": "Dear Customer, INR 1981 credited to A/c 7482 on 27/11/2025. Info: UPI-Priya Singh. Ref: 648275934229"
+  },
+  {
+    "bank": "gpay",
+    "subject": "Transaction Alert - GPAY Bank",
+    "body": "You paid \u20b9389 to Ola. 22102025. UPI Ref: 417489104406. -Google Pay",
+    "entities": {
+      "amount": "389",
+      "type": "debit",
+      "date": "22102025",
+      "account": "8195",
+      "reference": "417489104406",
+      "merchant": "ola",
+      "category": "transport"
+    },
+    "raw_text": "You paid \u20b9389 to Ola. 22102025. UPI Ref: 417489104406. -Google Pay"
+  },
+  {
+    "bank": "gpay",
+    "subject": "Transaction Alert - GPAY Bank",
+    "body": "You received \u20b92571.54 from Dividend - Mutual Fund. 24112025. UPI Ref: 409248663017. -Google Pay",
+    "entities": {
+      "amount": "2571.54",
+      "type": "credit",
+      "date": "24112025",
+      "account": "5891",
+      "reference": "409248663017"
+    },
+    "raw_text": "You received \u20b92571.54 from Dividend - Mutual Fund. 24112025. UPI Ref: 409248663017. -Google Pay"
+  },
+  {
+    "bank": "hdfc",
+    "subject": "Transaction Alert - HDFC Bank",
+    "body": "Rs 3143 debited from HDFC Bank A/c XX7912 on 12102025 for UPI txn. Ref 748913461122. Not you? Call 18002586161",
+    "entities": {
+      "amount": "3143",
+      "type": "debit",
+      "date": "12102025",
+      "account": "7912",
+      "reference": "748913461122",
+      "merchant": "swiggy",
+      "category": "food"
+    },
+    "raw_text": "Rs 3143 debited from HDFC Bank A/c XX7912 on 12102025 for UPI txn. Ref 748913461122. Not you? Call 18002586161"
+  },
+  {
+    "bank": "kotak",
+    "subject": "Transaction Alert - KOTAK Bank",
+    "body": "INR 8160 debited from Kotak A/c 8705 on 14-11-25 to VPA:rapido@icici. Ref No.189485261008",
+    "entities": {
+      "amount": "8160",
+      "type": "debit",
+      "date": "14-11-25",
+      "account": "8705",
+      "reference": "189485261008",
+      "merchant": "rapido",
+      "category": "transport"
+    },
+    "raw_text": "INR 8160 debited from Kotak A/c 8705 on 14-11-25 to VPA:rapido@icici. Ref No.189485261008"
+  },
+  {
+    "bank": "paytm",
+    "subject": "Transaction Alert - PAYTM Bank",
+    "body": "Rs 5151 credited to your PAYTM Bank a/c XX6881 from Interest Credit. Ref: 728703172393",
+    "entities": {
+      "amount": "5151",
+      "type": "credit",
+      "date": "24/12/2025",
+      "account": "6881",
+      "reference": "728703172393"
+    },
+    "raw_text": "Rs 5151 credited to your PAYTM Bank a/c XX6881 from Interest Credit. Ref: 728703172393"
+  },
+  {
+    "bank": "icici",
+    "subject": "Transaction Alert - ICICI Bank",
+    "body": "ICICI Bank Acct XX1931 credited with INR 692.75 on 06112025. IMPS Ref 274079861243.",
+    "entities": {
+      "amount": "692.75",
+      "type": "credit",
+      "date": "06112025",
+      "account": "1931",
+      "reference": "274079861243"
+    },
+    "raw_text": "ICICI Bank Acct XX1931 credited with INR 692.75 on 06112025. IMPS Ref 274079861243."
+  },
+  {
+    "bank": "sbi",
+    "subject": "Transaction Alert - SBI Bank",
+    "body": "Dear SBI User, Rs 620 credited to A/c X7548 on 02-12-25. UPI Ref 661100891573.",
+    "entities": {
+      "amount": "620",
+      "type": "credit",
+      "date": "02-12-25",
+      "account": "7548",
+      "reference": "661100891573"
+    },
+    "raw_text": "Dear SBI User, Rs 620 credited to A/c X7548 on 02-12-25. UPI Ref 661100891573."
+  },
+  {
+    "bank": "kotak",
+    "subject": "Transaction Alert - KOTAK Bank",
+    "body": "Kotak Bank: Rs.927.60 debited from A/c XX6363 on 14-12-2025 towards UPI-Airtel. Avl Bal Rs.15726.00. Ref 517729190564",
+    "entities": {
+      "amount": "927.60",
+      "type": "debit",
+      "date": "14-12-2025",
+      "account": "6363",
+      "reference": "517729190564",
+      "merchant": "airtel",
+      "category": "bills"
+    },
+    "raw_text": "Kotak Bank: Rs.927.60 debited from A/c XX6363 on 14-12-2025 towards UPI-Airtel. Avl Bal Rs.15726.00. Ref 517729190564"
+  },
+  {
+    "bank": "gpay",
+    "subject": "Transaction Alert - GPAY Bank",
+    "body": "You paid \u20b96712 to Zomato. 04-01-26. UPI Ref: 145424634923. -Google Pay",
+    "entities": {
+      "amount": "6712",
+      "type": "debit",
+      "date": "04-01-26",
+      "account": "3870",
+      "reference": "145424634923",
+      "merchant": "zomato",
+      "category": "food"
+    },
+    "raw_text": "You paid \u20b96712 to Zomato. 04-01-26. UPI Ref: 145424634923. -Google Pay"
+  },
+  {
+    "bank": "paytm",
+    "subject": "Transaction Alert - PAYTM Bank",
+    "body": "Paid Rs.1638 to BigBazaar via Paytm UPI. 27 Nov 2025. Txn ID: 520096802415",
+    "entities": {
+      "amount": "1638",
+      "type": "debit",
+      "date": "27 Nov 2025",
+      "account": "7325",
+      "reference": "520096802415",
+      "merchant": "bigbazaar",
+      "category": "grocery"
+    },
+    "raw_text": "Paid Rs.1638 to BigBazaar via Paytm UPI. 27 Nov 2025. Txn ID: 520096802415"
+  },
+  {
+    "bank": "gpay",
+    "subject": "Transaction Alert - GPAY Bank",
+    "body": "You paid \u20b97416 to Myntra. 12 Dec 2025. UPI Ref: 697493414595. -Google Pay",
+    "entities": {
+      "amount": "7416",
+      "type": "debit",
+      "date": "12 Dec 2025",
+      "account": "4683",
+      "reference": "697493414595",
+      "merchant": "myntra",
+      "category": "shopping"
+    },
+    "raw_text": "You paid \u20b97416 to Myntra. 12 Dec 2025. UPI Ref: 697493414595. -Google Pay"
+  },
+  {
+    "bank": "phonepe",
+    "subject": "Transaction Alert - PHONEPE Bank",
+    "body": "Rs.3728.11 credited to your PhonePe wallet from Priya Singh. 17/12/2025",
+    "entities": {
+      "amount": "3728.11",
+      "type": "credit",
+      "date": "17/12/2025",
+      "account": "2229",
+      "reference": "706336912249"
+    },
+    "raw_text": "Rs.3728.11 credited to your PhonePe wallet from Priya Singh. 17/12/2025"
+  },
+  {
+    "bank": "kotak",
+    "subject": "Transaction Alert - KOTAK Bank",
+    "body": "Kotak Bank: Rs.102 credited to A/c XX2245 on 25 Oct 2025. UPI Ref 317819329568. Avl Bal Rs.2527.00",
+    "entities": {
+      "amount": "102",
+      "type": "credit",
+      "date": "25 Oct 2025",
+      "account": "2245",
+      "reference": "317819329568"
+    },
+    "raw_text": "Kotak Bank: Rs.102 credited to A/c XX2245 on 25 Oct 2025. UPI Ref 317819329568. Avl Bal Rs.2527.00"
+  },
+  {
+    "bank": "phonepe",
+    "subject": "Transaction Alert - PHONEPE Bank",
+    "body": "Payment of Rs.1577 to DMart successful! 22 Nov 2025. UPI Ref: 436171026274",
+    "entities": {
+      "amount": "1577",
+      "type": "debit",
+      "date": "22 Nov 2025",
+      "account": "5118",
+      "reference": "436171026274",
+      "merchant": "dmart",
+      "category": "grocery"
+    },
+    "raw_text": "Payment of Rs.1577 to DMart successful! 22 Nov 2025. UPI Ref: 436171026274"
+  },
+  {
+    "bank": "kotak",
+    "subject": "Transaction Alert - KOTAK Bank",
+    "body": "Rs 1755 debited via UPI from Kotak Bank A/c XX7232 on 24-10-2025. Merchant:Water. If not you call 18002740110",
+    "entities": {
+      "amount": "1755",
+      "type": "debit",
+      "date": "24-10-2025",
+      "account": "7232",
+      "reference": "734648396163",
+      "merchant": "water",
+      "category": "bills"
+    },
+    "raw_text": "Rs 1755 debited via UPI from Kotak Bank A/c XX7232 on 24-10-2025. Merchant:Water. If not you call 18002740110"
+  },
+  {
+    "bank": "hdfc",
+    "subject": "Transaction Alert - HDFC Bank",
+    "body": "Rs 333 credited to HDFC Bank A/c XX3504 on 26-12-2025. UPI Ref 223957493142. Thank you for banking with us.",
+    "entities": {
+      "amount": "333",
+      "type": "credit",
+      "date": "26-12-2025",
+      "account": "3504",
+      "reference": "223957493142"
+    },
+    "raw_text": "Rs 333 credited to HDFC Bank A/c XX3504 on 26-12-2025. UPI Ref 223957493142. Thank you for banking with us."
+  },
+  {
+    "bank": "paytm",
+    "subject": "Transaction Alert - PAYTM Bank",
+    "body": "Paytm: Rs.1749 added to wallet from Salary - ACME Corp. 02-12-2025",
+    "entities": {
+      "amount": "1749",
+      "type": "credit",
+      "date": "02-12-2025",
+      "account": "1803",
+      "reference": "957643978300"
+    },
+    "raw_text": "Paytm: Rs.1749 added to wallet from Salary - ACME Corp. 02-12-2025"
+  },
+  {
+    "bank": "phonepe",
+    "subject": "Transaction Alert - PHONEPE Bank",
+    "body": "You paid Rs.1983.97 to KFC from PHONEPE Bank a/c XX5658. Txn ID: 116633204627. 05-11-2025",
+    "entities": {
+      "amount": "1983.97",
+      "type": "debit",
+      "date": "05-11-2025",
+      "account": "5658",
+      "reference": "116633204627",
+      "merchant": "kfc",
+      "category": "food"
+    },
+    "raw_text": "You paid Rs.1983.97 to KFC from PHONEPE Bank a/c XX5658. Txn ID: 116633204627. 05-11-2025"
+  },
+  {
+    "bank": "sbi",
+    "subject": "Transaction Alert - SBI Bank",
+    "body": "Dear SBI User, Rs 43122 debited from A/c X5533 on 31-12-2025 by UPI Ola. Ref 566580698915. If not you, fwd SMS to 9223766666",
+    "entities": {
+      "amount": "43122",
+      "type": "debit",
+      "date": "31-12-2025",
+      "account": "5533",
+      "reference": "566580698915",
+      "merchant": "ola",
+      "category": "transport"
+    },
+    "raw_text": "Dear SBI User, Rs 43122 debited from A/c X5533 on 31-12-2025 by UPI Ola. Ref 566580698915. If not you, fwd SMS to 9223766666"
+  },
+  {
+    "bank": "icici",
+    "subject": "Transaction Alert - ICICI Bank",
+    "body": "Dear Customer, Rs.3030.61 is debited from A/c XX7932 for UPI txn to VPA-airtel@paytm on 28/10/2025. Ref:680958994499",
+    "entities": {
+      "amount": "3030.61",
+      "type": "debit",
+      "date": "28/10/2025",
+      "account": "7932",
+      "reference": "680958994499",
+      "merchant": "airtel",
+      "category": "bills"
+    },
+    "raw_text": "Dear Customer, Rs.3030.61 is debited from A/c XX7932 for UPI txn to VPA-airtel@paytm on 28/10/2025. Ref:680958994499"
+  },
+  {
+    "bank": "axis",
+    "subject": "Transaction Alert - AXIS Bank",
+    "body": "Dear Customer, INR 549.89 credited to Axis A/c XX4585 on 06-01-2026. Avl Bal:Rs.3430.00",
+    "entities": {
+      "amount": "549.89",
+      "type": "credit",
+      "date": "06-01-2026",
+      "account": "4585",
+      "reference": "567199758169"
+    },
+    "raw_text": "Dear Customer, INR 549.89 credited to Axis A/c XX4585 on 06-01-2026. Avl Bal:Rs.3430.00"
+  },
+  {
+    "bank": "gpay",
+    "subject": "Transaction Alert - GPAY Bank",
+    "body": "You received \u20b91599 from Dividend - Mutual Fund. 11-11-2025. UPI Ref: 392932052116. -Google Pay",
+    "entities": {
+      "amount": "1599",
+      "type": "credit",
+      "date": "11-11-2025",
+      "account": "9998",
+      "reference": "392932052116"
+    },
+    "raw_text": "You received \u20b91599 from Dividend - Mutual Fund. 11-11-2025. UPI Ref: 392932052116. -Google Pay"
+  },
+  {
+    "bank": "phonepe",
+    "subject": "Transaction Alert - PHONEPE Bank",
+    "body": "PhonePe: Rs.1108 sent to dmart@hdfcbank on 27/12/2025. Ref: 549769295925. Check app for details.",
+    "entities": {
+      "amount": "1108",
+      "type": "debit",
+      "date": "27/12/2025",
+      "account": "9004",
+      "reference": "549769295925",
+      "merchant": "dmart",
+      "category": "grocery"
+    },
+    "raw_text": "PhonePe: Rs.1108 sent to dmart@hdfcbank on 27/12/2025. Ref: 549769295925. Check app for details."
+  },
+  {
+    "bank": "sbi",
+    "subject": "Transaction Alert - SBI Bank",
+    "body": "SBI: Rs.4044 credited to a/c XX3532 on 22112025. Info: Rahul Sharma. Ref:923004474410",
+    "entities": {
+      "amount": "4044",
+      "type": "credit",
+      "date": "22112025",
+      "account": "3532",
+      "reference": "923004474410"
+    },
+    "raw_text": "SBI: Rs.4044 credited to a/c XX3532 on 22112025. Info: Rahul Sharma. Ref:923004474410"
+  },
+  {
+    "bank": "icici",
+    "subject": "Transaction Alert - ICICI Bank",
+    "body": "INR 1820 credited to ICICI Bank A/c 7396 on 30/12/2025 from Interest Credit. UPI Ref: 101627677155",
+    "entities": {
+      "amount": "1820",
+      "type": "credit",
+      "date": "30/12/2025",
+      "account": "7396",
+      "reference": "101627677155"
+    },
+    "raw_text": "INR 1820 credited to ICICI Bank A/c 7396 on 30/12/2025 from Interest Credit. UPI Ref: 101627677155"
+  },
+  {
+    "bank": "sbi",
+    "subject": "Transaction Alert - SBI Bank",
+    "body": "Dear SBI User, Rs 1722 credited to A/c X4728 on 23-11-25. UPI Ref 975402538007.",
+    "entities": {
+      "amount": "1722",
+      "type": "credit",
+      "date": "23-11-25",
+      "account": "4728",
+      "reference": "975402538007"
+    },
+    "raw_text": "Dear SBI User, Rs 1722 credited to A/c X4728 on 23-11-25. UPI Ref 975402538007."
+  },
+  {
+    "bank": "phonepe",
+    "subject": "Transaction Alert - PHONEPE Bank",
+    "body": "You paid Rs.1147 to Myntra from PHONEPE Bank a/c XX8933. Txn ID: 337045863496. 10/10/2025",
+    "entities": {
+      "amount": "1147",
+      "type": "debit",
+      "date": "10/10/2025",
+      "account": "8933",
+      "reference": "337045863496",
+      "merchant": "myntra",
+      "category": "shopping"
+    },
+    "raw_text": "You paid Rs.1147 to Myntra from PHONEPE Bank a/c XX8933. Txn ID: 337045863496. 10/10/2025"
+  },
+  {
+    "bank": "phonepe",
+    "subject": "Transaction Alert - PHONEPE Bank",
+    "body": "PhonePe: Rs.155.62 received from Interest Credit on 23-12-2025. Ref: 638591937347",
+    "entities": {
+      "amount": "155.62",
+      "type": "credit",
+      "date": "23-12-2025",
+      "account": "2213",
+      "reference": "638591937347"
+    },
+    "raw_text": "PhonePe: Rs.155.62 received from Interest Credit on 23-12-2025. Ref: 638591937347"
+  },
+  {
+    "bank": "paytm",
+    "subject": "Transaction Alert - PAYTM Bank",
+    "body": "Paid Rs.9269 to Metro via Paytm UPI. 29-10-2025. Txn ID: 175666412237",
+    "entities": {
+      "amount": "9269",
+      "type": "debit",
+      "date": "29-10-2025",
+      "account": "4846",
+      "reference": "175666412237",
+      "merchant": "metro",
+      "category": "transport"
+    },
+    "raw_text": "Paid Rs.9269 to Metro via Paytm UPI. 29-10-2025. Txn ID: 175666412237"
+  },
+  {
+    "bank": "phonepe",
+    "subject": "Transaction Alert - PHONEPE Bank",
+    "body": "Rs.956.76 credited to your PhonePe wallet from Cashback. 13-11-25",
+    "entities": {
+      "amount": "956.76",
+      "type": "credit",
+      "date": "13-11-25",
+      "account": "1986",
+      "reference": "781047077731"
+    },
+    "raw_text": "Rs.956.76 credited to your PhonePe wallet from Cashback. 13-11-25"
+  },
+  {
+    "bank": "gpay",
+    "subject": "Transaction Alert - GPAY Bank",
+    "body": "You received \u20b9510 from Dividend - Mutual Fund. 23 Dec 2025. UPI Ref: 232916613814. -Google Pay",
+    "entities": {
+      "amount": "510",
+      "type": "credit",
+      "date": "23 Dec 2025",
+      "account": "3522",
+      "reference": "232916613814"
+    },
+    "raw_text": "You received \u20b9510 from Dividend - Mutual Fund. 23 Dec 2025. UPI Ref: 232916613814. -Google Pay"
+  },
+  {
+    "bank": "sbi",
+    "subject": "Transaction Alert - SBI Bank",
+    "body": "SBI: Rs.7867 debited from a/c XX5915 on 04 Dec 2025. UPI txn to dmart@hdfcbank. If not done by you,call 1800112211",
+    "entities": {
+      "amount": "7867",
+      "type": "debit",
+      "date": "04 Dec 2025",
+      "account": "5915",
+      "reference": "835001525541",
+      "merchant": "dmart",
+      "category": "grocery"
+    },
+    "raw_text": "SBI: Rs.7867 debited from a/c XX5915 on 04 Dec 2025. UPI txn to dmart@hdfcbank. If not done by you,call 1800112211"
+  },
+  {
+    "bank": "icici",
+    "subject": "Transaction Alert - ICICI Bank",
+    "body": "INR 1546 credited to ICICI Bank A/c 5861 on 27 Oct 2025 from Salary - ACME Corp. UPI Ref: 306823277527",
+    "entities": {
+      "amount": "1546",
+      "type": "credit",
+      "date": "27 Oct 2025",
+      "account": "5861",
+      "reference": "306823277527"
+    },
+    "raw_text": "INR 1546 credited to ICICI Bank A/c 5861 on 27 Oct 2025 from Salary - ACME Corp. UPI Ref: 306823277527"
+  },
+  {
+    "bank": "kotak",
+    "subject": "Transaction Alert - KOTAK Bank",
+    "body": "Rs 7325.84 debited via UPI from Kotak Bank A/c XX4266 on 01-01-2026. Merchant:Zepto. If not you call 18002740110",
+    "entities": {
+      "amount": "7325.84",
+      "type": "debit",
+      "date": "01-01-2026",
+      "account": "4266",
+      "reference": "374661490981",
+      "merchant": "zepto",
+      "category": "grocery"
+    },
+    "raw_text": "Rs 7325.84 debited via UPI from Kotak Bank A/c XX4266 on 01-01-2026. Merchant:Zepto. If not you call 18002740110"
+  },
+  {
+    "bank": "axis",
+    "subject": "Transaction Alert - AXIS Bank",
+    "body": "Rs.1895 debited from Axis Bank A/c 6491 on 16-12-2025 to VPA nykaa@paytm. UPI Ref:663859569104",
+    "entities": {
+      "amount": "1895",
+      "type": "debit",
+      "date": "16-12-2025",
+      "account": "6491",
+      "reference": "663859569104",
+      "merchant": "nykaa",
+      "category": "shopping"
+    },
+    "raw_text": "Rs.1895 debited from Axis Bank A/c 6491 on 16-12-2025 to VPA nykaa@paytm. UPI Ref:663859569104"
+  },
+  {
+    "bank": "axis",
+    "subject": "Transaction Alert - AXIS Bank",
+    "body": "Dear Customer, INR 5155 debited from Axis A/c XX8144 on 13-12-25. Info:UPI-Metro. Bal:Rs.10753.00",
+    "entities": {
+      "amount": "5155",
+      "type": "debit",
+      "date": "13-12-25",
+      "account": "8144",
+      "reference": "877579719274",
+      "merchant": "metro",
+      "category": "transport"
+    },
+    "raw_text": "Dear Customer, INR 5155 debited from Axis A/c XX8144 on 13-12-25. Info:UPI-Metro. Bal:Rs.10753.00"
+  },
+  {
+    "bank": "hdfc",
+    "subject": "Transaction Alert - HDFC Bank",
+    "body": "Rs 4404 credited to HDFC Bank A/c XX5315 on 09-11-2025. UPI Ref 894370590668. Thank you for banking with us.",
+    "entities": {
+      "amount": "4404",
+      "type": "credit",
+      "date": "09-11-2025",
+      "account": "5315",
+      "reference": "894370590668"
+    },
+    "raw_text": "Rs 4404 credited to HDFC Bank A/c XX5315 on 09-11-2025. UPI Ref 894370590668. Thank you for banking with us."
+  },
+  {
+    "bank": "icici",
+    "subject": "Transaction Alert - ICICI Bank",
+    "body": "ICICI Bank Acct XX1964 debited with INR 521 on 06-01-2026. IMPS Ref 794529888366. Call 18602662 if not done by you.",
+    "entities": {
+      "amount": "521",
+      "type": "debit",
+      "date": "06-01-2026",
+      "account": "1964",
+      "reference": "794529888366",
+      "merchant": "uber",
+      "category": "transport"
+    },
+    "raw_text": "ICICI Bank Acct XX1964 debited with INR 521 on 06-01-2026. IMPS Ref 794529888366. Call 18602662 if not done by you."
+  },
+  {
+    "bank": "axis",
+    "subject": "Transaction Alert - AXIS Bank",
+    "body": "Dear Customer, INR 7134.57 credited to Axis A/c XX6502 on 28-12-25. Avl Bal:Rs.90943.00",
+    "entities": {
+      "amount": "7134.57",
+      "type": "credit",
+      "date": "28-12-25",
+      "account": "6502",
+      "reference": "397359885684"
+    },
+    "raw_text": "Dear Customer, INR 7134.57 credited to Axis A/c XX6502 on 28-12-25. Avl Bal:Rs.90943.00"
+  },
+  {
+    "bank": "gpay",
+    "subject": "Transaction Alert - GPAY Bank",
+    "body": "\u20b96045 sent to metro@sbi from GPAY Bank XX6280. Txn: 576266444796. 22-10-2025",
+    "entities": {
+      "amount": "6045",
+      "type": "debit",
+      "date": "22-10-2025",
+      "account": "6280",
+      "reference": "576266444796",
+      "merchant": "metro",
+      "category": "transport"
+    },
+    "raw_text": "\u20b96045 sent to metro@sbi from GPAY Bank XX6280. Txn: 576266444796. 22-10-2025"
+  },
+  {
+    "bank": "hdfc",
+    "subject": "Transaction Alert - HDFC Bank",
+    "body": "HDFC Bank: Rs.2653 has been debited from A/c **6977 on 25 Dec 2025 to VPA swiggy@ybl (UPI Ref No 599410093881). Avl Bal Rs.26625.00",
+    "entities": {
+      "amount": "2653",
+      "type": "debit",
+      "date": "25 Dec 2025",
+      "account": "6977",
+      "reference": "599410093881",
+      "merchant": "swiggy",
+      "category": "food"
+    },
+    "raw_text": "HDFC Bank: Rs.2653 has been debited from A/c **6977 on 25 Dec 2025 to VPA swiggy@ybl (UPI Ref No 599410093881). Avl Bal Rs.26625.00"
+  },
+  {
+    "bank": "kotak",
+    "subject": "Transaction Alert - KOTAK Bank",
+    "body": "Rs 1632 credited to Kotak Bank A/c XX1672 on 11102025. Info:Neha Gupta. Balance:Rs.24386.00",
+    "entities": {
+      "amount": "1632",
+      "type": "credit",
+      "date": "11102025",
+      "account": "1672",
+      "reference": "232308735151"
+    },
+    "raw_text": "Rs 1632 credited to Kotak Bank A/c XX1672 on 11102025. Info:Neha Gupta. Balance:Rs.24386.00"
+  },
+  {
+    "bank": "axis",
+    "subject": "Transaction Alert - AXIS Bank",
+    "body": "Dear Customer, INR 1477.17 debited from Axis A/c XX3851 on 13 Dec 2025. Info:UPI-Metro. Bal:Rs.42400.00",
+    "entities": {
+      "amount": "1477.17",
+      "type": "debit",
+      "date": "13 Dec 2025",
+      "account": "3851",
+      "reference": "844657758783",
+      "merchant": "metro",
+      "category": "transport"
+    },
+    "raw_text": "Dear Customer, INR 1477.17 debited from Axis A/c XX3851 on 13 Dec 2025. Info:UPI-Metro. Bal:Rs.42400.00"
+  },
+  {
+    "bank": "hdfc",
+    "subject": "Transaction Alert - HDFC Bank",
+    "body": "Dear Customer, INR 7599 debited from A/c 5010 on 21/10/2025. Info: UPI-Ola. If not done by you, call 18002586161",
+    "entities": {
+      "amount": "7599",
+      "type": "debit",
+      "date": "21/10/2025",
+      "account": "5010",
+      "reference": "901158030343",
+      "merchant": "ola",
+      "category": "transport"
+    },
+    "raw_text": "Dear Customer, INR 7599 debited from A/c 5010 on 21/10/2025. Info: UPI-Ola. If not done by you, call 18002586161"
+  },
+  {
+    "bank": "gpay",
+    "subject": "Transaction Alert - GPAY Bank",
+    "body": "Google Pay: \u20b9609 credited from Salary - ACME Corp. Ref: 599263022595",
+    "entities": {
+      "amount": "609",
+      "type": "credit",
+      "date": "06 Nov 2025",
+      "account": "3369",
+      "reference": "599263022595"
+    },
+    "raw_text": "Google Pay: \u20b9609 credited from Salary - ACME Corp. Ref: 599263022595"
+  },
+  {
+    "bank": "paytm",
+    "subject": "Transaction Alert - PAYTM Bank",
+    "body": "Received Rs.7596.75 from Priya Singh via Paytm UPI. 19/12/2025. Txn ID: 802060293051",
+    "entities": {
+      "amount": "7596.75",
+      "type": "credit",
+      "date": "19/12/2025",
+      "account": "5161",
+      "reference": "802060293051"
+    },
+    "raw_text": "Received Rs.7596.75 from Priya Singh via Paytm UPI. 19/12/2025. Txn ID: 802060293051"
+  },
+  {
+    "bank": "icici",
+    "subject": "Transaction Alert - ICICI Bank",
+    "body": "Dear Customer, Rs.29558 is debited from A/c XX7126 for UPI txn to VPA-nykaa@paytm on 03112025. Ref:268358041225",
+    "entities": {
+      "amount": "29558",
+      "type": "debit",
+      "date": "03112025",
+      "account": "7126",
+      "reference": "268358041225",
+      "merchant": "nykaa",
+      "category": "shopping"
+    },
+    "raw_text": "Dear Customer, Rs.29558 is debited from A/c XX7126 for UPI txn to VPA-nykaa@paytm on 03112025. Ref:268358041225"
+  },
+  {
+    "bank": "gpay",
+    "subject": "Transaction Alert - GPAY Bank",
+    "body": "\u20b92236 received from Interest Credit to GPAY Bank XX6091. 21/10/2025",
+    "entities": {
+      "amount": "2236",
+      "type": "credit",
+      "date": "21/10/2025",
+      "account": "6091",
+      "reference": "274847185866"
+    },
+    "raw_text": "\u20b92236 received from Interest Credit to GPAY Bank XX6091. 21/10/2025"
+  },
+  {
+    "bank": "icici",
+    "subject": "Transaction Alert - ICICI Bank",
+    "body": "ICICI Bank Acct XX8744 debited with INR 537.63 on 10122025. IMPS Ref 895137224815. Call 18602662 if not done by you.",
+    "entities": {
+      "amount": "537.63",
+      "type": "debit",
+      "date": "10122025",
+      "account": "8744",
+      "reference": "895137224815",
+      "merchant": "dominos",
+      "category": "food"
+    },
+    "raw_text": "ICICI Bank Acct XX8744 debited with INR 537.63 on 10122025. IMPS Ref 895137224815. Call 18602662 if not done by you."
+  },
+  {
+    "bank": "paytm",
+    "subject": "Transaction Alert - PAYTM Bank",
+    "body": "Paytm: You sent Rs.14903 to Ajio. 04-12-25. Order ID: 862886090135",
+    "entities": {
+      "amount": "14903",
+      "type": "debit",
+      "date": "04-12-25",
+      "account": "7512",
+      "reference": "862886090135",
+      "merchant": "ajio",
+      "category": "shopping"
+    },
+    "raw_text": "Paytm: You sent Rs.14903 to Ajio. 04-12-25. Order ID: 862886090135"
+  },
+  {
+    "bank": "paytm",
+    "subject": "Transaction Alert - PAYTM Bank",
+    "body": "Paid Rs.1180 to Water via Paytm UPI. 19 Nov 2025. Txn ID: 456193888210",
+    "entities": {
+      "amount": "1180",
+      "type": "debit",
+      "date": "19 Nov 2025",
+      "account": "4090",
+      "reference": "456193888210",
+      "merchant": "water",
+      "category": "bills"
+    },
+    "raw_text": "Paid Rs.1180 to Water via Paytm UPI. 19 Nov 2025. Txn ID: 456193888210"
+  },
+  {
+    "bank": "paytm",
+    "subject": "Transaction Alert - PAYTM Bank",
+    "body": "Rs 4356 credited to your PAYTM Bank a/c XX7951 from Rahul Sharma. Ref: 428941115748",
+    "entities": {
+      "amount": "4356",
+      "type": "credit",
+      "date": "17-12-2025",
+      "account": "7951",
+      "reference": "428941115748"
+    },
+    "raw_text": "Rs 4356 credited to your PAYTM Bank a/c XX7951 from Rahul Sharma. Ref: 428941115748"
+  }
+]
