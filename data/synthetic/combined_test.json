@@ -1,0 +1,1809 @@
+[
+  {
+    "raw_text": "2025-08-05  NEFT/TRANSFER/4332/Kiran Hegde  DR:5,510  BAL:350,996.77",
+    "date": "2025-08-05",
+    "description": "NEFT/TRANSFER/4332/Kiran Hegde",
+    "debit": "5,510",
+    "credit": null,
+    "balance": "350,996.77",
+    "bank": "hdfc",
+    "labeled": true,
+    "entities": {
+      "date": "2025-08-05",
+      "description": "NEFT/TRANSFER/4332/Kiran Hegde",
+      "amount": "5510",
+      "type": "debit",
+      "balance": "350996.77",
+      "category": "transfer"
+    }
+  },
+  {
+    "raw_text": "19/12/2025 NEFT-SALARY-TCS Withdrawal: Rs. Balance: Rs.368,672.69",
+    "date": "19/12/2025",
+    "description": "NEFT-SALARY-TCS",
+    "debit": null,
+    "credit": "50,412.62",
+    "balance": "368,672.69",
+    "bank": "hdfc",
+    "labeled": true,
+    "entities": {
+      "date": "19/12/2025",
+      "description": "NEFT-SALARY-TCS",
+      "amount": "50412.62",
+      "type": "credit",
+      "balance": "368672.69",
+      "category": "salary"
+    }
+  },
+  {
+    "raw_text": "09/10/2025 | ELECTRICITY-Hotstar | 17,915 |  | 28,122.06",
+    "date": "09/10/2025",
+    "description": "ELECTRICITY-Hotstar",
+    "debit": "17,915",
+    "credit": null,
+    "balance": "28,122.06",
+    "bank": "hdfc",
+    "labeled": true,
+    "entities": {
+      "date": "09/10/2025",
+      "description": "ELECTRICITY-Hotstar",
+      "amount": "17915",
+      "type": "debit",
+      "balance": "28122.06",
+      "merchant": "hotstar",
+      "category": "bills"
+    }
+  },
+  {
+    "raw_text": "18-10-2025 | UPI-Vikram Reddy-04727790 | 14,397 |  | 152,723.27",
+    "date": "18-10-2025",
+    "description": "UPI-Vikram Reddy-04727790",
+    "debit": "14,397",
+    "credit": null,
+    "balance": "152,723.27",
+    "bank": "hdfc",
+    "labeled": true,
+    "entities": {
+      "date": "18-10-2025",
+      "description": "UPI-Vikram Reddy-04727790",
+      "amount": "14397",
+      "type": "debit",
+      "balance": "152723.27",
+      "merchant": "airtel",
+      "category": "transfer"
+    }
+  },
+  {
+    "raw_text": "14 Nov 25 ICICI Pru@paytm-UPI Withdrawal: Rs.17,058 Balance: Rs.140,744.34",
+    "date": "14 Nov 25",
+    "description": "ICICI Pru@paytm-UPI",
+    "debit": "17,058",
+    "credit": null,
+    "balance": "140,744.34",
+    "bank": "hdfc",
+    "labeled": true,
+    "entities": {
+      "date": "14 Nov 25",
+      "description": "ICICI Pru@paytm-UPI",
+      "amount": "17058",
+      "type": "debit",
+      "balance": "140744.34",
+      "merchant": "icici pru",
+      "category": "food"
+    }
+  },
+  {
+    "raw_text": "07-11-25 | NEFT-INW-977468862392-Deepa Iyer |  | 9,380.34 | 49,986.66",
+    "date": "07-11-25",
+    "description": "NEFT-INW-977468862392-Deepa Iyer",
+    "debit": null,
+    "credit": "9,380.34",
+    "balance": "49,986.66",
+    "bank": "hdfc",
+    "labeled": true,
+    "entities": {
+      "date": "07-11-25",
+      "description": "NEFT-INW-977468862392-Deepa Iyer",
+      "amount": "9380.34",
+      "type": "credit",
+      "balance": "49986.66",
+      "category": "transfer"
+    }
+  },
+  {
+    "raw_text": "11/12/2025  NEFT-INW-440640909743-Deepa Iyer  DR:  BAL:457,883.99",
+    "date": "11/12/2025",
+    "description": "NEFT-INW-440640909743-Deepa Iyer",
+    "debit": null,
+    "credit": "6,849.56",
+    "balance": "457,883.99",
+    "bank": "hdfc",
+    "labeled": true,
+    "entities": {
+      "date": "11/12/2025",
+      "description": "NEFT-INW-440640909743-Deepa Iyer",
+      "amount": "6849.56",
+      "type": "credit",
+      "balance": "457883.99",
+      "category": "investment"
+    }
+  },
+  {
+    "raw_text": "23/12/2025  FT-Anita Desai-0145  DR:340  BAL:257,728.11",
+    "date": "23/12/2025",
+    "description": "FT-Anita Desai-0145",
+    "debit": "340",
+    "credit": null,
+    "balance": "257,728.11",
+    "bank": "hdfc",
+    "labeled": true,
+    "entities": {
+      "date": "23/12/2025",
+      "description": "FT-Anita Desai-0145",
+      "amount": "340",
+      "type": "debit",
+      "balance": "257728.11",
+      "category": "transfer"
+    }
+  },
+  {
+    "raw_text": "18-09-25  MOBILE RECHARGE-1484656482  DR:13,721.03  BAL:150,587.72",
+    "date": "18-09-25",
+    "description": "MOBILE RECHARGE-1484656482",
+    "debit": "13,721.03",
+    "credit": null,
+    "balance": "150,587.72",
+    "bank": "hdfc",
+    "labeled": true,
+    "entities": {
+      "date": "18-09-25",
+      "description": "MOBILE RECHARGE-1484656482",
+      "amount": "13721.03",
+      "type": "debit",
+      "balance": "150587.72",
+      "merchant": "icici pru",
+      "category": "utilities"
+    }
+  },
+  {
+    "raw_text": "13-09-25 UPI-4933163735-LinkedIn Withdrawal: Rs.23,906.95 Balance: Rs.254,426.03",
+    "date": "13-09-25",
+    "description": "UPI-4933163735-LinkedIn",
+    "debit": "23,906.95",
+    "credit": null,
+    "balance": "254,426.03",
+    "bank": "hdfc",
+    "labeled": true,
+    "entities": {
+      "date": "13-09-25",
+      "description": "UPI-4933163735-LinkedIn",
+      "amount": "23906.95",
+      "type": "debit",
+      "balance": "254426.03",
+      "merchant": "linkedin",
+      "category": "transfer"
+    }
+  },
+  {
+    "raw_text": "13-10-25  UPI-5499045301-JioMart  DR:17,272  BAL:470,911.46",
+    "date": "13-10-25",
+    "description": "UPI-5499045301-JioMart",
+    "debit": "17,272",
+    "credit": null,
+    "balance": "470,911.46",
+    "bank": "hdfc",
+    "labeled": true,
+    "entities": {
+      "date": "13-10-25",
+      "description": "UPI-5499045301-JioMart",
+      "amount": "17272",
+      "type": "debit",
+      "balance": "470911.46",
+      "merchant": "jiomart",
+      "category": "transport"
+    }
+  },
+  {
+    "raw_text": "17/12/2025  ELECTRICITY-Paytm  DR:23,068  BAL:205,007.76",
+    "date": "17/12/2025",
+    "description": "ELECTRICITY-Paytm",
+    "debit": "23,068",
+    "credit": null,
+    "balance": "205,007.76",
+    "bank": "hdfc",
+    "labeled": true,
+    "entities": {
+      "date": "17/12/2025",
+      "description": "ELECTRICITY-Paytm",
+      "amount": "23068",
+      "type": "debit",
+      "balance": "205007.76",
+      "merchant": "paytm",
+      "category": "bills"
+    }
+  },
+  {
+    "raw_text": "2025-07-16//ICICI//Vodafone@paytm-UPI//AMT:20,435//BAL:302,847.83",
+    "date": "2025-07-16",
+    "description": "Vodafone@paytm-UPI",
+    "debit": "20,435",
+    "credit": null,
+    "balance": "302,847.83",
+    "bank": "icici",
+    "labeled": true,
+    "entities": {
+      "date": "2025-07-16",
+      "description": "Vodafone@paytm-UPI",
+      "amount": "20435",
+      "type": "debit",
+      "balance": "302847.83",
+      "merchant": "vodafone",
+      "category": "shopping"
+    }
+  },
+  {
+    "raw_text": "16-11-2025 - UPI/GooglePlay/573660965699 - Rs.10,590 - Bal: Rs.36,727.87",
+    "date": "16-11-2025",
+    "description": "UPI/GooglePlay/573660965699",
+    "debit": "10,590",
+    "credit": null,
+    "balance": "36,727.87",
+    "bank": "icici",
+    "labeled": true,
+    "entities": {
+      "date": "16-11-2025",
+      "description": "UPI/GooglePlay/573660965699",
+      "amount": "10590",
+      "type": "debit",
+      "balance": "36727.87",
+      "merchant": "googleplay",
+      "category": "shopping"
+    }
+  },
+  {
+    "raw_text": "16 Nov 2025 - Paytm BILL PAYMENT - Rs.22,519 - Bal: Rs.188,082.78",
+    "date": "16 Nov 2025",
+    "description": "Paytm BILL PAYMENT",
+    "debit": "22,519",
+    "credit": null,
+    "balance": "188,082.78",
+    "bank": "icici",
+    "labeled": true,
+    "entities": {
+      "date": "16 Nov 2025",
+      "description": "Paytm BILL PAYMENT",
+      "amount": "22519",
+      "type": "debit",
+      "balance": "188082.78",
+      "merchant": "paytm",
+      "category": "bills"
+    }
+  },
+  {
+    "raw_text": "02 Oct 25//ICICI//Nykaa@paytm-UPI//AMT:19,147//BAL:212,879.68",
+    "date": "02 Oct 25",
+    "description": "Nykaa@paytm-UPI",
+    "debit": "19,147",
+    "credit": null,
+    "balance": "212,879.68",
+    "bank": "icici",
+    "labeled": true,
+    "entities": {
+      "date": "02 Oct 25",
+      "description": "Nykaa@paytm-UPI",
+      "amount": "19147",
+      "type": "debit",
+      "balance": "212879.68",
+      "merchant": "nykaa",
+      "category": "food"
+    }
+  },
+  {
+    "raw_text": "18 Sep 25//ICICI//CARD TXN-SBI Life//AMT:15,408//BAL:110,774.22",
+    "date": "18 Sep 25",
+    "description": "CARD TXN-SBI Life",
+    "debit": "15,408",
+    "credit": null,
+    "balance": "110,774.22",
+    "bank": "icici",
+    "labeled": true,
+    "entities": {
+      "date": "18 Sep 25",
+      "description": "CARD TXN-SBI Life",
+      "amount": "15408",
+      "type": "debit",
+      "balance": "110774.22",
+      "merchant": "sbi life",
+      "category": "entertainment"
+    }
+  },
+  {
+    "raw_text": "02 Dec 25//ICICI//IMPS/P2P/Kavita Nair//AMT:8,508.00//BAL:338,517.48",
+    "date": "02 Dec 25",
+    "description": "IMPS/P2P/Kavita Nair",
+    "debit": "8,508.00",
+    "credit": null,
+    "balance": "338,517.48",
+    "bank": "icici",
+    "labeled": true,
+    "entities": {
+      "date": "02 Dec 25",
+      "description": "IMPS/P2P/Kavita Nair",
+      "amount": "8508.00",
+      "type": "debit",
+      "balance": "338517.48",
+      "merchant": "zomato",
+      "category": "bills"
+    }
+  },
+  {
+    "raw_text": "07-01-2026//ICICI//MOBILE RECHARGE-7198554601//AMT:16,212.42//BAL:29,272.28",
+    "date": "07-01-2026",
+    "description": "MOBILE RECHARGE-7198554601",
+    "debit": "16,212.42",
+    "credit": null,
+    "balance": "29,272.28",
+    "bank": "icici",
+    "labeled": true,
+    "entities": {
+      "date": "07-01-2026",
+      "description": "MOBILE RECHARGE-7198554601",
+      "amount": "16212.42",
+      "type": "debit",
+      "balance": "29272.28",
+      "merchant": "bsnl",
+      "category": "utilities"
+    }
+  },
+  {
+    "raw_text": "01/11/2025 - NEFT/TRANSFER/9293/Arun Krishnan - Rs.19,644.06 - Bal: Rs.285,447.84",
+    "date": "01/11/2025",
+    "description": "NEFT/TRANSFER/9293/Arun Krishnan",
+    "debit": "19,644.06",
+    "credit": null,
+    "balance": "285,447.84",
+    "bank": "icici",
+    "labeled": true,
+    "entities": {
+      "date": "01/11/2025",
+      "description": "NEFT/TRANSFER/9293/Arun Krishnan",
+      "amount": "19644.06",
+      "type": "debit",
+      "balance": "285447.84",
+      "category": "investment"
+    }
+  },
+  {
+    "raw_text": "2025-11-28 | ELECTRICITY-Netflix | 11,338.41 |  | 283,658.61",
+    "date": "2025-11-28",
+    "description": "ELECTRICITY-Netflix",
+    "debit": "11,338.41",
+    "credit": null,
+    "balance": "283,658.61",
+    "bank": "icici",
+    "labeled": true,
+    "entities": {
+      "date": "2025-11-28",
+      "description": "ELECTRICITY-Netflix",
+      "amount": "11338.41",
+      "type": "debit",
+      "balance": "283658.61",
+      "merchant": "netflix",
+      "category": "bills"
+    }
+  },
+  {
+    "raw_text": "04 Dec 2025 | UPI-5535590425-JioMart | 17,149.71 |  | 366,958.51",
+    "date": "04 Dec 2025",
+    "description": "UPI-5535590425-JioMart",
+    "debit": "17,149.71",
+    "credit": null,
+    "balance": "366,958.51",
+    "bank": "icici",
+    "labeled": true,
+    "entities": {
+      "date": "04 Dec 2025",
+      "description": "UPI-5535590425-JioMart",
+      "amount": "17149.71",
+      "type": "debit",
+      "balance": "366958.51",
+      "merchant": "jiomart",
+      "category": "shopping"
+    }
+  },
+  {
+    "raw_text": "25-09-2025 | NEFT-INW-304891382496-Meera Rao |  | 17,015 | 422,794.95",
+    "date": "25-09-2025",
+    "description": "NEFT-INW-304891382496-Meera Rao",
+    "debit": null,
+    "credit": "17,015",
+    "balance": "422,794.95",
+    "bank": "icici",
+    "labeled": true,
+    "entities": {
+      "date": "25-09-2025",
+      "description": "NEFT-INW-304891382496-Meera Rao",
+      "amount": "17015",
+      "type": "credit",
+      "balance": "422794.95",
+      "category": "investment"
+    }
+  },
+  {
+    "raw_text": "22 Dec 25 | ECOM/Ola/ONLINE | 759 |  | 251,594.61",
+    "date": "22 Dec 25",
+    "description": "ECOM/Ola/ONLINE",
+    "debit": "759",
+    "credit": null,
+    "balance": "251,594.61",
+    "bank": "icici",
+    "labeled": true,
+    "entities": {
+      "date": "22 Dec 25",
+      "description": "ECOM/Ola/ONLINE",
+      "amount": "759",
+      "type": "debit",
+      "balance": "251594.61",
+      "merchant": "ola",
+      "category": "food"
+    }
+  },
+  {
+    "raw_text": "25-09-25 ELECTRICITY-LIC Amount: 6,987 Available: 442,846.46",
+    "date": "25-09-25",
+    "description": "ELECTRICITY-LIC",
+    "debit": "6,987",
+    "credit": null,
+    "balance": "442,846.46",
+    "bank": "sbi",
+    "labeled": true,
+    "entities": {
+      "date": "25-09-25",
+      "description": "ELECTRICITY-LIC",
+      "amount": "6987",
+      "type": "debit",
+      "balance": "442846.46",
+      "merchant": "lic",
+      "category": "telecom"
+    }
+  },
+  {
+    "raw_text": "07 Jan 2026 UPI-Vikram Reddy-91843579 Amount: 7,381.88 Available: 80,149.11",
+    "date": "07 Jan 2026",
+    "description": "UPI-Vikram Reddy-91843579",
+    "debit": "7,381.88",
+    "credit": null,
+    "balance": "80,149.11",
+    "bank": "sbi",
+    "labeled": true,
+    "entities": {
+      "date": "07 Jan 2026",
+      "description": "UPI-Vikram Reddy-91843579",
+      "amount": "7381.88",
+      "type": "debit",
+      "balance": "80149.11",
+      "merchant": "tata play",
+      "category": "bills"
+    }
+  },
+  {
+    "raw_text": "SBI/19-11-2025/NEFT-INW-49678274-Deepa Iyer/Rs.17,684.90/Bal.463,117.69",
+    "date": "19-11-2025",
+    "description": "NEFT-INW-49678274-Deepa Iyer",
+    "debit": "17,684.90",
+    "credit": null,
+    "balance": "463,117.69",
+    "bank": "sbi",
+    "labeled": true,
+    "entities": {
+      "date": "19-11-2025",
+      "description": "NEFT-INW-49678274-Deepa Iyer",
+      "amount": "17684.90",
+      "type": "debit",
+      "balance": "463117.69",
+      "category": "investment"
+    }
+  },
+  {
+    "raw_text": "SBI/02/10/2025/POS Vodafone Delhi/Rs.7,898/Bal.14,154.58",
+    "date": "02/10/2025",
+    "description": "POS Vodafone Delhi",
+    "debit": "7,898",
+    "credit": null,
+    "balance": "14,154.58",
+    "bank": "sbi",
+    "labeled": true,
+    "entities": {
+      "date": "02/10/2025",
+      "description": "POS Vodafone Delhi",
+      "amount": "7898",
+      "type": "debit",
+      "balance": "14154.58",
+      "merchant": "vodafone",
+      "category": "shopping"
+    }
+  },
+  {
+    "raw_text": "SBI/31 Dec 25/SBI Life@paytm-UPI/Rs.2,561/Bal.212,735.11",
+    "date": "31 Dec 25",
+    "description": "SBI Life@paytm-UPI",
+    "debit": "2,561",
+    "credit": null,
+    "balance": "212,735.11",
+    "bank": "sbi",
+    "labeled": true,
+    "entities": {
+      "date": "31 Dec 25",
+      "description": "SBI Life@paytm-UPI",
+      "amount": "2561",
+      "type": "debit",
+      "balance": "212735.11",
+      "merchant": "sbi life",
+      "category": "bills"
+    }
+  },
+  {
+    "raw_text": "21 Sep 2025 | UPI/LIC/86604164 | 295 |  | 83,671.05",
+    "date": "21 Sep 2025",
+    "description": "UPI/LIC/86604164",
+    "debit": "295",
+    "credit": null,
+    "balance": "83,671.05",
+    "bank": "sbi",
+    "labeled": true,
+    "entities": {
+      "date": "21 Sep 2025",
+      "description": "UPI/LIC/86604164",
+      "amount": "295",
+      "type": "debit",
+      "balance": "83671.05",
+      "merchant": "lic",
+      "category": "bills"
+    }
+  },
+  {
+    "raw_text": "SBI/2025-11-26/UPI-Vikram Reddy-8774186520/Rs.23,043/Bal.26,428.81",
+    "date": "2025-11-26",
+    "description": "UPI-Vikram Reddy-8774186520",
+    "debit": "23,043",
+    "credit": null,
+    "balance": "26,428.81",
+    "bank": "sbi",
+    "labeled": true,
+    "entities": {
+      "date": "2025-11-26",
+      "description": "UPI-Vikram Reddy-8774186520",
+      "amount": "23043",
+      "type": "debit",
+      "balance": "26428.81",
+      "merchant": "phonepe",
+      "category": "transfer"
+    }
+  },
+  {
+    "raw_text": "11 Jul 25 | UPI-TRANSFER-JioMart | 13,285 |  | 440,165.93",
+    "date": "11 Jul 25",
+    "description": "UPI-TRANSFER-JioMart",
+    "debit": "13,285",
+    "credit": null,
+    "balance": "440,165.93",
+    "bank": "sbi",
+    "labeled": true,
+    "entities": {
+      "date": "11 Jul 25",
+      "description": "UPI-TRANSFER-JioMart",
+      "amount": "13285",
+      "type": "debit",
+      "balance": "440165.93",
+      "merchant": "jiomart",
+      "category": "bills"
+    }
+  },
+  {
+    "raw_text": "31-08-2025 NEFT CR-SBI-Amit Singh Amount: 22,758 Available: 365,263.76",
+    "date": "31-08-2025",
+    "description": "NEFT CR-SBI-Amit Singh",
+    "debit": null,
+    "credit": "22,758",
+    "balance": "365,263.76",
+    "bank": "sbi",
+    "labeled": true,
+    "entities": {
+      "date": "31-08-2025",
+      "description": "NEFT CR-SBI-Amit Singh",
+      "amount": "22758",
+      "type": "credit",
+      "balance": "365263.76",
+      "category": "investment"
+    }
+  },
+  {
+    "raw_text": "06-12-2025 UPI-Priya Sharma-9611080466 Amount: 17,846 Available: 421,981.94",
+    "date": "06-12-2025",
+    "description": "UPI-Priya Sharma-9611080466",
+    "debit": "17,846",
+    "credit": null,
+    "balance": "421,981.94",
+    "bank": "sbi",
+    "labeled": true,
+    "entities": {
+      "date": "06-12-2025",
+      "description": "UPI-Priya Sharma-9611080466",
+      "amount": "17846",
+      "type": "debit",
+      "balance": "421981.94",
+      "merchant": "googleplay",
+      "category": "transfer"
+    }
+  },
+  {
+    "raw_text": "11-09-25 FT-Ravi Verma-0755 Amount: 24,505.29 Available: 201,411.71",
+    "date": "11-09-25",
+    "description": "FT-Ravi Verma-0755",
+    "debit": "24,505.29",
+    "credit": null,
+    "balance": "201,411.71",
+    "bank": "sbi",
+    "labeled": true,
+    "entities": {
+      "date": "11-09-25",
+      "description": "FT-Ravi Verma-0755",
+      "amount": "24505.29",
+      "type": "debit",
+      "balance": "201411.71",
+      "category": "transfer"
+    }
+  },
+  {
+    "raw_text": "SBI/07 Sep 2025/BILL PAY-MakeMyTrip/Rs.4,271/Bal.363,846.41",
+    "date": "07 Sep 2025",
+    "description": "BILL PAY-MakeMyTrip",
+    "debit": "4,271",
+    "credit": null,
+    "balance": "363,846.41",
+    "bank": "sbi",
+    "labeled": true,
+    "entities": {
+      "date": "07 Sep 2025",
+      "description": "BILL PAY-MakeMyTrip",
+      "amount": "4271",
+      "type": "debit",
+      "balance": "363846.41",
+      "merchant": "makemytrip",
+      "category": "telecom"
+    }
+  },
+  {
+    "raw_text": "AXIS-2025-09-12-NEFT CR-SBI-Deepa Iyer-21,361.99-34,115.00",
+    "date": "2025-09-12",
+    "description": "NEFT CR-SBI-Deepa Iyer",
+    "debit": "21,361.99",
+    "credit": null,
+    "balance": "34,115.00",
+    "bank": "axis",
+    "labeled": true,
+    "entities": {
+      "date": "2025-09-12",
+      "description": "NEFT CR-SBI-Deepa Iyer",
+      "amount": "21361.99",
+      "type": "debit",
+      "balance": "34115.00",
+      "category": "salary"
+    }
+  },
+  {
+    "raw_text": "2025-08-14 | BBPS/Flipkart/329715096883 | 16,052 |  | 420,558.97",
+    "date": "2025-08-14",
+    "description": "BBPS/Flipkart/329715096883",
+    "debit": "16,052",
+    "credit": null,
+    "balance": "420,558.97",
+    "bank": "axis",
+    "labeled": true,
+    "entities": {
+      "date": "2025-08-14",
+      "description": "BBPS/Flipkart/329715096883",
+      "amount": "16052",
+      "type": "debit",
+      "balance": "420558.97",
+      "merchant": "flipkart",
+      "category": "telecom"
+    }
+  },
+  {
+    "raw_text": "AXIS-14 Aug 2025-IMPS/P2P/Ravi Verma-17,831.75-180,335.88",
+    "date": "14 Aug 2025",
+    "description": "IMPS/P2P/Ravi Verma",
+    "debit": "17,831.75",
+    "credit": null,
+    "balance": "180,335.88",
+    "bank": "axis",
+    "labeled": true,
+    "entities": {
+      "date": "14 Aug 2025",
+      "description": "IMPS/P2P/Ravi Verma",
+      "amount": "17831.75",
+      "type": "debit",
+      "balance": "180335.88",
+      "merchant": "jio",
+      "category": "transfer"
+    }
+  },
+  {
+    "raw_text": "AXIS-2025-07-22-ECOM/PhonePe/ONLINE-11,734-463,162.67",
+    "date": "2025-07-22",
+    "description": "ECOM/PhonePe/ONLINE",
+    "debit": "11,734",
+    "credit": null,
+    "balance": "463,162.67",
+    "bank": "axis",
+    "labeled": true,
+    "entities": {
+      "date": "2025-07-22",
+      "description": "ECOM/PhonePe/ONLINE",
+      "amount": "11734",
+      "type": "debit",
+      "balance": "463162.67",
+      "merchant": "phonepe",
+      "category": "food"
+    }
+  },
+  {
+    "raw_text": "AXIS-14/11/2025-NEFT-INW-12688122-Anita Desai-3,226-397,329.12",
+    "date": "14/11/2025",
+    "description": "NEFT-INW-12688122-Anita Desai",
+    "debit": "3,226",
+    "credit": null,
+    "balance": "397,329.12",
+    "bank": "axis",
+    "labeled": true,
+    "entities": {
+      "date": "14/11/2025",
+      "description": "NEFT-INW-12688122-Anita Desai",
+      "amount": "3226",
+      "type": "debit",
+      "balance": "397329.12",
+      "category": "transfer"
+    }
+  },
+  {
+    "raw_text": "27-07-25 >> ATM WDL Ahmedabad 1874960335 >> Rs 19,077 >> Bal Rs 309,075.44",
+    "date": "27-07-25",
+    "description": "ATM WDL Ahmedabad 1874960335",
+    "debit": "19,077",
+    "credit": null,
+    "balance": "309,075.44",
+    "bank": "axis",
+    "labeled": true,
+    "entities": {
+      "date": "27-07-25",
+      "description": "ATM WDL Ahmedabad 1874960335",
+      "amount": "19077",
+      "type": "debit",
+      "balance": "309075.44",
+      "merchant": "tata play",
+      "category": "food"
+    }
+  },
+  {
+    "raw_text": "AXIS-29 Oct 2025-NEFT-Rahul Kumar-7200784361-3,380-326,157.98",
+    "date": "29 Oct 2025",
+    "description": "NEFT-Rahul Kumar-7200784361",
+    "debit": null,
+    "credit": "3,380",
+    "balance": "326,157.98",
+    "bank": "axis",
+    "labeled": true,
+    "entities": {
+      "date": "29 Oct 2025",
+      "description": "NEFT-Rahul Kumar-7200784361",
+      "amount": "3380",
+      "type": "credit",
+      "balance": "326157.98",
+      "category": "transfer"
+    }
+  },
+  {
+    "raw_text": "AXIS-14/08/2025-NEFT CR-AXIS-Vikram Reddy-901-89,323.75",
+    "date": "14/08/2025",
+    "description": "NEFT CR-AXIS-Vikram Reddy",
+    "debit": null,
+    "credit": "901",
+    "balance": "89,323.75",
+    "bank": "axis",
+    "labeled": true,
+    "entities": {
+      "date": "14/08/2025",
+      "description": "NEFT CR-AXIS-Vikram Reddy",
+      "amount": "901",
+      "type": "credit",
+      "balance": "89323.75",
+      "category": "transfer"
+    }
+  },
+  {
+    "raw_text": "04 Dec 2025 >> POS Paytm Bangalore >> Rs 15,700 >> Bal Rs 489,774.23",
+    "date": "04 Dec 2025",
+    "description": "POS Paytm Bangalore",
+    "debit": "15,700",
+    "credit": null,
+    "balance": "489,774.23",
+    "bank": "axis",
+    "labeled": true,
+    "entities": {
+      "date": "04 Dec 2025",
+      "description": "POS Paytm Bangalore",
+      "amount": "15700",
+      "type": "debit",
+      "balance": "489774.23",
+      "merchant": "paytm",
+      "category": "entertainment"
+    }
+  },
+  {
+    "raw_text": "AXIS-13/10/2025-MOBILE RECHARGE-8601347789-15,721-62,958.80",
+    "date": "13/10/2025",
+    "description": "MOBILE RECHARGE-8601347789",
+    "debit": "15,721",
+    "credit": null,
+    "balance": "62,958.80",
+    "bank": "axis",
+    "labeled": true,
+    "entities": {
+      "date": "13/10/2025",
+      "description": "MOBILE RECHARGE-8601347789",
+      "amount": "15721",
+      "type": "debit",
+      "balance": "62958.80",
+      "merchant": "udemy",
+      "category": "utilities"
+    }
+  },
+  {
+    "raw_text": "AXIS-2025-07-25-UPI-Anita Desai-45023290-12,464.01-316,403.12",
+    "date": "2025-07-25",
+    "description": "UPI-Anita Desai-45023290",
+    "debit": "12,464.01",
+    "credit": null,
+    "balance": "316,403.12",
+    "bank": "axis",
+    "labeled": true,
+    "entities": {
+      "date": "2025-07-25",
+      "description": "UPI-Anita Desai-45023290",
+      "amount": "12464.01",
+      "type": "debit",
+      "balance": "316403.12",
+      "merchant": "bsnl",
+      "category": "food"
+    }
+  },
+  {
+    "raw_text": "AXIS-11-07-25-UPI-Meera Rao-5358512538-601-328,636.01",
+    "date": "11-07-25",
+    "description": "UPI-Meera Rao-5358512538",
+    "debit": "601",
+    "credit": null,
+    "balance": "328,636.01",
+    "bank": "axis",
+    "labeled": true,
+    "entities": {
+      "date": "11-07-25",
+      "description": "UPI-Meera Rao-5358512538",
+      "amount": "601",
+      "type": "debit",
+      "balance": "328636.01",
+      "merchant": "makemytrip",
+      "category": "shopping"
+    }
+  },
+  {
+    "raw_text": "29 Jul 2025 | NEFT-INW-0673682050-Kiran Hegde |  | 19,263.75 | 491,034.00",
+    "date": "29 Jul 2025",
+    "description": "NEFT-INW-0673682050-Kiran Hegde",
+    "debit": null,
+    "credit": "19,263.75",
+    "balance": "491,034.00",
+    "bank": "kotak",
+    "labeled": true,
+    "entities": {
+      "date": "29 Jul 2025",
+      "description": "NEFT-INW-0673682050-Kiran Hegde",
+      "amount": "19263.75",
+      "type": "credit",
+      "balance": "491034.00",
+      "category": "transfer"
+    }
+  },
+  {
+    "raw_text": "09 Oct 25 | UPI-Anita Desai-059161186385 | 1,725 |  | 308,241.68",
+    "date": "09 Oct 25",
+    "description": "UPI-Anita Desai-059161186385",
+    "debit": "1,725",
+    "credit": null,
+    "balance": "308,241.68",
+    "bank": "kotak",
+    "labeled": true,
+    "entities": {
+      "date": "09 Oct 25",
+      "description": "UPI-Anita Desai-059161186385",
+      "amount": "1725",
+      "type": "debit",
+      "balance": "308241.68",
+      "merchant": "zepto",
+      "category": "shopping"
+    }
+  },
+  {
+    "raw_text": "20 Dec 25 KOTAK UPI-TRANSFER-BigBasket 1,150 BAL:128,401.60",
+    "date": "20 Dec 25",
+    "description": "UPI-TRANSFER-BigBasket",
+    "debit": "1,150",
+    "credit": null,
+    "balance": "128,401.60",
+    "bank": "kotak",
+    "labeled": true,
+    "entities": {
+      "date": "20 Dec 25",
+      "description": "UPI-TRANSFER-BigBasket",
+      "amount": "1150",
+      "type": "debit",
+      "balance": "128401.60",
+      "merchant": "bigbasket",
+      "category": "transport"
+    }
+  },
+  {
+    "raw_text": "14/11/2025 KOTAK UPI-TRANSFER-BigBasket 10,706.29 BAL:184,880.84",
+    "date": "14/11/2025",
+    "description": "UPI-TRANSFER-BigBasket",
+    "debit": "10,706.29",
+    "credit": null,
+    "balance": "184,880.84",
+    "bank": "kotak",
+    "labeled": true,
+    "entities": {
+      "date": "14/11/2025",
+      "description": "UPI-TRANSFER-BigBasket",
+      "amount": "10706.29",
+      "type": "debit",
+      "balance": "184880.84",
+      "merchant": "bigbasket",
+      "category": "food"
+    }
+  },
+  {
+    "raw_text": "2025-10-12: UPI-4338532472-ICICI Pru | Amount: Rs.23,733 | Balance: Rs.27,019.90",
+    "date": "2025-10-12",
+    "description": "UPI-4338532472-ICICI Pru",
+    "debit": "23,733",
+    "credit": null,
+    "balance": "27,019.90",
+    "bank": "kotak",
+    "labeled": true,
+    "entities": {
+      "date": "2025-10-12",
+      "description": "UPI-4338532472-ICICI Pru",
+      "amount": "23733",
+      "type": "debit",
+      "balance": "27019.90",
+      "merchant": "icici pru",
+      "category": "transport"
+    }
+  },
+  {
+    "raw_text": "12 Aug 2025: NEFT CR-SBI-Suresh Menon | Amount: Rs.4,947.26 | Balance: Rs.72,001.17",
+    "date": "12 Aug 2025",
+    "description": "NEFT CR-SBI-Suresh Menon",
+    "debit": null,
+    "credit": "4,947.26",
+    "balance": "72,001.17",
+    "bank": "kotak",
+    "labeled": true,
+    "entities": {
+      "date": "12 Aug 2025",
+      "description": "NEFT CR-SBI-Suresh Menon",
+      "amount": "4947.26",
+      "type": "credit",
+      "balance": "72001.17",
+      "category": "investment"
+    }
+  },
+  {
+    "raw_text": "22-09-25: Paytm@paytm-UPI | Amount: Rs.17,743.07 | Balance: Rs.192,529.54",
+    "date": "22-09-25",
+    "description": "Paytm@paytm-UPI",
+    "debit": "17,743.07",
+    "credit": null,
+    "balance": "192,529.54",
+    "bank": "kotak",
+    "labeled": true,
+    "entities": {
+      "date": "22-09-25",
+      "description": "Paytm@paytm-UPI",
+      "amount": "17743.07",
+      "type": "debit",
+      "balance": "192529.54",
+      "merchant": "paytm",
+      "category": "transport"
+    }
+  },
+  {
+    "raw_text": "12/11/2025 | FT-Neha Patel-7326 | 316.26 |  | 411,970.94",
+    "date": "12/11/2025",
+    "description": "FT-Neha Patel-7326",
+    "debit": "316.26",
+    "credit": null,
+    "balance": "411,970.94",
+    "bank": "kotak",
+    "labeled": true,
+    "entities": {
+      "date": "12/11/2025",
+      "description": "FT-Neha Patel-7326",
+      "amount": "316.26",
+      "type": "debit",
+      "balance": "411970.94",
+      "category": "transfer"
+    }
+  },
+  {
+    "raw_text": "13/11/2025: LOAN EMI-52229993 | Amount: Rs.8,053 | Balance: Rs.236,883.45",
+    "date": "13/11/2025",
+    "description": "LOAN EMI-52229993",
+    "debit": "8,053",
+    "credit": null,
+    "balance": "236,883.45",
+    "bank": "kotak",
+    "labeled": true,
+    "entities": {
+      "date": "13/11/2025",
+      "description": "LOAN EMI-52229993",
+      "amount": "8053",
+      "type": "debit",
+      "balance": "236883.45",
+      "merchant": "myntra",
+      "category": "shopping"
+    }
+  },
+  {
+    "raw_text": "2025-10-04 KOTAK UPI-BSNL@ybl-PAYMENT 16,438.43 BAL:163,777.18",
+    "date": "2025-10-04",
+    "description": "UPI-BSNL@ybl-PAYMENT",
+    "debit": "16,438.43",
+    "credit": null,
+    "balance": "163,777.18",
+    "bank": "kotak",
+    "labeled": true,
+    "entities": {
+      "date": "2025-10-04",
+      "description": "UPI-BSNL@ybl-PAYMENT",
+      "amount": "16438.43",
+      "type": "debit",
+      "balance": "163777.18",
+      "merchant": "bsnl",
+      "category": "bills"
+    }
+  },
+  {
+    "raw_text": "12-11-25: MakeMyTrip@paytm-UPI | Amount: Rs.24,708 | Balance: Rs.271,257.52",
+    "date": "12-11-25",
+    "description": "MakeMyTrip@paytm-UPI",
+    "debit": "24,708",
+    "credit": null,
+    "balance": "271,257.52",
+    "bank": "kotak",
+    "labeled": true,
+    "entities": {
+      "date": "12-11-25",
+      "description": "MakeMyTrip@paytm-UPI",
+      "amount": "24708",
+      "type": "debit",
+      "balance": "271257.52",
+      "merchant": "makemytrip",
+      "category": "shopping"
+    }
+  },
+  {
+    "raw_text": "2025-12-31 | UPI-Vikram Reddy-6083200487 | 20,376 |  | 291,187.64",
+    "date": "2025-12-31",
+    "description": "UPI-Vikram Reddy-6083200487",
+    "debit": "20,376",
+    "credit": null,
+    "balance": "291,187.64",
+    "bank": "kotak",
+    "labeled": true,
+    "entities": {
+      "date": "2025-12-31",
+      "description": "UPI-Vikram Reddy-6083200487",
+      "amount": "20376",
+      "type": "debit",
+      "balance": "291187.64",
+      "merchant": "bigbasket",
+      "category": "food"
+    }
+  },
+  {
+    "bank": "hdfc",
+    "subject": "Transaction Alert - HDFC Bank",
+    "body": "Rs 838 credited to HDFC Bank A/c XX2876 on 08112025. UPI Ref 112637644335. Thank you for banking with us.",
+    "entities": {
+      "amount": "838",
+      "type": "credit",
+      "date": "08112025",
+      "account": "2876",
+      "reference": "112637644335"
+    },
+    "raw_text": "Rs 838 credited to HDFC Bank A/c XX2876 on 08112025. UPI Ref 112637644335. Thank you for banking with us."
+  },
+  {
+    "bank": "hdfc",
+    "subject": "Transaction Alert - HDFC Bank",
+    "body": "Dear Customer, INR 555 credited to A/c 8019 on 30-10-25. Info: UPI-Amit Kumar. Ref: 743158526982",
+    "entities": {
+      "amount": "555",
+      "type": "credit",
+      "date": "30-10-25",
+      "account": "8019",
+      "reference": "743158526982"
+    },
+    "raw_text": "Dear Customer, INR 555 credited to A/c 8019 on 30-10-25. Info: UPI-Amit Kumar. Ref: 743158526982"
+  },
+  {
+    "bank": "hdfc",
+    "subject": "Transaction Alert - HDFC Bank",
+    "body": "Dear Customer, INR 6392.49 debited from A/c 6925 on 27122025. Info: UPI-DMart. If not done by you, call 18002586161",
+    "entities": {
+      "amount": "6392.49",
+      "type": "debit",
+      "date": "27122025",
+      "account": "6925",
+      "reference": "781304820142",
+      "merchant": "dmart",
+      "category": "grocery"
+    },
+    "raw_text": "Dear Customer, INR 6392.49 debited from A/c 6925 on 27122025. Info: UPI-DMart. If not done by you, call 18002586161"
+  },
+  {
+    "bank": "hdfc",
+    "subject": "Transaction Alert - HDFC Bank",
+    "body": "Dear Customer, INR 3273.98 debited from A/c 2584 on 24-11-2025. Info: UPI-Zomato. If not done by you, call 18002586161",
+    "entities": {
+      "amount": "3273.98",
+      "type": "debit",
+      "date": "24-11-2025",
+      "account": "2584",
+      "reference": "517010168081",
+      "merchant": "zomato",
+      "category": "food"
+    },
+    "raw_text": "Dear Customer, INR 3273.98 debited from A/c 2584 on 24-11-2025. Info: UPI-Zomato. If not done by you, call 18002586161"
+  },
+  {
+    "bank": "hdfc",
+    "subject": "Transaction Alert - HDFC Bank",
+    "body": "HDFC Bank: Rs.1282.26 has been debited from A/c **8359 on 15102025 to VPA zomato@paytm (UPI Ref No 342319992484). Avl Bal Rs.41182.00",
+    "entities": {
+      "amount": "1282.26",
+      "type": "debit",
+      "date": "15102025",
+      "account": "8359",
+      "reference": "342319992484",
+      "merchant": "zomato",
+      "category": "food"
+    },
+    "raw_text": "HDFC Bank: Rs.1282.26 has been debited from A/c **8359 on 15102025 to VPA zomato@paytm (UPI Ref No 342319992484). Avl Bal Rs.41182.00"
+  },
+  {
+    "bank": "hdfc",
+    "subject": "Transaction Alert - HDFC Bank",
+    "body": "Dear Customer, INR 6562.42 debited from A/c 6168 on 30/12/2025. Info: UPI-Electricity. If not done by you, call 18002586161",
+    "entities": {
+      "amount": "6562.42",
+      "type": "debit",
+      "date": "30/12/2025",
+      "account": "6168",
+      "reference": "137889353643",
+      "merchant": "electricity",
+      "category": "bills"
+    },
+    "raw_text": "Dear Customer, INR 6562.42 debited from A/c 6168 on 30/12/2025. Info: UPI-Electricity. If not done by you, call 18002586161"
+  },
+  {
+    "bank": "icici",
+    "subject": "Transaction Alert - ICICI Bank",
+    "body": "INR 1399 debited from ICICI Bank A/c 2612 on 13 Nov 2025 to Jio via UPI. Ref: 158965931802",
+    "entities": {
+      "amount": "1399",
+      "type": "debit",
+      "date": "13 Nov 2025",
+      "account": "2612",
+      "reference": "158965931802",
+      "merchant": "jio",
+      "category": "bills"
+    },
+    "raw_text": "INR 1399 debited from ICICI Bank A/c 2612 on 13 Nov 2025 to Jio via UPI. Ref: 158965931802"
+  },
+  {
+    "bank": "icici",
+    "subject": "Transaction Alert - ICICI Bank",
+    "body": "Dear Customer, Rs.1425 is debited from A/c XX5061 for UPI txn to VPA-bigbasket@ybl on 11112025. Ref:230788137103",
+    "entities": {
+      "amount": "1425",
+      "type": "debit",
+      "date": "11112025",
+      "account": "5061",
+      "reference": "230788137103",
+      "merchant": "bigbasket",
+      "category": "shopping"
+    },
+    "raw_text": "Dear Customer, Rs.1425 is debited from A/c XX5061 for UPI txn to VPA-bigbasket@ybl on 11112025. Ref:230788137103"
+  },
+  {
+    "bank": "icici",
+    "subject": "Transaction Alert - ICICI Bank",
+    "body": "INR 3569.58 credited to ICICI Bank A/c 8579 on 20 Dec 2025 from Refund - Amazon. UPI Ref: 405730753142",
+    "entities": {
+      "amount": "3569.58",
+      "type": "credit",
+      "date": "20 Dec 2025",
+      "account": "8579",
+      "reference": "405730753142"
+    },
+    "raw_text": "INR 3569.58 credited to ICICI Bank A/c 8579 on 20 Dec 2025 from Refund - Amazon. UPI Ref: 405730753142"
+  },
+  {
+    "bank": "icici",
+    "subject": "Transaction Alert - ICICI Bank",
+    "body": "Dear Customer, Rs.1050.47 is debited from A/c XX2290 for UPI txn to VPA-zepto@ybl on 28/11/2025. Ref:362241791770",
+    "entities": {
+      "amount": "1050.47",
+      "type": "debit",
+      "date": "28/11/2025",
+      "account": "2290",
+      "reference": "362241791770",
+      "merchant": "zepto",
+      "category": "grocery"
+    },
+    "raw_text": "Dear Customer, Rs.1050.47 is debited from A/c XX2290 for UPI txn to VPA-zepto@ybl on 28/11/2025. Ref:362241791770"
+  },
+  {
+    "bank": "icici",
+    "subject": "Transaction Alert - ICICI Bank",
+    "body": "ICICI Bank Acct XX4872 credited with INR 16416.70 on 05-01-2026. IMPS Ref 928612436713.",
+    "entities": {
+      "amount": "16416.70",
+      "type": "credit",
+      "date": "05-01-2026",
+      "account": "4872",
+      "reference": "928612436713"
+    },
+    "raw_text": "ICICI Bank Acct XX4872 credited with INR 16416.70 on 05-01-2026. IMPS Ref 928612436713."
+  },
+  {
+    "bank": "icici",
+    "subject": "Transaction Alert - ICICI Bank",
+    "body": "ICICI Bank Acct XX1931 credited with INR 692.75 on 06112025. IMPS Ref 274079861243.",
+    "entities": {
+      "amount": "692.75",
+      "type": "credit",
+      "date": "06112025",
+      "account": "1931",
+      "reference": "274079861243"
+    },
+    "raw_text": "ICICI Bank Acct XX1931 credited with INR 692.75 on 06112025. IMPS Ref 274079861243."
+  },
+  {
+    "bank": "sbi",
+    "subject": "Transaction Alert - SBI Bank",
+    "body": "SBI: Rs.373 debited from a/c XX9666 on 29-10-25. UPI txn to zomato@paytm. If not done by you,call 1800112211",
+    "entities": {
+      "amount": "373",
+      "type": "debit",
+      "date": "29-10-25",
+      "account": "9666",
+      "reference": "989003396697",
+      "merchant": "zomato",
+      "category": "food"
+    },
+    "raw_text": "SBI: Rs.373 debited from a/c XX9666 on 29-10-25. UPI txn to zomato@paytm. If not done by you,call 1800112211"
+  },
+  {
+    "bank": "sbi",
+    "subject": "Transaction Alert - SBI Bank",
+    "body": "Dear SBI User, Rs 8033 credited to A/c X2771 on 15/11/2025. UPI Ref 272944613643.",
+    "entities": {
+      "amount": "8033",
+      "type": "credit",
+      "date": "15/11/2025",
+      "account": "2771",
+      "reference": "272944613643"
+    },
+    "raw_text": "Dear SBI User, Rs 8033 credited to A/c X2771 on 15/11/2025. UPI Ref 272944613643."
+  },
+  {
+    "bank": "sbi",
+    "subject": "Transaction Alert - SBI Bank",
+    "body": "Rs 9193.15 debited from SBI A/c 5616 on 24122025 via UPI. Ref No 397020387114. Balance: Rs.335491.00",
+    "entities": {
+      "amount": "9193.15",
+      "type": "debit",
+      "date": "24122025",
+      "account": "5616",
+      "reference": "397020387114",
+      "merchant": "dmart",
+      "category": "grocery"
+    },
+    "raw_text": "Rs 9193.15 debited from SBI A/c 5616 on 24122025 via UPI. Ref No 397020387114. Balance: Rs.335491.00"
+  },
+  {
+    "bank": "sbi",
+    "subject": "Transaction Alert - SBI Bank",
+    "body": "Rs 1759 credited to SBI A/c 1685 on 28/10/2025. IMPS from Amit Kumar. Balance: Rs.21961.00",
+    "entities": {
+      "amount": "1759",
+      "type": "credit",
+      "date": "28/10/2025",
+      "account": "1685",
+      "reference": "239284873367"
+    },
+    "raw_text": "Rs 1759 credited to SBI A/c 1685 on 28/10/2025. IMPS from Amit Kumar. Balance: Rs.21961.00"
+  },
+  {
+    "bank": "sbi",
+    "subject": "Transaction Alert - SBI Bank",
+    "body": "SBI: Rs.1203 debited from a/c XX5345 on 28122025. UPI txn to swiggy@ybl. If not done by you,call 1800112211",
+    "entities": {
+      "amount": "1203",
+      "type": "debit",
+      "date": "28122025",
+      "account": "5345",
+      "reference": "654966271979",
+      "merchant": "swiggy",
+      "category": "food"
+    },
+    "raw_text": "SBI: Rs.1203 debited from a/c XX5345 on 28122025. UPI txn to swiggy@ybl. If not done by you,call 1800112211"
+  },
+  {
+    "bank": "sbi",
+    "subject": "Transaction Alert - SBI Bank",
+    "body": "Dear SBI User, Rs 8072 debited from A/c X2832 on 08 Oct 2025 by UPI Ola. Ref 110999011248. If not you, fwd SMS to 9223766666",
+    "entities": {
+      "amount": "8072",
+      "type": "debit",
+      "date": "08 Oct 2025",
+      "account": "2832",
+      "reference": "110999011248",
+      "merchant": "ola",
+      "category": "transport"
+    },
+    "raw_text": "Dear SBI User, Rs 8072 debited from A/c X2832 on 08 Oct 2025 by UPI Ola. Ref 110999011248. If not you, fwd SMS to 9223766666"
+  },
+  {
+    "bank": "axis",
+    "subject": "Transaction Alert - AXIS Bank",
+    "body": "Dear Customer, INR 523 credited to Axis A/c XX7678 on 18/12/2025. Avl Bal:Rs.5944.00",
+    "entities": {
+      "amount": "523",
+      "type": "credit",
+      "date": "18/12/2025",
+      "account": "7678",
+      "reference": "555542394193"
+    },
+    "raw_text": "Dear Customer, INR 523 credited to Axis A/c XX7678 on 18/12/2025. Avl Bal:Rs.5944.00"
+  },
+  {
+    "bank": "axis",
+    "subject": "Transaction Alert - AXIS Bank",
+    "body": "Rs.6756 debited from Axis Bank A/c 8119 on 04-12-2025 to VPA swiggy@ybl. UPI Ref:753300614396",
+    "entities": {
+      "amount": "6756",
+      "type": "debit",
+      "date": "04-12-2025",
+      "account": "8119",
+      "reference": "753300614396",
+      "merchant": "swiggy",
+      "category": "food"
+    },
+    "raw_text": "Rs.6756 debited from Axis Bank A/c 8119 on 04-12-2025 to VPA swiggy@ybl. UPI Ref:753300614396"
+  },
+  {
+    "bank": "axis",
+    "subject": "Transaction Alert - AXIS Bank",
+    "body": "Axis Bank Acct XX4185 debited for Rs.2378.61 on 20-10-2025. UPI:Ola. Ref 557222530916. Not you? SMS FREEZE to 5676782",
+    "entities": {
+      "amount": "2378.61",
+      "type": "debit",
+      "date": "20-10-2025",
+      "account": "4185",
+      "reference": "557222530916",
+      "merchant": "ola",
+      "category": "transport"
+    },
+    "raw_text": "Axis Bank Acct XX4185 debited for Rs.2378.61 on 20-10-2025. UPI:Ola. Ref 557222530916. Not you? SMS FREEZE to 5676782"
+  },
+  {
+    "bank": "axis",
+    "subject": "Transaction Alert - AXIS Bank",
+    "body": "Rs.480 debited from Axis Bank A/c 8618 on 24102025 to VPA zepto@ybl. UPI Ref:454999257514",
+    "entities": {
+      "amount": "480",
+      "type": "debit",
+      "date": "24102025",
+      "account": "8618",
+      "reference": "454999257514",
+      "merchant": "zepto",
+      "category": "grocery"
+    },
+    "raw_text": "Rs.480 debited from Axis Bank A/c 8618 on 24102025 to VPA zepto@ybl. UPI Ref:454999257514"
+  },
+  {
+    "bank": "axis",
+    "subject": "Transaction Alert - AXIS Bank",
+    "body": "Dear Customer, INR 193 debited from Axis A/c XX3041 on 25112025. Info:UPI-Blinkit. Bal:Rs.5306.00",
+    "entities": {
+      "amount": "193",
+      "type": "debit",
+      "date": "25112025",
+      "account": "3041",
+      "reference": "827197730438",
+      "merchant": "blinkit",
+      "category": "grocery"
+    },
+    "raw_text": "Dear Customer, INR 193 debited from Axis A/c XX3041 on 25112025. Info:UPI-Blinkit. Bal:Rs.5306.00"
+  },
+  {
+    "bank": "axis",
+    "subject": "Transaction Alert - AXIS Bank",
+    "body": "Dear Customer, INR 1191.16 credited to Axis A/c XX9702 on 09/11/2025. Avl Bal:Rs.21985.00",
+    "entities": {
+      "amount": "1191.16",
+      "type": "credit",
+      "date": "09/11/2025",
+      "account": "9702",
+      "reference": "610248199023"
+    },
+    "raw_text": "Dear Customer, INR 1191.16 credited to Axis A/c XX9702 on 09/11/2025. Avl Bal:Rs.21985.00"
+  },
+  {
+    "bank": "kotak",
+    "subject": "Transaction Alert - KOTAK Bank",
+    "body": "Rs 1421.28 debited via UPI from Kotak Bank A/c XX3749 on 08-11-25. Merchant:Flipkart. If not you call 18002740110",
+    "entities": {
+      "amount": "1421.28",
+      "type": "debit",
+      "date": "08-11-25",
+      "account": "3749",
+      "reference": "507020728093",
+      "merchant": "flipkart",
+      "category": "shopping"
+    },
+    "raw_text": "Rs 1421.28 debited via UPI from Kotak Bank A/c XX3749 on 08-11-25. Merchant:Flipkart. If not you call 18002740110"
+  },
+  {
+    "bank": "kotak",
+    "subject": "Transaction Alert - KOTAK Bank",
+    "body": "INR 1552 credited to Kotak A/c 9817 on 15-10-25 from Amit Kumar. Ref:987408586371",
+    "entities": {
+      "amount": "1552",
+      "type": "credit",
+      "date": "15-10-25",
+      "account": "9817",
+      "reference": "987408586371"
+    },
+    "raw_text": "INR 1552 credited to Kotak A/c 9817 on 15-10-25 from Amit Kumar. Ref:987408586371"
+  },
+  {
+    "bank": "kotak",
+    "subject": "Transaction Alert - KOTAK Bank",
+    "body": "INR 4640 credited to Kotak A/c 4995 on 26-12-25 from Cashback. Ref:597707816158",
+    "entities": {
+      "amount": "4640",
+      "type": "credit",
+      "date": "26-12-25",
+      "account": "4995",
+      "reference": "597707816158"
+    },
+    "raw_text": "INR 4640 credited to Kotak A/c 4995 on 26-12-25 from Cashback. Ref:597707816158"
+  },
+  {
+    "bank": "kotak",
+    "subject": "Transaction Alert - KOTAK Bank",
+    "body": "INR 738 debited from Kotak A/c 3091 on 16/11/2025 to VPA:bwssb@sbi. Ref No.614711052552",
+    "entities": {
+      "amount": "738",
+      "type": "debit",
+      "date": "16/11/2025",
+      "account": "3091",
+      "reference": "614711052552",
+      "merchant": "water",
+      "category": "bills"
+    },
+    "raw_text": "INR 738 debited from Kotak A/c 3091 on 16/11/2025 to VPA:bwssb@sbi. Ref No.614711052552"
+  },
+  {
+    "bank": "kotak",
+    "subject": "Transaction Alert - KOTAK Bank",
+    "body": "Rs 7304 credited to Kotak Bank A/c XX6934 on 14 Nov 2025. Info:Cashback. Balance:Rs.173918.00",
+    "entities": {
+      "amount": "7304",
+      "type": "credit",
+      "date": "14 Nov 2025",
+      "account": "6934",
+      "reference": "572899688547"
+    },
+    "raw_text": "Rs 7304 credited to Kotak Bank A/c XX6934 on 14 Nov 2025. Info:Cashback. Balance:Rs.173918.00"
+  },
+  {
+    "bank": "kotak",
+    "subject": "Transaction Alert - KOTAK Bank",
+    "body": "Kotak Bank: Rs.37460 debited from A/c XX8999 on 29102025 towards UPI-Rapido. Avl Bal Rs.535080.00. Ref 344374238950",
+    "entities": {
+      "amount": "37460",
+      "type": "debit",
+      "date": "29102025",
+      "account": "8999",
+      "reference": "344374238950",
+      "merchant": "rapido",
+      "category": "transport"
+    },
+    "raw_text": "Kotak Bank: Rs.37460 debited from A/c XX8999 on 29102025 towards UPI-Rapido. Avl Bal Rs.535080.00. Ref 344374238950"
+  },
+  {
+    "bank": "gpay",
+    "subject": "Transaction Alert - GPAY Bank",
+    "body": "\u20b91470 sent to zomato@paytm from GPAY Bank XX1601. Txn: 936717894940. 14 Oct 2025",
+    "entities": {
+      "amount": "1470",
+      "type": "debit",
+      "date": "14 Oct 2025",
+      "account": "1601",
+      "reference": "936717894940",
+      "merchant": "zomato",
+      "category": "food"
+    },
+    "raw_text": "\u20b91470 sent to zomato@paytm from GPAY Bank XX1601. Txn: 936717894940. 14 Oct 2025"
+  },
+  {
+    "bank": "gpay",
+    "subject": "Transaction Alert - GPAY Bank",
+    "body": "Google Pay: Payment of \u20b91248 to Electricity successful. 05-11-2025. Ref 484270768628",
+    "entities": {
+      "amount": "1248",
+      "type": "debit",
+      "date": "05-11-2025",
+      "account": "7690",
+      "reference": "484270768628",
+      "merchant": "electricity",
+      "category": "bills"
+    },
+    "raw_text": "Google Pay: Payment of \u20b91248 to Electricity successful. 05-11-2025. Ref 484270768628"
+  },
+  {
+    "bank": "gpay",
+    "subject": "Transaction Alert - GPAY Bank",
+    "body": "You paid \u20b91632 to Rapido. 02-11-2025. UPI Ref: 609136562669. -Google Pay",
+    "entities": {
+      "amount": "1632",
+      "type": "debit",
+      "date": "02-11-2025",
+      "account": "7770",
+      "reference": "609136562669",
+      "merchant": "rapido",
+      "category": "transport"
+    },
+    "raw_text": "You paid \u20b91632 to Rapido. 02-11-2025. UPI Ref: 609136562669. -Google Pay"
+  },
+  {
+    "bank": "gpay",
+    "subject": "Transaction Alert - GPAY Bank",
+    "body": "You paid \u20b9389 to Ola. 22102025. UPI Ref: 417489104406. -Google Pay",
+    "entities": {
+      "amount": "389",
+      "type": "debit",
+      "date": "22102025",
+      "account": "8195",
+      "reference": "417489104406",
+      "merchant": "ola",
+      "category": "transport"
+    },
+    "raw_text": "You paid \u20b9389 to Ola. 22102025. UPI Ref: 417489104406. -Google Pay"
+  },
+  {
+    "bank": "gpay",
+    "subject": "Transaction Alert - GPAY Bank",
+    "body": "You received \u20b92571.54 from Dividend - Mutual Fund. 24112025. UPI Ref: 409248663017. -Google Pay",
+    "entities": {
+      "amount": "2571.54",
+      "type": "credit",
+      "date": "24112025",
+      "account": "5891",
+      "reference": "409248663017"
+    },
+    "raw_text": "You received \u20b92571.54 from Dividend - Mutual Fund. 24112025. UPI Ref: 409248663017. -Google Pay"
+  },
+  {
+    "bank": "gpay",
+    "subject": "Transaction Alert - GPAY Bank",
+    "body": "You paid \u20b96712 to Zomato. 04-01-26. UPI Ref: 145424634923. -Google Pay",
+    "entities": {
+      "amount": "6712",
+      "type": "debit",
+      "date": "04-01-26",
+      "account": "3870",
+      "reference": "145424634923",
+      "merchant": "zomato",
+      "category": "food"
+    },
+    "raw_text": "You paid \u20b96712 to Zomato. 04-01-26. UPI Ref: 145424634923. -Google Pay"
+  },
+  {
+    "bank": "paytm",
+    "subject": "Transaction Alert - PAYTM Bank",
+    "body": "Paytm: Rs.25081 added to wallet from Interest Credit. 22/11/2025",
+    "entities": {
+      "amount": "25081",
+      "type": "credit",
+      "date": "22/11/2025",
+      "account": "5106",
+      "reference": "308892683171"
+    },
+    "raw_text": "Paytm: Rs.25081 added to wallet from Interest Credit. 22/11/2025"
+  },
+  {
+    "bank": "paytm",
+    "subject": "Transaction Alert - PAYTM Bank",
+    "body": "Paytm: You sent Rs.2806 to Ola. 08-10-2025. Order ID: 282294211298",
+    "entities": {
+      "amount": "2806",
+      "type": "debit",
+      "date": "08-10-2025",
+      "account": "5906",
+      "reference": "282294211298",
+      "merchant": "ola",
+      "category": "transport"
+    },
+    "raw_text": "Paytm: You sent Rs.2806 to Ola. 08-10-2025. Order ID: 282294211298"
+  },
+  {
+    "bank": "paytm",
+    "subject": "Transaction Alert - PAYTM Bank",
+    "body": "Paid Rs.817 to Uber via Paytm UPI. 06122025. Txn ID: 720245039395",
+    "entities": {
+      "amount": "817",
+      "type": "debit",
+      "date": "06122025",
+      "account": "3950",
+      "reference": "720245039395",
+      "merchant": "uber",
+      "category": "transport"
+    },
+    "raw_text": "Paid Rs.817 to Uber via Paytm UPI. 06122025. Txn ID: 720245039395"
+  },
+  {
+    "bank": "paytm",
+    "subject": "Transaction Alert - PAYTM Bank",
+    "body": "Rs 1258 debited from your PAYTM Bank a/c XX8486 to zomato@paytm. Paytm Ref: 675953876146",
+    "entities": {
+      "amount": "1258",
+      "type": "debit",
+      "date": "25 Dec 2025",
+      "account": "8486",
+      "reference": "675953876146",
+      "merchant": "zomato",
+      "category": "food"
+    },
+    "raw_text": "Rs 1258 debited from your PAYTM Bank a/c XX8486 to zomato@paytm. Paytm Ref: 675953876146"
+  },
+  {
+    "bank": "paytm",
+    "subject": "Transaction Alert - PAYTM Bank",
+    "body": "Rs 5151 credited to your PAYTM Bank a/c XX6881 from Interest Credit. Ref: 728703172393",
+    "entities": {
+      "amount": "5151",
+      "type": "credit",
+      "date": "24/12/2025",
+      "account": "6881",
+      "reference": "728703172393"
+    },
+    "raw_text": "Rs 5151 credited to your PAYTM Bank a/c XX6881 from Interest Credit. Ref: 728703172393"
+  },
+  {
+    "bank": "paytm",
+    "subject": "Transaction Alert - PAYTM Bank",
+    "body": "Paid Rs.1638 to BigBazaar via Paytm UPI. 27 Nov 2025. Txn ID: 520096802415",
+    "entities": {
+      "amount": "1638",
+      "type": "debit",
+      "date": "27 Nov 2025",
+      "account": "7325",
+      "reference": "520096802415",
+      "merchant": "bigbazaar",
+      "category": "grocery"
+    },
+    "raw_text": "Paid Rs.1638 to BigBazaar via Paytm UPI. 27 Nov 2025. Txn ID: 520096802415"
+  },
+  {
+    "bank": "phonepe",
+    "subject": "Transaction Alert - PHONEPE Bank",
+    "body": "You received Rs.15582 from Amit Kumar to PHONEPE Bank a/c XX4697. 22122025. Txn ID: 558549792976",
+    "entities": {
+      "amount": "15582",
+      "type": "credit",
+      "date": "22122025",
+      "account": "4697",
+      "reference": "558549792976"
+    },
+    "raw_text": "You received Rs.15582 from Amit Kumar to PHONEPE Bank a/c XX4697. 22122025. Txn ID: 558549792976"
+  },
+  {
+    "bank": "phonepe",
+    "subject": "Transaction Alert - PHONEPE Bank",
+    "body": "Payment of Rs.1062 to BigBazaar successful! 14 Dec 2025. UPI Ref: 487458104455",
+    "entities": {
+      "amount": "1062",
+      "type": "debit",
+      "date": "14 Dec 2025",
+      "account": "5232",
+      "reference": "487458104455",
+      "merchant": "bigbazaar",
+      "category": "grocery"
+    },
+    "raw_text": "Payment of Rs.1062 to BigBazaar successful! 14 Dec 2025. UPI Ref: 487458104455"
+  },
+  {
+    "bank": "phonepe",
+    "subject": "Transaction Alert - PHONEPE Bank",
+    "body": "You received Rs.1266 from Cashback to PHONEPE Bank a/c XX5632. 02/01/2026. Txn ID: 874331514343",
+    "entities": {
+      "amount": "1266",
+      "type": "credit",
+      "date": "02/01/2026",
+      "account": "5632",
+      "reference": "874331514343"
+    },
+    "raw_text": "You received Rs.1266 from Cashback to PHONEPE Bank a/c XX5632. 02/01/2026. Txn ID: 874331514343"
+  },
+  {
+    "bank": "phonepe",
+    "subject": "Transaction Alert - PHONEPE Bank",
+    "body": "Payment of Rs.4426.23 to DMart successful! 29-11-2025. UPI Ref: 687156468494",
+    "entities": {
+      "amount": "4426.23",
+      "type": "debit",
+      "date": "29-11-2025",
+      "account": "3073",
+      "reference": "687156468494",
+      "merchant": "dmart",
+      "category": "grocery"
+    },
+    "raw_text": "Payment of Rs.4426.23 to DMart successful! 29-11-2025. UPI Ref: 687156468494"
+  },
+  {
+    "bank": "phonepe",
+    "subject": "Transaction Alert - PHONEPE Bank",
+    "body": "You paid Rs.85.29 to Water from PHONEPE Bank a/c XX7046. Txn ID: 827164617915. 16/11/2025",
+    "entities": {
+      "amount": "85.29",
+      "type": "debit",
+      "date": "16/11/2025",
+      "account": "7046",
+      "reference": "827164617915",
+      "merchant": "water",
+      "category": "bills"
+    },
+    "raw_text": "You paid Rs.85.29 to Water from PHONEPE Bank a/c XX7046. Txn ID: 827164617915. 16/11/2025"
+  },
+  {
+    "bank": "phonepe",
+    "subject": "Transaction Alert - PHONEPE Bank",
+    "body": "Rs.3728.11 credited to your PhonePe wallet from Priya Singh. 17/12/2025",
+    "entities": {
+      "amount": "3728.11",
+      "type": "credit",
+      "date": "17/12/2025",
+      "account": "2229",
+      "reference": "706336912249"
+    },
+    "raw_text": "Rs.3728.11 credited to your PhonePe wallet from Priya Singh. 17/12/2025"
+  }
+]
