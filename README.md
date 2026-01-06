@@ -311,13 +311,13 @@ mlx_lm.lora \
 - [x] Unit tests (48 tests) ✨
 - [x] REST API for inference ✨
 
-### 🔄 Phase 2: Bank Statement Parsing (In Progress)
-- [ ] Bank statement PDF extraction
-- [ ] Text row parsing with pdfplumber
-- [ ] Manual labeling of 500+ rows
-- [ ] Synthetic variation generation
-- [ ] [BANK_STATEMENT] prefix training
-- [ ] Retrain and evaluate
+### ✅ Phase 2: Bank Statement Parsing (Complete)
+- [x] Bank statement PDF extraction
+- [x] Text row parsing with pdfplumber
+- [x] Synthetic 500 statement rows generated
+- [x] [BANK_STATEMENT] prefix training
+- [x] Retrained v4 model (800 iterations)
+- [x] Dual capability: emails + statement rows
 
 ### 📋 Future Phases
 - [ ] Spending analytics dashboard
