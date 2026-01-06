@@ -1,0 +1,171 @@
+{"text": "UPI: Unified Payments Interface - A real-time payment system developed by NPCI that enables instant money transfers between bank accounts through mobile phones. Launched in 2016.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 26}
+{"text": "VPA: Virtual Payment Address - A unique identifier for UPI transactions in the format username@bankhandle (e.g., name@ybl, user@okaxis). Eliminates need to share bank account details.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 25}
+{"text": "IMPS: Immediate Payment Service - An instant 24x7 interbank electronic fund transfer service launched by NPCI in 2010. Maximum limit typically Rs.5 lakhs per transaction.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 25}
+{"text": "NEFT: National Electronic Funds Transfer - A nationwide payment system facilitating one-to-one funds transfer. Operates in half-hourly batches. No minimum limit, maximum limit varies by bank.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 26}
+{"text": "RTGS: Real Time Gross Settlement - For high-value instant fund transfers. Minimum Rs.2 lakhs, no upper limit. Settlement happens on a real-time gross basis.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 24}
+{"text": "IFSC: Indian Financial System Code - An 11-character alphanumeric code that uniquely identifies bank branches in India. First 4 characters represent bank, 5th is 0, last 6 identify branch.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 29}
+{"text": "UPI ID: Also called VPA. Unique address for receiving UPI payments. Format: username@bankhandle.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "UPI PIN: 4 or 6 digit Personal Identification Number set by user to authorize UPI transactions. Never share with anyone.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 20}
+{"text": "QR Code: Quick Response Code used for UPI payments. Contains merchant's VPA/UPI ID for easy scanning and payment.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 18}
+{"text": "Collect Request: UPI feature where money is requested from another user. Payee initiates the request, payer approves.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 17}
+{"text": "UPI Lite: Offline UPI feature for small value transactions up to Rs.500 without internet connectivity.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 15}
+{"text": "UPI AutoPay: Mandate-based recurring payments through UPI for subscriptions, EMIs, etc.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "BHIM: Bharat Interface for Money - Government's UPI payment app developed by NPCI.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "PhonePe: Popular UPI payment app owned by Walmart. Uses @ybl (Yes Bank Limited) handle.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 14}
+{"text": "GPay: Google Pay - Google's UPI payment app in India. Uses @okaxis, @okicici, @oksbi handles.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 15}
+{"text": "Paytm: Payment app offering UPI, wallet, and banking services. Uses @paytm handle.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "CRED: Members-only app for credit card payments. Offers rewards for bill payments.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "Transaction Reference Number: Unique 12-digit number assigned to each UPI transaction for tracking.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "UTR: Unique Transaction Reference - 16 or 22 digit number for NEFT/RTGS/IMPS transactions.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "CASA: Current Account Savings Account - Low-cost deposits for banks. CASA ratio indicates financial health.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 15}
+{"text": "FD: Fixed Deposit - Term deposit where money is locked for a fixed period at predetermined interest rate.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 18}
+{"text": "RD: Recurring Deposit - Monthly savings scheme with fixed deposit at regular intervals.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "Savings Account: Basic bank account for individuals with variable interest (usually 2.5-4% p.a.).", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "Current Account: Account for businesses with no interest but unlimited transactions.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "NRE Account: Non-Resident External account for NRIs. Foreign currency converted to INR. Tax-free interest.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 14}
+{"text": "NRO Account: Non-Resident Ordinary account for NRIs. For income earned in India. Taxable interest.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 14}
+{"text": "FCNR: Foreign Currency Non-Resident account. Deposits held in foreign currency. Tax-free.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "CIF: Customer Information File - Unique identification number assigned to each customer by bank.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 14}
+{"text": "Account Number: Unique number identifying a specific bank account. Usually 11-16 digits.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "MICR: Magnetic Ink Character Recognition - 9-digit code on cheques identifying bank, branch, and account.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 15}
+{"text": "Cheque: Written order to bank to pay specific amount from account to named person/entity.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 14}
+{"text": "DD: Demand Draft - Prepaid negotiable instrument for fund transfer. Safer than cheques.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "KYC: Know Your Customer - Mandatory identity verification process for opening bank accounts.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "CKYC: Central KYC - Centralized repository of KYC records to avoid repeated submissions.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "Passbook: Physical record of all transactions in a bank account.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "Statement: Periodic summary of all transactions, available monthly or on-demand.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "Overdraft: Facility to withdraw more than available balance, up to approved limit. Interest charged on usage.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 16}
+{"text": "NACH: National Automated Clearing House - NPCI system for bulk/repetitive payments like EMIs, salaries.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 14}
+{"text": "ECS: Electronic Clearing Service - For bulk payments like dividends, salaries. Being replaced by NACH.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 15}
+{"text": "Standing Instruction: Automatic recurring payment instruction to bank for regular transfers.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "Nomination: Designating a person to receive account balance in case of account holder's death.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 14}
+{"text": "Joint Account: Bank account held by two or more individuals together.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "Minor Account: Bank account for individuals below 18 years, operated by guardian.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "Dormant Account: Account with no transactions for extended period (usually 24 months).", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "ATM: Automated Teller Machine - For cash withdrawal, balance inquiry, mini statements.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "Debit Card: Card linked to bank account for purchases and ATM withdrawals.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "Credit Card: Card with pre-approved credit limit for purchases. Interest charged on unpaid balance.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 14}
+{"text": "CVV: Card Verification Value - 3-digit security code on back of card.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "PIN: Personal Identification Number - 4-digit code for ATM/card transactions.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "EMI: Equated Monthly Installment - Fixed monthly payment for loans, calculated on principal and interest.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 15}
+{"text": "APR: Annual Percentage Rate - True cost of borrowing including interest and fees.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "PLR: Prime Lending Rate - Base rate used by banks to set loan interest rates.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 15}
+{"text": "MCLR: Marginal Cost of Funds based Lending Rate - Current benchmark for setting loan rates.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 15}
+{"text": "Repo Rate: Rate at which RBI lends to commercial banks. Affects all interest rates.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 14}
+{"text": "Reverse Repo Rate: Rate at which RBI borrows from commercial banks.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "CRR: Cash Reserve Ratio - Percentage of deposits banks must keep with RBI.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "SLR: Statutory Liquidity Ratio - Percentage of deposits banks must invest in government securities.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 14}
+{"text": "NPA: Non-Performing Asset - Loan where interest/principal payment is overdue by 90+ days.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "Write-off: When bank removes irrecoverable loan from books. Borrower still liable.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "Lien: Bank's right to hold customer's deposits against loan default.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "Garnishee Order: Court order to bank to freeze and transfer funds for debt recovery.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 14}
+{"text": "Mutual Fund: Investment vehicle that pools money from multiple investors to invest in securities.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 14}
+{"text": "AMC: Asset Management Company - Entity that manages mutual fund schemes.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "NAV: Net Asset Value - Per unit price of mutual fund. Calculated as (Assets - Liabilities) / Units.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 18}
+{"text": "AUM: Assets Under Management - Total market value of assets managed by AMC.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "SIP: Systematic Investment Plan - Regular investment of fixed amount in mutual fund at set intervals.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 16}
+{"text": "SWP: Systematic Withdrawal Plan - Regular withdrawal of fixed amount from mutual fund.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "STP: Systematic Transfer Plan - Regular transfer from one fund to another.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "ELSS: Equity Linked Savings Scheme - Tax-saving mutual fund with 3-year lock-in under Section 80C.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 15}
+{"text": "Debt Fund: Mutual fund investing in fixed income securities like bonds, debentures.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "Hybrid Fund: Mutual fund investing in both equity and debt instruments.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "Index Fund: Fund that replicates a market index like Nifty 50, Sensex.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "ETF: Exchange Traded Fund - Index fund traded on stock exchange like a stock.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 14}
+{"text": "NFO: New Fund Offer - Initial offering of a new mutual fund scheme.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "Exit Load: Fee charged when selling mutual fund units before specified period.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "Expense Ratio: Annual fee charged by AMC as percentage of AUM.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "CAGR: Compound Annual Growth Rate - Annualized rate of return accounting for compounding.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "XIRR: Extended Internal Rate of Return - Actual return considering irregular cash flows.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "Direct Plan: Mutual fund bought directly from AMC without distributor. Lower expense ratio.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "Regular Plan: Mutual fund bought through distributor. Higher expense ratio, includes commission.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "Growth Option: Mutual fund option where returns are reinvested. No dividends paid.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "IDCW: Income Distribution cum Capital Withdrawal - New name for dividend option in mutual funds.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 15}
+{"text": "Smallcap: Companies with market cap below Rs.5,000 crores. Higher risk, higher potential return.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "Largecap: Companies with market cap above Rs.20,000 crores. More stable.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "Sectoral Fund: Fund investing in specific sector like banking, IT, pharma.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "Thematic Fund: Fund investing based on theme like ESG, infrastructure, consumption.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "SEBI: Securities and Exchange Board of India - Regulator for securities market.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "AMFI: Association of Mutual Funds in India - Industry body for mutual funds.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "DP: Depository Participant - Intermediary between investor and depository (NSDL/CDSL).", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "NSDL: National Securities Depository Limited - Depository for holding securities.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "CDSL: Central Depository Services Limited - Another depository for securities.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "Zerodha: Largest discount broker in India. Pioneer of zero brokerage model.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "PAN: Permanent Account Number - 10-character alphanumeric tax identification issued by Income Tax Dept.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 14}
+{"text": "TAN: Tax Deduction Account Number - 10-digit number for entities deducting TDS.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "TDS: Tax Deducted at Source - Tax deducted by payer before making payment.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "TCS: Tax Collected at Source - Tax collected by seller from buyer on certain transactions.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 15}
+{"text": "Form 26AS: Annual tax statement showing TDS/TCS and taxes paid.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "Form 16: TDS certificate from employer showing salary and tax deducted.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "Form 16A: TDS certificate for non-salary income like interest, commission.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "ITR: Income Tax Return - Annual declaration of income and tax liability.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "ITR-1 (Sahaj): For salaried individuals with income up to Rs.50 lakhs.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "Assessment Year (AY): Year in which income is assessed and return filed. AY follows FY.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 15}
+{"text": "Financial Year (FY): April to March period in which income is earned.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "Due Date: Last date for filing ITR. Usually July 31 for non-audit cases.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "Belated Return: ITR filed after due date but before end of assessment year.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "Section 80C: Deduction up to Rs.1.5 lakhs for specified investments (PPF, ELSS, LIC, etc.).", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 14}
+{"text": "Section 80D: Deduction for health insurance premium. Rs.25,000 self, Rs.50,000 parents (senior).", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "Section 80E: Deduction for education loan interest. No upper limit.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "Section 80TTA: Deduction up to Rs.10,000 on savings account interest.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "Section 80TTB: Deduction up to Rs.50,000 on deposit interest for senior citizens.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "HRA: House Rent Allowance - Tax-exempt allowance for rental accommodation.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "LTA: Leave Travel Allowance - Tax-exempt allowance for domestic travel.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "Old Tax Regime: Tax regime with deductions and exemptions but higher rates.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "New Tax Regime: Simplified regime with lower rates but no deductions.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "Capital Gains: Profit from sale of capital assets like property, shares.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "LTCG: Long Term Capital Gains - Gains from assets held beyond specified period. Lower tax rate.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 16}
+{"text": "STCG: Short Term Capital Gains - Gains from assets held below specified period. Higher tax rate.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 16}
+{"text": "Indexation: Adjusting purchase price for inflation to reduce capital gains tax.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "GST: Goods and Services Tax - Indirect tax on supply of goods and services.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 14}
+{"text": "GSTIN: GST Identification Number - 15-digit unique ID for GST registered businesses.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "CGST: Central GST - GST component going to central government.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "SGST: State GST - GST component going to state government.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "IGST: Integrated GST - For inter-state supplies. Goes to consuming state.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "HSN Code: Harmonized System Nomenclature - Product classification code for GST.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "SAC Code: Services Accounting Code - Service classification code for GST.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "e-Way Bill: Electronic document for movement of goods above Rs.50,000.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "Input Tax Credit (ITC): Credit of GST paid on inputs against output GST liability.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 14}
+{"text": "Advance Tax: Paying tax in installments during the financial year if liability exceeds Rs.10,000.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 14}
+{"text": "Self-Assessment Tax: Balance tax paid at time of filing return.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "Interest u/s 234A/B/C: Interest for late filing, short advance tax, deferment of advance tax.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 14}
+{"text": "Faceless Assessment: Online assessment without physical meeting with tax officer.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "RBI: Reserve Bank of India - Central bank of India. Regulates monetary policy, banks, forex.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 15}
+{"text": "NPCI: National Payments Corporation of India - Umbrella organization for retail payments.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "SEBI: Securities and Exchange Board of India - Regulator for securities market.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "IRDAI: Insurance Regulatory and Development Authority of India - Insurance regulator.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "PFRDA: Pension Fund Regulatory and Development Authority - Pension regulator.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "AMFI: Association of Mutual Funds in India - Mutual fund industry body.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "FEDAI: Foreign Exchange Dealers' Association of India - Forex market body.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "FEMA: Foreign Exchange Management Act - Law governing forex transactions.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "PMLA: Prevention of Money Laundering Act - Anti-money laundering law.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "PPF: Public Provident Fund - Government savings scheme with tax benefits. 15-year lock-in.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "EPF: Employees' Provident Fund - Mandatory retirement savings for salaried employees.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "UAN: Universal Account Number - Unique number for EPF members.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "NPS: National Pension System - Voluntary pension scheme for retirement.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "PRAN: Permanent Retirement Account Number - Unique NPS account number.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "OTP: One Time Password - Time-sensitive code for transaction verification.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "CIBIL Score: Credit score by TransUnion CIBIL. Range 300-900. Above 750 is good.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "NBFC: Non-Banking Financial Company - Financial institution not holding banking license.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "P2P Lending: Peer-to-Peer lending platform connecting borrowers and lenders directly.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "BNPL: Buy Now Pay Later - Short-term financing for purchases.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "Digital Rupee (e\u20b9): CBDC (Central Bank Digital Currency) issued by RBI.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "Cryptocurrency: Digital currency like Bitcoin, Ethereum. Not legal tender in India.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "CFT: Combating Financing of Terrorism - Regulations against terror financing.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "PPI: Prepaid Payment Instrument - Wallets, prepaid cards for payments.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "SARFAESI Act: Law allowing banks to recover NPAs by selling secured assets.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "DRT: Debt Recovery Tribunal - For recovery of bank dues.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "IBC: Insolvency and Bankruptcy Code - For corporate insolvency resolution.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "HDFC Bank: Housing Development Finance Corporation Bank. Largest private sector bank in India.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "ICICI Bank: Industrial Credit and Investment Corporation of India Bank. Second largest private bank.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 14}
+{"text": "SBI: State Bank of India. Largest public sector bank in India. Government-owned.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "Axis Bank: Third largest private sector bank. Previously called UTI Bank.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "Kotak Mahindra Bank: Private sector bank founded by Uday Kotak.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "Yes Bank: Private sector bank. Had crisis in 2020, now under reconstruction.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 12}
+{"text": "IDFC First Bank: Merged entity of IDFC Bank and Capital First.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "Bank of Baroda: Public sector bank merged with Dena Bank and Vijaya Bank.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "Punjab National Bank: Public sector bank merged with Oriental Bank and United Bank.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 13}
+{"text": "Union Bank of India: Public sector bank merged with Andhra Bank and Corporation Bank.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 14}
+{"text": "UCO Bank: Public sector bank previously called United Commercial Bank.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 10}
+{"text": "Payments Bank: Bank that can accept deposits up to Rs.2 lakhs but cannot lend. Examples: Paytm, Airtel.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 17}
+{"text": "Small Finance Bank: Bank for unserved/underserved sections. Examples: AU, Ujjivan, Equitas.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
+{"text": "NBFCs: Bajaj Finance, HDFC Ltd, Shriram Finance, L&T Finance, Mahindra Finance.", "source": "glossary", "metadata": {"type": "banking_glossary"}, "word_count": 11}
