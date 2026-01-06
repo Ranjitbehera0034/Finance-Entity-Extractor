@@ -236,10 +236,23 @@ print(result.is_valid())     # True
 |--------|-------|
 | Total Emails Parsed | 40,820 |
 | Finance Emails Identified | 8,116 (19.9%) |
-| Transaction Emails | 598 |
-| Training Examples | 456 |
-| Parsing Success Rate | 97.3% |
-| Unit Tests | 36 ✅ |
+| Synthetic Training Examples | 1,600 |
+| Banks Supported | 8 (HDFC, ICICI, SBI, Axis, Kotak, GPay, Paytm, PhonePe) |
+| Model Accuracy | **99.0%** ✨ |
+| Unit Tests | 48 ✅ |
+
+### 🏦 Phase 1 Evaluation Results (v3)
+
+| Bank | Accuracy | Status |
+|------|----------|--------|
+| HDFC | 100% | ✅ |
+| ICICI | 100% | ✅ |
+| SBI | 100% | ✅ |
+| Axis | 100% | ✅ |
+| Kotak | 100% | ✅ |
+| Paytm | 100% | ✅ |
+| PhonePe | 100% | ✅ |
+| GPay | 91.7% | ✅ |
 
 ## 🛠️ Technology Stack
 
@@ -287,17 +300,26 @@ mlx_lm.lora \
 
 ## 📝 Roadmap
 
+### ✅ Phase 1: UPI Email Coverage (Complete)
 - [x] Email parsing from MBOX
 - [x] LLM-based classification
 - [x] Pattern discovery
-- [x] LoRA fine-tuning
-- [x] Credit transaction support
-- [x] Merchant name extraction ✨
-- [x] Payment method detection ✨
-- [x] Category classification ✨
-- [x] Modular Python structure ✨
+- [x] LoRA fine-tuning (600 iterations)
+- [x] Credit transaction support (640 samples)
+- [x] 8 banks supported with 200+ samples each
+- [x] **99% accuracy** on held-out test set ✨
 - [x] Unit tests (48 tests) ✨
 - [x] REST API for inference ✨
+
+### 🔄 Phase 2: Bank Statement Parsing (In Progress)
+- [ ] Bank statement PDF extraction
+- [ ] Text row parsing with pdfplumber
+- [ ] Manual labeling of 500+ rows
+- [ ] Synthetic variation generation
+- [ ] [BANK_STATEMENT] prefix training
+- [ ] Retrain and evaluate
+
+### 📋 Future Phases
 - [ ] Spending analytics dashboard
 - [ ] Real-time Gmail integration
 - [ ] Docker deployment
