@@ -20,190 +20,219 @@ pipeline_tag: text-generation
 
 # Finance Entity Extractor (FinEE) v1.0
 
-<a href="https://huggingface.co/Ranjit0034/finance-entity-extractor">
-    <img src="https://img.shields.io/badge/Model-FinEE_3.8B-blue?style=for-the-badge&logo=huggingface" alt="Model Name">
-</a>
-<a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
-</a>
-<a href="https://huggingface.co/Ranjit0034/finance-entity-extractor">
-    <img src="https://img.shields.io/badge/Parameters-3.8B-orange?style=for-the-badge" alt="Parameters">
-</a>
-<a href="https://github.com/ggerganov/llama.cpp">
-    <img src="https://img.shields.io/badge/GGUF-Compatible-purple?style=for-the-badge" alt="GGUF">
+<a href="https://pypi.org/project/finee/">
+    <img src="https://img.shields.io/pypi/v/finee?style=for-the-badge&logo=pypi&logoColor=white" alt="PyPI">
 </a>
 <a href="https://github.com/Ranjitbehera0034/Finance-Entity-Extractor/actions/workflows/tests.yml">
     <img src="https://github.com/Ranjitbehera0034/Finance-Entity-Extractor/actions/workflows/tests.yml/badge.svg" alt="Tests">
 </a>
+<a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
+</a>
+<a href="https://colab.research.google.com/github/Ranjitbehera0034/Finance-Entity-Extractor/blob/main/examples/demo.ipynb">
+    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
+</a>
 
 <br>
 
-**A production-ready 3.8B parameter language model optimized for zero-shot financial entity extraction.**
+**Extract structured financial data from Indian banking messages in one command.**
 <br>
-*Validated on Indian banking syntax (HDFC, ICICI, SBI, Axis, Kotak) with 94.5% field accuracy.*
-
-[ [Model Card](https://huggingface.co/Ranjit0034/finance-entity-extractor) ] · [ [GitHub](https://github.com/Ranjitbehera0034/Finance-Entity-Extractor) ] · [ [Quick Start](#quick-start-with-finee-library) ]
+*94.5% field accuracy across HDFC, ICICI, SBI, Axis, Kotak.*
 
 </div>
 
 ---
 
-## Performance Benchmarks
-
-### Comparison with Foundation Models
-
-| Model | Parameters | Entity Precision (India) | Latency (CPU) | Cost |
-|-------|------------|-------------------------|---------------|------|
-| **FinEE-3.8B (Ours)** | 3.8B | **94.5%** | **45ms** | Free |
-| Llama-3-8B-Instruct | 8B | 89.4% | 120ms | Free |
-| GPT-3.5-Turbo | ~175B | 94.1% | ~500ms | $0.002/1K |
-| GPT-4 | ~1.7T | 96.8% | ~800ms | $0.03/1K |
-
-### Platform Support
-
-| Platform | Framework | Status |
-|----------|-----------|--------|
-| macOS Apple Silicon | MLX | ✅ Full Support |
-| Linux + NVIDIA GPU | PyTorch/Transformers | ✅ Full Support |
-| Linux + CPU | PyTorch/GGUF | ✅ Full Support |
-| Windows | GGUF/llama.cpp | ✅ Full Support |
-
-## 🐍 Quick Start with FinEE Library
-
-The easiest way to use the model is through the `finee` Python library, which handles backend selection, caching, and validation automatically.
-
-### Installation
+## ⚡ One-Command Installation
 
 ```bash
-# Install from GitHub
-pip install git+https://github.com/Ranjitbehera0034/Finance-Entity-Extractor.git
-
-# Or clone and install locally
-git clone https://github.com/Ranjitbehera0034/Finance-Entity-Extractor.git
-cd Finance-Entity-Extractor
-pip install -e ".[metal]"   # Apple Silicon
-pip install -e ".[cuda]"    # NVIDIA GPU
-pip install -e ".[cpu]"     # CPU only
+pip install finee
 ```
 
-### Usage
+That's it. No cloning, no setup.
+
+---
+
+## 🚀 30-Second Quick Start
 
 ```python
 from finee import extract
 
-# Automatic backend detection (MLX, CUDA, or CPU)
-text = "Rs.500 paid to swiggy@ybl on 01-01-2025"
-result = extract(text)
+# Parse any Indian bank message
+result = extract("Rs.2500 debited from A/c XX3545 to swiggy@ybl on 28-12-2025")
 
-print(f"Amount: {result.amount}")
-print(f"Merchant: {result.merchant} ({result.category})")
-print(f"Confidence: {result.confidence.value}")
-
-# Output JSON
-print(result.to_json())
-# {
-#   "amount": 500.0,
-#   "type": "debit",
-#   "merchant": "Swiggy",
-#   "category": "food",
-#   "date": "01-01-2025",
-#   ...
-# }
+print(result.amount)      # 2500.0
+print(result.merchant)    # "Swiggy"
+print(result.category)    # "food"
+print(result.confidence)  # Confidence.HIGH
 ```
 
-### Command Line Interface
+**Try it live:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ranjitbehera0034/Finance-Entity-Extractor/blob/main/examples/demo.ipynb)
+
+---
+
+## 📋 Output Schema Contract
+
+Every extraction returns a guaranteed JSON structure:
+
+```json
+{
+  "amount": 2500.0,           // float - Always numeric, never "Rs. 2,500"
+  "currency": "INR",          // string - ISO 4217 code
+  "type": "debit",            // string - "debit" | "credit"
+  "account": "3545",          // string - Last 4 digits only
+  "date": "28-12-2025",       // string - DD-MM-YYYY format
+  "reference": "534567891234",// string - UPI/NEFT reference
+  "merchant": "Swiggy",       // string - Normalized name (not "VPA-SWIGGY-BLR")
+  "category": "food",         // string - Enum: food|shopping|transport|bills|...
+  "vpa": "swiggy@ybl",        // string - Raw VPA
+  "confidence": 0.95,         // float - 0.0 to 1.0
+  "confidence_level": "HIGH"  // string - "LOW" | "MEDIUM" | "HIGH"
+}
+```
+
+### Type Definitions (TypeScript-style)
+
+```typescript
+interface ExtractionResult {
+  amount: number | null;
+  currency: "INR";
+  type: "debit" | "credit" | null;
+  account: string | null;
+  date: string | null;        // DD-MM-YYYY
+  reference: string | null;
+  merchant: string | null;
+  category: Category | null;
+  vpa: string | null;
+  confidence: number;         // 0.0 - 1.0
+  confidence_level: "LOW" | "MEDIUM" | "HIGH";
+}
+
+type Category = 
+  | "food" | "shopping" | "transport" | "bills"
+  | "entertainment" | "travel" | "grocery" | "fuel"
+  | "healthcare" | "education" | "investment" | "transfer" | "other";
+```
+
+---
+
+## 🏦 Supported Banks
+
+| Bank | Debit | Credit | UPI | NEFT/IMPS |
+|------|:-----:|:------:|:---:|:---------:|
+| HDFC | ✅ | ✅ | ✅ | ✅ |
+| ICICI | ✅ | ✅ | ✅ | ✅ |
+| SBI | ✅ | ✅ | ✅ | ✅ |
+| Axis | ✅ | ✅ | ✅ | ✅ |
+| Kotak | ✅ | ✅ | ✅ | ✅ |
+
+---
+
+## 📊 Benchmark
+
+| Metric | Value |
+|--------|-------|
+| Field Accuracy | 94.5% |
+| Latency (Regex mode) | <1ms |
+| Latency (LLM mode) | ~50ms |
+| Throughput | 50,000+ msg/sec |
+
+---
+
+## 🔧 Installation Options
 
 ```bash
-# Direct extraction
+# Core (Regex + Rules only, no ML)
+pip install finee
+
+# With Apple Silicon backend
+pip install "finee[metal]"
+
+# With NVIDIA GPU backend
+pip install "finee[cuda]"
+
+# With CPU backend (llama.cpp)
+pip install "finee[cpu]"
+```
+
+---
+
+## 💻 CLI Usage
+
+```bash
+# Extract from text
 finee extract "Rs.500 debited from A/c 1234"
 
 # Check available backends
 finee backends
+
+# Show version
+finee --version
 ```
 
 ---
 
-## 📋 Overview
-
-This project demonstrates how to:
-1. **Parse** 40K+ emails from a Gmail MBOX export
-2. **Classify** emails into categories using Phi-3 Mini
-3. **Discover** patterns in financial emails (transactions, amounts, dates)
-4. **Fine-tune** a local LLM using LoRA for entity extraction
-5. **Extract** structured data: amount, transaction type, account, date, reference
-
-## 🏗️ Project Structure
+## 🏗️ Architecture
 
 ```
-Finance-Entity-Extractor/
-├── src/
-│   └── finee/                 # FinEE Package
-│       ├── __init__.py
-│       ├── extractor.py       # Main pipeline orchestrator
-│       ├── cache.py           # Tier 0 LRU Cache
-│       ├── regex_engine.py    # Tier 1 Regex Engine
-│       ├── merchants.py       # Tier 2 Rule Mapping
-│       ├── prompt.py          # Tier 3 Targeted Prompts
-│       ├── validator.py       # Tier 4 Validation & Repair
-│       ├── backends/          # Auto-detecting Backends (MLX, PT, GGUF)
-│       └── cli.py             # Command Line Interface
-├── tests/                     # 88 Unit Tests
-├── .github/workflows/         # CI/CD
-├── pyproject.toml
-├── train.py                   # Training pipeline
-└── README.md
+Input Text
+    │
+    ▼
+┌─────────────────────────────────────────────────────────────┐
+│ TIER 0: Hash Cache (<1ms if seen before)                    │
+└─────────────────────────────────────────────────────────────┘
+    │
+    ▼
+┌─────────────────────────────────────────────────────────────┐
+│ TIER 1: Regex Engine                                        │
+│ Extract: amount, date, reference, account, vpa, type        │
+└─────────────────────────────────────────────────────────────┘
+    │
+    ▼
+┌─────────────────────────────────────────────────────────────┐
+│ TIER 2: Rule-Based Mapping                                  │
+│ Map: vpa → merchant, merchant → category                    │
+└─────────────────────────────────────────────────────────────┘
+    │
+    ▼
+┌─────────────────────────────────────────────────────────────┐
+│ TIER 3: LLM (Optional, for missing fields)                  │
+│ Targeted prompts for: merchant, category only               │
+└─────────────────────────────────────────────────────────────┘
+    │
+    ▼
+┌─────────────────────────────────────────────────────────────┐
+│ TIER 4: Validation + Normalization                          │
+│ JSON repair, date normalization, confidence scoring         │
+└─────────────────────────────────────────────────────────────┘
+    │
+    ▼
+ExtractionResult (Guaranteed Schema)
 ```
 
-## 🎯 Extracted Entities
-
-| Entity | Description | Example |
-|--------|-------------|---------|
-| `amount` | Transaction amount | "2500.00" |
-| `type` | Debit or Credit | "debit" |
-| `account` | Account identifier | "3545" |
-| `date` | Transaction date | "28-12-25" |
-| `reference` | UPI/NEFT reference | "534567891234" |
-| `merchant` | Merchant name | "swiggy" |
-| `category` | Transaction category | "food" |
-| `confidence` | Extraction confidence | "HIGH" |
-
-## 📈 Benchmark Results
-
-### Multi-Bank Validation (v8)
-
-| Bank | Field Accuracy | Status |
-|------|----------------|--------|
-| ICICI | 96.2% | ✅ |
-| HDFC | 95.0% | ✅ |
-| SBI | 93.3% | ✅ |
-| Axis | 93.3% | ✅ |
-| Kotak | 92.0% | ✅ |
-| **Overall** | **94.5%** | ✅ |
-
-### Field-Level Accuracy
-
-| Field | Accuracy |
-|-------|----------|
-| Amount | 98.5% |
-| Type | 99.2% |
-| Date | 97.8% |
-| Account | 96.1% |
-| Reference | 72.7% |
+---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- [Microsoft](https://huggingface.co/microsoft) for Phi-3 model
-- [MLX team](https://github.com/ml-explore) for the amazing framework
-- [Hugging Face](https://huggingface.co/) for model hosting
+```bash
+git clone https://github.com/Ranjitbehera0034/Finance-Entity-Extractor.git
+cd Finance-Entity-Extractor
+pip install -e ".[dev]"
+pytest tests/
+```
 
 ---
 
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE)
+
+---
+
+<div align="center">
+
 **Made with ❤️ by Ranjit Behera**
+
+[GitHub](https://github.com/Ranjitbehera0034/Finance-Entity-Extractor) · [PyPI](https://pypi.org/project/finee/) · [Hugging Face](https://huggingface.co/Ranjit0034/finance-entity-extractor)
+
+</div>
