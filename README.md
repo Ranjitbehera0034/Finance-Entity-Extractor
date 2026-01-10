@@ -21,17 +21,30 @@ pipeline_tag: text-generation
 [![PyPI](https://img.shields.io/pypi/v/finee?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/finee/)
 [![Tests](https://github.com/Ranjitbehera0034/Finance-Entity-Extractor/actions/workflows/tests.yml/badge.svg)](https://github.com/Ranjitbehera0034/Finance-Entity-Extractor/actions/workflows/tests.yml)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ranjitbehera0034/Finance-Entity-Extractor/blob/main/examples/demo.ipynb)
 
-**Extract structured financial data from Indian banking messages.**
+**Production-grade Finance NER for Indian Banks**
 <br>
-*94.5% field accuracy. <1ms latency. Zero setup.*
+*Hybrid Regex + Phi-3 LLM • 94.5% accuracy • <1ms latency*
 
 </div>
 
 ---
 
-## ⚡ Install & Run in 10 Seconds
+## 🔥 Hybrid Architecture
+
+> **Runs 100% offline using Regex by default.**
+> **Optional 3.8B LLM auto-downloads only for complex edge cases.**
+
+| Mode | Latency | Accuracy | Model Download |
+|------|---------|----------|----------------|
+| **Regex (Default)** | <1ms | 87% | ❌ None |
+| **Regex + LLM** | ~50ms | 94.5% | ✅ 7GB (one-time) |
+
+---
+
+## ⚡ Install in 10 Seconds
 
 ```bash
 pip install finee
@@ -47,7 +60,25 @@ print(r.merchant)  # "Swiggy"
 print(r.category)  # "food"
 ```
 
-**No model download. No API keys. Works offline.**
+**Try it now:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ranjitbehera0034/Finance-Entity-Extractor/blob/main/examples/demo.ipynb)
+
+---
+
+## 🧠 Enable LLM Mode (For Edge Cases)
+
+```python
+from finee import FinEE
+from finee.schema import ExtractionConfig
+
+# Downloads 7GB model once, then runs locally
+extractor = FinEE(ExtractionConfig(use_llm=True))
+result = extractor.extract("Your complex bank message...")
+```
+
+**Supported Backends:**
+- Apple Silicon → MLX (fastest)
+- NVIDIA GPU → PyTorch/CUDA
+- CPU → llama.cpp (GGUF)
 
 ---
 
@@ -65,9 +96,7 @@ Every extraction returns this **guaranteed JSON structure**:
   "reference": "534567891234",// string - UPI/NEFT ref
   "merchant": "Swiggy",       // string - Normalized name
   "category": "food",         // string - food|shopping|transport|...
-  "vpa": "swiggy@ybl",        // string - Raw VPA
-  "confidence": 0.95,         // float - 0.0 to 1.0
-  "confidence_level": "HIGH"  // "LOW" | "MEDIUM" | "HIGH"
+  "confidence": 0.95          // float - 0.0 to 1.0
 }
 ```
 
@@ -75,55 +104,46 @@ Every extraction returns this **guaranteed JSON structure**:
 
 ## 🔬 Verify Accuracy Yourself
 
-Don't trust "99% accuracy" claims. **Run the benchmark:**
-
 ```bash
-# Clone and test
 git clone https://github.com/Ranjitbehera0034/Finance-Entity-Extractor.git
 cd Finance-Entity-Extractor
 pip install finee
-
-# Run benchmark
 python benchmark.py --all
-```
-
-**Test on YOUR data:**
-```bash
-python benchmark.py --file your_transactions.jsonl
 ```
 
 ---
 
-## 💀 Torture Test (Edge Cases)
+## 💀 Edge Case Handling
 
-Real bank SMS is messy. Here's how FinEE handles the chaos:
-
-| Edge Case | Input | Result |
-|-----------|-------|--------|
-| **Missing spaces** | `Rs.500.00debited from A/c1234` | ✅ amount=500.0 |
-| **Weird formatting** | `Rs 2,500/-debited dt:28/12/25` | ✅ amount=2500.0 |
-| **Mixed case** | `RS. 1500 DEBITED from ACCT` | ✅ amount=1500.0, type=debit |
-| **Unicode symbols** | `₹2,500 debited from •••• 3545` | ✅ amount=2500.0 |
-| **Multiple amounts** | `Rs.500 debited. Bal: Rs.15,000` | ✅ amount=500.0 (first) |
-| **Truncated SMS** | `Rs.2500 debited from A/c...3545 to swi...` | ✅ amount=2500.0 |
-| **Extra noise** | `ALERT! Dear Customer, Rs.500 debited... Ignore if done by you.` | ✅ amount=500.0 |
-
-**Run torture tests:**
-```bash
-python benchmark.py --torture
-```
+| Input | Result |
+|-------|--------|
+| `Rs.500.00debited from A/c1234` (no spaces) | ✅ amount=500.0 |
+| `₹2,500 debited` (Unicode) | ✅ amount=2500.0 |
+| `1.5 Lakh credited` (Lakhs) | ✅ amount=150000.0 |
+| `Rs.500 debited. Bal: Rs.15,000` (multiple) | ✅ amount=500.0 |
 
 ---
 
 ## 🏦 Supported Banks
 
-| Bank | Debit | Credit | UPI | NEFT/IMPS |
-|------|:-----:|:------:|:---:|:---------:|
-| HDFC | ✅ | ✅ | ✅ | ✅ |
-| ICICI | ✅ | ✅ | ✅ | ✅ |
-| SBI | ✅ | ✅ | ✅ | ✅ |
-| Axis | ✅ | ✅ | ✅ | ✅ |
-| Kotak | ✅ | ✅ | ✅ | ✅ |
+| Bank | Status |
+|------|--------|
+| HDFC | ✅ |
+| ICICI | ✅ |
+| SBI | ✅ |
+| Axis | ✅ |
+| Kotak | ✅ |
+
+---
+
+## 📊 Benchmark
+
+| Metric | Value |
+|--------|-------|
+| **Field Accuracy** | 94.5% (with LLM) |
+| **Regex-only Accuracy** | 87.5% |
+| **Latency (Regex)** | <1ms |
+| **Throughput** | 50,000+ msg/sec |
 
 ---
 
@@ -139,20 +159,18 @@ Input Text
     │
     ▼
 ┌─────────────────────────────────────────────────────────────┐
-│ TIER 1: Regex Engine (50+ battle-tested patterns)          │
-│ Extract: amount, date, reference, account, vpa, type       │
+│ TIER 1: Regex Engine (50+ patterns)                        │
 └─────────────────────────────────────────────────────────────┘
     │
     ▼
 ┌─────────────────────────────────────────────────────────────┐
 │ TIER 2: Rule-Based Mapping (200+ VPA → merchant)           │
-│ Map: vpa → merchant, merchant → category                   │
 └─────────────────────────────────────────────────────────────┘
     │
     ▼
 ┌─────────────────────────────────────────────────────────────┐
-│ TIER 3: LLM (Optional, for edge cases)                     │
-│ Targeted prompts for: merchant, category only              │
+│ TIER 3: Phi-3 LLM (Optional - downloads 7GB model)         │
+│         Only called for edge cases                         │
 └─────────────────────────────────────────────────────────────┘
     │
     ▼
@@ -161,66 +179,32 @@ ExtractionResult (Guaranteed Schema)
 
 ---
 
-## 📊 Benchmark Results
-
-| Metric | Value |
-|--------|-------|
-| **Field Accuracy** | 94.5% |
-| **Latency (Regex)** | <1ms |
-| **Latency (LLM)** | ~50ms |
-| **Throughput** | 50,000+ msg/sec |
-| **Banks Tested** | 5 (HDFC, ICICI, SBI, Axis, Kotak) |
-
----
-
-## 💻 CLI Usage
-
-```bash
-# Extract from text
-finee extract "Rs.500 debited from A/c 1234"
-
-# Show version
-finee --version
-
-# Check available backends
-finee backends
-```
-
----
-
 ## 📁 Repository Structure
 
 ```
 Finance-Entity-Extractor/
-├── src/finee/              # Core package (16 modules)
-│   ├── extractor.py        # Pipeline orchestrator
-│   ├── regex_engine.py     # 50+ regex patterns
-│   ├── merchants.py        # 200+ VPA mappings
-│   └── backends/           # MLX, PyTorch, GGUF
+├── src/finee/              # Core package
 ├── tests/                  # 88 unit tests
-├── examples/               # Colab notebook
-├── experiments/            # Research notebooks
-├── benchmark.py            # ⭐ Verify accuracy yourself
-├── pyproject.toml
-└── README.md
+├── examples/demo.ipynb     # 👈 Try in Colab!
+├── benchmark.py            # Verify accuracy
+├── CHANGELOG.md            # Release history
+└── CONTRIBUTING.md         # How to contribute
 ```
 
 ---
 
 ## 🤝 Contributing
 
-```bash
-git clone https://github.com/Ranjitbehera0034/Finance-Entity-Extractor.git
-cd Finance-Entity-Extractor
-pip install -e ".[dev]"
-pytest tests/
-```
+See [CONTRIBUTING.md](CONTRIBUTING.md) for:
+- Git Flow branching strategy
+- How to run tests
+- Release process
 
 ---
 
 ## 📄 License
 
-MIT License - see [LICENSE](LICENSE)
+MIT License
 
 ---
 
@@ -228,6 +212,6 @@ MIT License - see [LICENSE](LICENSE)
 
 **Made with ❤️ by Ranjit Behera**
 
-[PyPI](https://pypi.org/project/finee/) · [GitHub](https://github.com/Ranjitbehera0034/Finance-Entity-Extractor) · [Hugging Face](https://huggingface.co/Ranjit0034/finance-entity-extractor)
+[PyPI](https://pypi.org/project/finee/) • [GitHub](https://github.com/Ranjitbehera0034/Finance-Entity-Extractor) • [Hugging Face](https://huggingface.co/Ranjit0034/finance-entity-extractor)
 
 </div>
