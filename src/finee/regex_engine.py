@@ -40,14 +40,22 @@ class RegexEngine:
         
         patterns = {
             'amount': [
-                # Rs.2500.00 or Rs 2500 or INR 2,500.00
+                # Lakhs notation: 1.5 Lakh, 2 lacs, etc.
+                RegexPattern(
+                    'amount_lakhs',
+                    re.compile(r'([\d.]+)\s*(?:lakh|lac|L)s?\b', re.IGNORECASE),
+                    'amount',
+                    priority=15,
+                    extractor=lambda m: str(float(m.group(1)) * 100000)
+                ),
+                # Rs.2500.00 or Rs 2500 or INR 2,500.00 or ₹2,500
                 RegexPattern(
                     'amount_rs',
                     re.compile(r'(?:Rs\.?|INR|₹)\s*([\d,]+(?:\.\d{1,2})?)', re.IGNORECASE),
                     'amount',
                     priority=10
                 ),
-                # 2500.00 debited/credited (amount before action)
+                # 2500.00 debited/credited (amount before action, even without space)
                 RegexPattern(
                     'amount_action_before',
                     re.compile(r'([\d,]+(?:\.\d{1,2})?)\s*(?:has been\s+)?(?:debited|credited|transferred)', re.IGNORECASE),
