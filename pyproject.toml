@@ -1,0 +1,121 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "finee"
+version = "1.0.0"
+description = "Extract structured financial entities from Indian banking messages"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [
+    { name = "Ranjit Behera", email = "ranjit.behera@example.com" }
+]
+keywords = [
+    "finance",
+    "nlp",
+    "entity-extraction",
+    "banking",
+    "upi",
+    "india",
+    "llm",
+    "phi-3",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: General",
+]
+
+# CORE: No ML dependencies (regex/rules only mode)
+dependencies = [
+    "json-repair>=0.28.0",      # Fix broken JSON
+    "python-dateutil>=2.8.0",   # Date parsing
+]
+
+[project.optional-dependencies]
+# Apple Silicon (MLX)
+metal = [
+    "mlx-lm>=0.19.0",
+]
+
+# NVIDIA GPU (PyTorch + Transformers)
+cuda = [
+    "torch>=2.0.0",
+    "transformers>=4.36.0",
+    "accelerate>=0.25.0",
+]
+
+# CPU only (llama.cpp - works everywhere)
+cpu = [
+    "llama-cpp-python>=0.2.0",
+]
+
+# All backends
+all = [
+    "finee[metal,cuda,cpu]",
+]
+
+# Development
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
+
+# Documentation
+docs = [
+    "mkdocs>=1.5.0",
+    "mkdocs-material>=9.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Ranjit0034/llm-mail-trainer"
+Documentation = "https://huggingface.co/Ranjit0034/finance-entity-extractor"
+Repository = "https://github.com/Ranjit0034/llm-mail-trainer"
+Issues = "https://github.com/Ranjit0034/llm-mail-trainer/issues"
+
+[project.scripts]
+finee = "finee.cli:main"
+
+[tool.hatch.build]
+packages = ["src/finee"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/finee"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+
+[tool.black]
+line-length = 100
+target-version = ['py39', 'py310', 'py311', 'py312']
+include = '\.pyi?$'
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W", "I", "N"]
+ignore = ["E501"]  # Line too long (handled by black)
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_ignores = true
+ignore_missing_imports = true

@@ -1,0 +1,33 @@
+# Finance Entity Extractor - Requirements
+# ========================================
+# 
+# Core dependencies for running the finance-entity-extractor model.
+# 
+# Installation:
+#   pip install -r requirements.txt
+#
+# For Apple Silicon (MLX backend):
+#   pip install -r requirements.txt
+#
+# For PyTorch/CUDA (coming soon):
+#   pip install -r requirements-torch.txt
+
+# Core MLX dependencies (Apple Silicon)
+mlx>=0.18.0
+mlx-lm>=0.19.0
+
+# Data processing
+numpy>=1.24.0
+
+# Optional: API server
+fastapi>=0.100.0
+uvicorn>=0.23.0
+pydantic>=2.0.0
+
+# Optional: PDF parsing (for bank statements)
+pdfplumber>=0.10.0
+
+# Development
+pytest>=7.0.0
+black>=23.0.0
+mypy>=1.0.0

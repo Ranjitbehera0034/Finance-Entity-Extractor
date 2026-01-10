@@ -1,0 +1,2917 @@
+{
+  "timestamp": "2026-01-07T00:47:23.471687",
+  "model_path": "/Users/ranjit/llm-mail-trainer/models/base/phi3-mini",
+  "adapter_path": "/Users/ranjit/llm-mail-trainer/models/adapters/finance-lora-v4",
+  "test_file": "/Users/ranjit/llm-mail-trainer/data/synthetic/test_emails.json",
+  "summary": {
+    "total_samples": 96,
+    "correct_samples": 95,
+    "overall_accuracy": 0.9895833333333334,
+    "field_accuracy": {
+      "amount": 1.0,
+      "type": 0.9895833333333334,
+      "date": 0.9583333333333334,
+      "reference": 0.6979166666666666,
+      "merchant": 0.7604166666666666,
+      "category": 0.7395833333333334
+    },
+    "per_bank": {
+      "paytm": {
+        "total": 12,
+        "correct": 11,
+        "accuracy": 0.9166666666666666,
+        "avg_inference_ms": 2434.1065883636475
+      },
+      "kotak": {
+        "total": 12,
+        "correct": 12,
+        "accuracy": 1.0,
+        "avg_inference_ms": 2391.4495507876077
+      },
+      "axis": {
+        "total": 12,
+        "correct": 12,
+        "accuracy": 1.0,
+        "avg_inference_ms": 2493.197500705719
+      },
+      "sbi": {
+        "total": 12,
+        "correct": 12,
+        "accuracy": 1.0,
+        "avg_inference_ms": 2370.3922231992087
+      },
+      "hdfc": {
+        "total": 12,
+        "correct": 12,
+        "accuracy": 1.0,
+        "avg_inference_ms": 2323.349912961324
+      },
+      "gpay": {
+        "total": 12,
+        "correct": 12,
+        "accuracy": 1.0,
+        "avg_inference_ms": 2477.310617764791
+      },
+      "icici": {
+        "total": 12,
+        "correct": 12,
+        "accuracy": 1.0,
+        "avg_inference_ms": 2377.2778511047363
+      },
+      "phonepe": {
+        "total": 12,
+        "correct": 12,
+        "accuracy": 1.0,
+        "avg_inference_ms": 2470.5354372660317
+      }
+    }
+  },
+  "detailed_results": [
+    {
+      "bank": "paytm",
+      "expected": {
+        "amount": "25081",
+        "type": "credit",
+        "date": "22/11/2025",
+        "account": "5106",
+        "reference": "308892683171"
+      },
+      "predicted": {
+        "amount": "25081",
+        "type": "credit",
+        "date": "22/11/2025",
+        "account": "3098",
+        "reference": "600000000000"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2016.1371231079102
+    },
+    {
+      "bank": "kotak",
+      "expected": {
+        "amount": "1421.28",
+        "type": "debit",
+        "date": "08-11-25",
+        "account": "3749",
+        "reference": "507020728093",
+        "merchant": "flipkart",
+        "category": "shopping"
+      },
+      "predicted": {
+        "amount": "1421.28",
+        "type": "debit",
+        "date": "08-11-25",
+        "account": "3749",
+        "reference": "690010000000",
+        "merchant": "flipkart",
+        "category": "shopping"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2613.7399673461914
+    },
+    {
+      "bank": "paytm",
+      "expected": {
+        "amount": "2806",
+        "type": "debit",
+        "date": "08-10-2025",
+        "account": "5906",
+        "reference": "282294211298",
+        "merchant": "ola",
+        "category": "transport"
+      },
+      "predicted": {
+        "amount": "2806",
+        "type": "debit",
+        "date": "08-10-2025",
+        "account": "5989",
+        "reference": "282294211298",
+        "merchant": "ola",
+        "category": "transport"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2468.0769443511963
+    },
+    {
+      "bank": "axis",
+      "expected": {
+        "amount": "523",
+        "type": "credit",
+        "date": "18/12/2025",
+        "account": "7678",
+        "reference": "555542394193"
+      },
+      "predicted": {
+        "amount": "523",
+        "type": "credit",
+        "date": "18/12/2025",
+        "account": "7678",
+        "reference": "5944",
+        "merchant": "makemytrip",
+        "category": "shopping"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2412.8620624542236
+    },
+    {
+      "bank": "sbi",
+      "expected": {
+        "amount": "373",
+        "type": "debit",
+        "date": "29-10-25",
+        "account": "9666",
+        "reference": "989003396697",
+        "merchant": "zomato",
+        "category": "food"
+      },
+      "predicted": {
+        "amount": "373",
+        "type": "debit",
+        "date": "29-10-25",
+        "account": "9666",
+        "reference": "9666",
+        "merchant": "zomato",
+        "category": "food"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2280.539035797119
+    },
+    {
+      "bank": "paytm",
+      "expected": {
+        "amount": "817",
+        "type": "debit",
+        "date": "06122025",
+        "account": "3950",
+        "reference": "720245039395",
+        "merchant": "uber",
+        "category": "transport"
+      },
+      "predicted": {
+        "amount": "817",
+        "type": "debit",
+        "date": "06122025",
+        "account": "3099",
+        "reference": "720245039395",
+        "merchant": "uber",
+        "category": "transport"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2403.4852981567383
+    },
+    {
+      "bank": "paytm",
+      "expected": {
+        "amount": "1258",
+        "type": "debit",
+        "date": "25 Dec 2025",
+        "account": "8486",
+        "reference": "675953876146",
+        "merchant": "zomato",
+        "category": "food"
+      },
+      "predicted": {
+        "amount": "1258",
+        "type": "debit",
+        "date": "06-11-2025",
+        "account": "8486",
+        "reference": "675953876146",
+        "merchant": "zomato",
+        "category": "food"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": false,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2554.7749996185303
+    },
+    {
+      "bank": "hdfc",
+      "expected": {
+        "amount": "838",
+        "type": "credit",
+        "date": "08112025",
+        "account": "2876",
+        "reference": "112637644335"
+      },
+      "predicted": {
+        "amount": "838",
+        "type": "credit",
+        "date": "08112025",
+        "account": "2876",
+        "reference": "112637644335"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 1984.6258163452148
+    },
+    {
+      "bank": "kotak",
+      "expected": {
+        "amount": "1552",
+        "type": "credit",
+        "date": "15-10-25",
+        "account": "9817",
+        "reference": "987408586371"
+      },
+      "predicted": {
+        "amount": "1552",
+        "type": "credit",
+        "date": "15-10-25",
+        "account": "9817",
+        "reference": "987408586371"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2011.6841793060303
+    },
+    {
+      "bank": "gpay",
+      "expected": {
+        "amount": "1470",
+        "type": "debit",
+        "date": "14 Oct 2025",
+        "account": "1601",
+        "reference": "936717894940",
+        "merchant": "zomato",
+        "category": "food"
+      },
+      "predicted": {
+        "amount": "1470",
+        "type": "debit",
+        "date": "14 Oct 2025",
+        "account": "1601",
+        "reference": "936717894940",
+        "merchant": "zomato",
+        "category": "food"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2497.3790645599365
+    },
+    {
+      "bank": "axis",
+      "expected": {
+        "amount": "6756",
+        "type": "debit",
+        "date": "04-12-2025",
+        "account": "8119",
+        "reference": "753300614396",
+        "merchant": "swiggy",
+        "category": "food"
+      },
+      "predicted": {
+        "amount": "6756",
+        "type": "debit",
+        "date": "04-12-2025",
+        "account": "8119",
+        "reference": "753300614396",
+        "merchant": "swiggy",
+        "category": "food"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2555.3858280181885
+    },
+    {
+      "bank": "axis",
+      "expected": {
+        "amount": "2378.61",
+        "type": "debit",
+        "date": "20-10-2025",
+        "account": "4185",
+        "reference": "557222530916",
+        "merchant": "ola",
+        "category": "transport"
+      },
+      "predicted": {
+        "amount": "2378.61",
+        "type": "debit",
+        "date": "20-10-2025",
+        "account": "4185",
+        "reference": "557222530916",
+        "merchant": "ola",
+        "category": "transport"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2643.7342166900635
+    },
+    {
+      "bank": "hdfc",
+      "expected": {
+        "amount": "555",
+        "type": "credit",
+        "date": "30-10-25",
+        "account": "8019",
+        "reference": "743158526982"
+      },
+      "predicted": {
+        "amount": "555",
+        "type": "credit",
+        "date": "30-10-25",
+        "account": "8019",
+        "reference": "743158526982"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 1989.64524269104
+    },
+    {
+      "bank": "axis",
+      "expected": {
+        "amount": "480",
+        "type": "debit",
+        "date": "24102025",
+        "account": "8618",
+        "reference": "454999257514",
+        "merchant": "zepto",
+        "category": "grocery"
+      },
+      "predicted": {
+        "amount": "480",
+        "type": "debit",
+        "date": "24102025",
+        "account": "8618",
+        "reference": "454999257514",
+        "merchant": "zepto",
+        "category": "grocery"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2474.470853805542
+    },
+    {
+      "bank": "icici",
+      "expected": {
+        "amount": "1399",
+        "type": "debit",
+        "date": "13 Nov 2025",
+        "account": "2612",
+        "reference": "158965931802",
+        "merchant": "jio",
+        "category": "bills"
+      },
+      "predicted": {
+        "amount": "1399",
+        "type": "debit",
+        "date": "13 Nov 2025",
+        "account": "2612",
+        "reference": "158965931802",
+        "merchant": "jio",
+        "category": "bills"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2475.2979278564453
+    },
+    {
+      "bank": "phonepe",
+      "expected": {
+        "amount": "15582",
+        "type": "credit",
+        "date": "22122025",
+        "account": "4697",
+        "reference": "558549792976"
+      },
+      "predicted": {
+        "amount": "15582",
+        "type": "credit",
+        "date": "22122025",
+        "account": "4697",
+        "reference": "558549792976"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2046.5941429138184
+    },
+    {
+      "bank": "icici",
+      "expected": {
+        "amount": "1425",
+        "type": "debit",
+        "date": "11112025",
+        "account": "5061",
+        "reference": "230788137103",
+        "merchant": "bigbasket",
+        "category": "shopping"
+      },
+      "predicted": {
+        "amount": "1425",
+        "type": "debit",
+        "date": "11112025",
+        "account": "5061",
+        "reference": "230788137103",
+        "merchant": "bigbasket",
+        "category": "shopping"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2588.750123977661
+    },
+    {
+      "bank": "axis",
+      "expected": {
+        "amount": "193",
+        "type": "debit",
+        "date": "25112025",
+        "account": "3041",
+        "reference": "827197730438",
+        "merchant": "blinkit",
+        "category": "grocery"
+      },
+      "predicted": {
+        "amount": "193",
+        "type": "debit",
+        "date": "25112025",
+        "account": "3041",
+        "reference": "3041",
+        "merchant": "blinkit",
+        "category": "grocery"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2362.4470233917236
+    },
+    {
+      "bank": "icici",
+      "expected": {
+        "amount": "3569.58",
+        "type": "credit",
+        "date": "20 Dec 2025",
+        "account": "8579",
+        "reference": "405730753142"
+      },
+      "predicted": {
+        "amount": "3569.58",
+        "type": "credit",
+        "date": "20 Dec 2025",
+        "account": "8579",
+        "reference": "405730753142"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2175.709009170532
+    },
+    {
+      "bank": "sbi",
+      "expected": {
+        "amount": "8033",
+        "type": "credit",
+        "date": "15/11/2025",
+        "account": "2771",
+        "reference": "272944613643"
+      },
+      "predicted": {
+        "amount": "8033",
+        "type": "credit",
+        "date": "15/11/2025",
+        "account": "2771",
+        "reference": "272944613643"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2250.034809112549
+    },
+    {
+      "bank": "phonepe",
+      "expected": {
+        "amount": "1062",
+        "type": "debit",
+        "date": "14 Dec 2025",
+        "account": "5232",
+        "reference": "487458104455",
+        "merchant": "bigbazaar",
+        "category": "grocery"
+      },
+      "predicted": {
+        "amount": "1062",
+        "type": "debit",
+        "date": "14 Dec 2025",
+        "account": "14 Dec 2025",
+        "reference": "487458104455",
+        "merchant": "bigbazaar",
+        "category": "grocery"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2687.582015991211
+    },
+    {
+      "bank": "hdfc",
+      "expected": {
+        "amount": "6392.49",
+        "type": "debit",
+        "date": "27122025",
+        "account": "6925",
+        "reference": "781304820142",
+        "merchant": "dmart",
+        "category": "grocery"
+      },
+      "predicted": {
+        "amount": "6392.49",
+        "type": "debit",
+        "date": "27122025",
+        "account": "6925",
+        "reference": "86161",
+        "merchant": "uber",
+        "category": "transport"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2365.58198928833
+    },
+    {
+      "bank": "icici",
+      "expected": {
+        "amount": "1050.47",
+        "type": "debit",
+        "date": "28/11/2025",
+        "account": "2290",
+        "reference": "362241791770",
+        "merchant": "zepto",
+        "category": "grocery"
+      },
+      "predicted": {
+        "amount": "1050.47",
+        "type": "debit",
+        "date": "28/11/2025",
+        "account": "2290",
+        "reference": "362241791770",
+        "merchant": "zepto",
+        "category": "transport"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2590.0449752807617
+    },
+    {
+      "bank": "sbi",
+      "expected": {
+        "amount": "9193.15",
+        "type": "debit",
+        "date": "24122025",
+        "account": "5616",
+        "reference": "397020387114",
+        "merchant": "dmart",
+        "category": "grocery"
+      },
+      "predicted": {
+        "amount": "9193.15",
+        "type": "debit",
+        "date": "24122025",
+        "account": "5616",
+        "reference": "397020387114",
+        "merchant": "bigbazaar",
+        "category": "grocery"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": false,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2608.15691947937
+    },
+    {
+      "bank": "kotak",
+      "expected": {
+        "amount": "4640",
+        "type": "credit",
+        "date": "26-12-25",
+        "account": "4995",
+        "reference": "597707816158"
+      },
+      "predicted": {
+        "amount": "4640",
+        "type": "credit",
+        "date": "26-12-25",
+        "account": "4995",
+        "reference": "597707816158"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2030.5588245391846
+    },
+    {
+      "bank": "gpay",
+      "expected": {
+        "amount": "1248",
+        "type": "debit",
+        "date": "05-11-2025",
+        "account": "7690",
+        "reference": "484270768628",
+        "merchant": "electricity",
+        "category": "bills"
+      },
+      "predicted": {
+        "amount": "1248",
+        "type": "debit",
+        "date": "05-11-2025",
+        "account": "484270768628",
+        "reference": "484270768628",
+        "merchant": "electricity",
+        "category": "bills"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2733.021020889282
+    },
+    {
+      "bank": "sbi",
+      "expected": {
+        "amount": "1759",
+        "type": "credit",
+        "date": "28/10/2025",
+        "account": "1685",
+        "reference": "239284873367"
+      },
+      "predicted": {
+        "amount": "1759",
+        "type": "credit",
+        "date": "28/10/2025",
+        "account": "1685",
+        "reference": "20251028-1685",
+        "merchant": "bigbazaar",
+        "category": "grocery"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2599.599838256836
+    },
+    {
+      "bank": "sbi",
+      "expected": {
+        "amount": "1203",
+        "type": "debit",
+        "date": "28122025",
+        "account": "5345",
+        "reference": "654966271979",
+        "merchant": "swiggy",
+        "category": "food"
+      },
+      "predicted": {
+        "amount": "1203",
+        "type": "debit",
+        "date": "28122025",
+        "account": "5345",
+        "reference": "1800112211",
+        "merchant": "swiggy",
+        "category": "food"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2496.210813522339
+    },
+    {
+      "bank": "axis",
+      "expected": {
+        "amount": "1191.16",
+        "type": "credit",
+        "date": "09/11/2025",
+        "account": "9702",
+        "reference": "610248199023"
+      },
+      "predicted": {
+        "amount": "1191.16",
+        "type": "credit",
+        "date": "09/11/2025",
+        "account": "9702",
+        "reference": "9702",
+        "merchant": "9702",
+        "category": "transfer"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2473.763942718506
+    },
+    {
+      "bank": "hdfc",
+      "expected": {
+        "amount": "3273.98",
+        "type": "debit",
+        "date": "24-11-2025",
+        "account": "2584",
+        "reference": "517010168081",
+        "merchant": "zomato",
+        "category": "food"
+      },
+      "predicted": {
+        "amount": "3273.98",
+        "type": "debit",
+        "date": "24-11-2025",
+        "account": "2584",
+        "reference": "20251124230010",
+        "merchant": "zomato",
+        "category": "food"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2694.82684135437
+    },
+    {
+      "bank": "phonepe",
+      "expected": {
+        "amount": "1266",
+        "type": "credit",
+        "date": "02/01/2026",
+        "account": "5632",
+        "reference": "874331514343"
+      },
+      "predicted": {
+        "amount": "1266",
+        "type": "credit",
+        "date": "02/01/2026",
+        "account": "5632",
+        "reference": "874331514343"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2088.062047958374
+    },
+    {
+      "bank": "kotak",
+      "expected": {
+        "amount": "738",
+        "type": "debit",
+        "date": "16/11/2025",
+        "account": "3091",
+        "reference": "614711052552",
+        "merchant": "water",
+        "category": "bills"
+      },
+      "predicted": {
+        "amount": "738",
+        "type": "debit",
+        "date": "16/11/2025",
+        "account": "3091",
+        "reference": "614711052552",
+        "merchant": "kotak",
+        "category": "bwssb"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2597.2700119018555
+    },
+    {
+      "bank": "icici",
+      "expected": {
+        "amount": "16416.70",
+        "type": "credit",
+        "date": "05-01-2026",
+        "account": "4872",
+        "reference": "928612436713"
+      },
+      "predicted": {
+        "amount": "16416.70",
+        "type": "credit",
+        "date": "05-01-2026",
+        "account": "4872",
+        "reference": "928612436713"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2160.959005355835
+    },
+    {
+      "bank": "hdfc",
+      "expected": {
+        "amount": "1282.26",
+        "type": "debit",
+        "date": "15102025",
+        "account": "8359",
+        "reference": "342319992484",
+        "merchant": "zomato",
+        "category": "food"
+      },
+      "predicted": {
+        "amount": "1282.26",
+        "type": "debit",
+        "date": "15102025",
+        "account": "8359",
+        "reference": "342319992484",
+        "merchant": "zomato",
+        "category": "food"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2678.600072860718
+    },
+    {
+      "bank": "sbi",
+      "expected": {
+        "amount": "8072",
+        "type": "debit",
+        "date": "08 Oct 2025",
+        "account": "2832",
+        "reference": "110999011248",
+        "merchant": "ola",
+        "category": "transport"
+      },
+      "predicted": {
+        "amount": "8072",
+        "type": "debit",
+        "date": "08 Oct 2025",
+        "account": "2832",
+        "reference": "110999011248",
+        "merchant": "ola",
+        "category": "transport"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2529.703140258789
+    },
+    {
+      "bank": "kotak",
+      "expected": {
+        "amount": "7304",
+        "type": "credit",
+        "date": "14 Nov 2025",
+        "account": "6934",
+        "reference": "572899688547"
+      },
+      "predicted": {
+        "amount": "7304",
+        "type": "credit",
+        "date": "14 Nov 2025",
+        "account": "6934",
+        "reference": "7304",
+        "merchant": "6934",
+        "category": "grocery"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2413.489818572998
+    },
+    {
+      "bank": "hdfc",
+      "expected": {
+        "amount": "6562.42",
+        "type": "debit",
+        "date": "30/12/2025",
+        "account": "6168",
+        "reference": "137889353643",
+        "merchant": "electricity",
+        "category": "bills"
+      },
+      "predicted": {
+        "amount": "6562.42",
+        "type": "debit",
+        "date": "30/12/2025",
+        "account": "6168",
+        "reference": "6168",
+        "merchant": "electricity",
+        "category": "bills"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2483.527183532715
+    },
+    {
+      "bank": "gpay",
+      "expected": {
+        "amount": "1632",
+        "type": "debit",
+        "date": "02-11-2025",
+        "account": "7770",
+        "reference": "609136562669",
+        "merchant": "rapido",
+        "category": "transport"
+      },
+      "predicted": {
+        "amount": "1632",
+        "type": "debit",
+        "date": "02-11-2025",
+        "account": "609136562669",
+        "merchant": "rapido",
+        "category": "transport"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2277.514934539795
+    },
+    {
+      "bank": "sbi",
+      "expected": {
+        "amount": "1432",
+        "type": "debit",
+        "date": "16-11-2025",
+        "account": "1651",
+        "reference": "373029676920",
+        "merchant": "amazon",
+        "category": "shopping"
+      },
+      "predicted": {
+        "amount": "1432",
+        "type": "debit",
+        "date": "16-11-2025",
+        "account": "1651",
+        "reference": "373029676920",
+        "merchant": "amazon",
+        "category": "shopping"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2709.423065185547
+    },
+    {
+      "bank": "phonepe",
+      "expected": {
+        "amount": "4426.23",
+        "type": "debit",
+        "date": "29-11-2025",
+        "account": "3073",
+        "reference": "687156468494",
+        "merchant": "dmart",
+        "category": "grocery"
+      },
+      "predicted": {
+        "amount": "4426.23",
+        "type": "debit",
+        "date": "29-11-2025",
+        "account": "20250129",
+        "reference": "687156468494",
+        "merchant": "dmart",
+        "category": "grocery"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 3300.4870414733887
+    },
+    {
+      "bank": "axis",
+      "expected": {
+        "amount": "1907",
+        "type": "credit",
+        "date": "17 Dec 2025",
+        "account": "5050",
+        "reference": "385400876441"
+      },
+      "predicted": {
+        "amount": "1907",
+        "type": "credit",
+        "date": "17 Dec 2025",
+        "account": "5050",
+        "reference": "385400876441",
+        "merchant": "mutual fund",
+        "category": "transfer"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2559.9451065063477
+    },
+    {
+      "bank": "kotak",
+      "expected": {
+        "amount": "37460",
+        "type": "debit",
+        "date": "29102025",
+        "account": "8999",
+        "reference": "344374238950",
+        "merchant": "rapido",
+        "category": "transport"
+      },
+      "predicted": {
+        "amount": "37460",
+        "type": "debit",
+        "date": "29102025",
+        "account": "8999",
+        "reference": "344374238950",
+        "merchant": "rapido",
+        "category": "transport"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2535.1550579071045
+    },
+    {
+      "bank": "phonepe",
+      "expected": {
+        "amount": "85.29",
+        "type": "debit",
+        "date": "16/11/2025",
+        "account": "7046",
+        "reference": "827164617915",
+        "merchant": "water",
+        "category": "bills"
+      },
+      "predicted": {
+        "amount": "85.29",
+        "type": "debit",
+        "date": "16/11/2025",
+        "account": "7046",
+        "reference": "827164617915",
+        "merchant": "water",
+        "category": "bills"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2577.362298965454
+    },
+    {
+      "bank": "hdfc",
+      "expected": {
+        "amount": "1981",
+        "type": "credit",
+        "date": "27/11/2025",
+        "account": "7482",
+        "reference": "648275934229"
+      },
+      "predicted": {
+        "amount": "1981",
+        "type": "credit",
+        "date": "27/11/2025",
+        "account": "7482",
+        "reference": "648275934229"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2097.447156906128
+    },
+    {
+      "bank": "gpay",
+      "expected": {
+        "amount": "389",
+        "type": "debit",
+        "date": "22102025",
+        "account": "8195",
+        "reference": "417489104406",
+        "merchant": "ola",
+        "category": "transport"
+      },
+      "predicted": {
+        "amount": "389",
+        "type": "debit",
+        "date": "22102025",
+        "account": "417489104406",
+        "merchant": "ola",
+        "category": "transport"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2155.5891036987305
+    },
+    {
+      "bank": "gpay",
+      "expected": {
+        "amount": "2571.54",
+        "type": "credit",
+        "date": "24112025",
+        "account": "5891",
+        "reference": "409248663017"
+      },
+      "predicted": {
+        "amount": "2571.54",
+        "type": "credit",
+        "date": "24112025",
+        "account": "409248663017",
+        "merchant": "google",
+        "category": "shopping"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2324.397087097168
+    },
+    {
+      "bank": "hdfc",
+      "expected": {
+        "amount": "3143",
+        "type": "debit",
+        "date": "12102025",
+        "account": "7912",
+        "reference": "748913461122",
+        "merchant": "swiggy",
+        "category": "food"
+      },
+      "predicted": {
+        "amount": "3143",
+        "type": "debit",
+        "date": "12102025",
+        "account": "7912",
+        "reference": "748913461122",
+        "merchant": "bigbazaar",
+        "category": "grocery"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2544.909954071045
+    },
+    {
+      "bank": "kotak",
+      "expected": {
+        "amount": "8160",
+        "type": "debit",
+        "date": "14-11-25",
+        "account": "8705",
+        "reference": "189485261008",
+        "merchant": "rapido",
+        "category": "transport"
+      },
+      "predicted": {
+        "amount": "8160",
+        "type": "debit",
+        "date": "14-11-25",
+        "account": "8705",
+        "reference": "189485261008",
+        "merchant": "rapido",
+        "category": "transport"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2458.6687088012695
+    },
+    {
+      "bank": "paytm",
+      "expected": {
+        "amount": "5151",
+        "type": "credit",
+        "date": "24/12/2025",
+        "account": "6881",
+        "reference": "728703172393"
+      },
+      "predicted": {
+        "amount": "5151",
+        "type": "credit",
+        "date": "06-11-25",
+        "account": "6881",
+        "reference": "728703172393"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": false,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2014.5847797393799
+    },
+    {
+      "bank": "icici",
+      "expected": {
+        "amount": "692.75",
+        "type": "credit",
+        "date": "06112025",
+        "account": "1931",
+        "reference": "274079861243"
+      },
+      "predicted": {
+        "amount": "692.75",
+        "type": "credit",
+        "date": "06112025",
+        "account": "1931",
+        "reference": "274079861243"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2065.8881664276123
+    },
+    {
+      "bank": "sbi",
+      "expected": {
+        "amount": "620",
+        "type": "credit",
+        "date": "02-12-25",
+        "account": "7548",
+        "reference": "661100891573"
+      },
+      "predicted": {
+        "amount": "620",
+        "type": "credit",
+        "date": "02-12-25",
+        "account": "7548",
+        "reference": "661100891573"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 1989.2139434814453
+    },
+    {
+      "bank": "kotak",
+      "expected": {
+        "amount": "927.60",
+        "type": "debit",
+        "date": "14-12-2025",
+        "account": "6363",
+        "reference": "517729190564",
+        "merchant": "airtel",
+        "category": "bills"
+      },
+      "predicted": {
+        "amount": "927.60",
+        "type": "debit",
+        "date": "14-12-2025",
+        "account": "6363",
+        "reference": "517729190564",
+        "merchant": "airtel",
+        "category": "bills"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2634.366989135742
+    },
+    {
+      "bank": "gpay",
+      "expected": {
+        "amount": "6712",
+        "type": "debit",
+        "date": "04-01-26",
+        "account": "3870",
+        "reference": "145424634923",
+        "merchant": "zomato",
+        "category": "food"
+      },
+      "predicted": {
+        "amount": "6712",
+        "type": "debit",
+        "date": "04-01-26",
+        "account": "6712",
+        "reference": "145424634923",
+        "merchant": "zomato",
+        "category": "food"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2525.550127029419
+    },
+    {
+      "bank": "paytm",
+      "expected": {
+        "amount": "1638",
+        "type": "debit",
+        "date": "27 Nov 2025",
+        "account": "7325",
+        "reference": "520096802415",
+        "merchant": "bigbazaar",
+        "category": "grocery"
+      },
+      "predicted": {
+        "amount": "1638",
+        "type": "debit",
+        "date": "27 Nov 2025",
+        "account": "520096802415",
+        "reference": "520096802415",
+        "merchant": "bigbazaar",
+        "category": "grocery"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2758.028984069824
+    },
+    {
+      "bank": "gpay",
+      "expected": {
+        "amount": "7416",
+        "type": "debit",
+        "date": "12 Dec 2025",
+        "account": "4683",
+        "reference": "697493414595",
+        "merchant": "myntra",
+        "category": "shopping"
+      },
+      "predicted": {
+        "amount": "7416",
+        "type": "debit",
+        "date": "12 Dec 2025",
+        "account": "1608",
+        "reference": "697493414595",
+        "merchant": "myntra",
+        "category": "shopping"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2545.9578037261963
+    },
+    {
+      "bank": "phonepe",
+      "expected": {
+        "amount": "3728.11",
+        "type": "credit",
+        "date": "17/12/2025",
+        "account": "2229",
+        "reference": "706336912249"
+      },
+      "predicted": {
+        "amount": "3728.11",
+        "type": "credit",
+        "date": "17/12/2025",
+        "account": "3011",
+        "reference": "8410",
+        "merchant": "phonepe",
+        "category": "transport"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2339.136838912964
+    },
+    {
+      "bank": "kotak",
+      "expected": {
+        "amount": "102",
+        "type": "credit",
+        "date": "25 Oct 2025",
+        "account": "2245",
+        "reference": "317819329568"
+      },
+      "predicted": {
+        "amount": "102",
+        "type": "credit",
+        "date": "25 Oct 2025",
+        "account": "2245",
+        "reference": "317819329568"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2017.0180797576904
+    },
+    {
+      "bank": "phonepe",
+      "expected": {
+        "amount": "1577",
+        "type": "debit",
+        "date": "22 Nov 2025",
+        "account": "5118",
+        "reference": "436171026274",
+        "merchant": "dmart",
+        "category": "grocery"
+      },
+      "predicted": {
+        "amount": "1577",
+        "type": "debit",
+        "date": "22 Nov 2025",
+        "account": "2210",
+        "reference": "436171026274",
+        "merchant": "dmart",
+        "category": "grocery"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2541.3999557495117
+    },
+    {
+      "bank": "kotak",
+      "expected": {
+        "amount": "1755",
+        "type": "debit",
+        "date": "24-10-2025",
+        "account": "7232",
+        "reference": "734648396163",
+        "merchant": "water",
+        "category": "bills"
+      },
+      "predicted": {
+        "amount": "1755",
+        "type": "debit",
+        "date": "24-10-2025",
+        "account": "7232",
+        "reference": "7232",
+        "merchant": "water",
+        "category": "bills"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2368.7260150909424
+    },
+    {
+      "bank": "hdfc",
+      "expected": {
+        "amount": "333",
+        "type": "credit",
+        "date": "26-12-2025",
+        "account": "3504",
+        "reference": "223957493142"
+      },
+      "predicted": {
+        "amount": "333",
+        "type": "credit",
+        "date": "26-12-2025",
+        "account": "3504",
+        "reference": "223957493142"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2064.250707626343
+    },
+    {
+      "bank": "paytm",
+      "expected": {
+        "amount": "1749",
+        "type": "credit",
+        "date": "02-12-2025",
+        "account": "1803",
+        "reference": "957643978300"
+      },
+      "predicted": {
+        "amount": "1749",
+        "type": "credit",
+        "date": "02-12-2025",
+        "account": "3098",
+        "reference": "4567",
+        "merchant": "4567",
+        "category": "food"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2306.1821460723877
+    },
+    {
+      "bank": "phonepe",
+      "expected": {
+        "amount": "1983.97",
+        "type": "debit",
+        "date": "05-11-2025",
+        "account": "5658",
+        "reference": "116633204627",
+        "merchant": "kfc",
+        "category": "food"
+      },
+      "predicted": {
+        "amount": "1983.97",
+        "type": "debit",
+        "date": "05-11-2025",
+        "account": "5658",
+        "reference": "116633204627",
+        "merchant": "kfc",
+        "category": "food"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2639.6148204803467
+    },
+    {
+      "bank": "sbi",
+      "expected": {
+        "amount": "43122",
+        "type": "debit",
+        "date": "31-12-2025",
+        "account": "5533",
+        "reference": "566580698915",
+        "merchant": "ola",
+        "category": "transport"
+      },
+      "predicted": {
+        "amount": "43122",
+        "type": "debit",
+        "date": "31-12-2025",
+        "account": "5533",
+        "reference": "566580698915",
+        "merchant": "ola",
+        "category": "transport"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2613.1350994110107
+    },
+    {
+      "bank": "icici",
+      "expected": {
+        "amount": "3030.61",
+        "type": "debit",
+        "date": "28/10/2025",
+        "account": "7932",
+        "reference": "680958994499",
+        "merchant": "airtel",
+        "category": "bills"
+      },
+      "predicted": {
+        "amount": "3030.61",
+        "type": "debit",
+        "date": "28/10/2025",
+        "account": "7932",
+        "reference": "680958994499",
+        "merchant": "airtel",
+        "category": "transport"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2637.838125228882
+    },
+    {
+      "bank": "axis",
+      "expected": {
+        "amount": "549.89",
+        "type": "credit",
+        "date": "06-01-2026",
+        "account": "4585",
+        "reference": "567199758169"
+      },
+      "predicted": {
+        "amount": "549.89",
+        "type": "credit",
+        "date": "06-01-2026",
+        "account": "4585",
+        "reference": "4585",
+        "merchant": "4585",
+        "category": "shopping"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2488.3949756622314
+    },
+    {
+      "bank": "gpay",
+      "expected": {
+        "amount": "1599",
+        "type": "credit",
+        "date": "11-11-2025",
+        "account": "9998",
+        "reference": "392932052116"
+      },
+      "predicted": {
+        "amount": "1599",
+        "type": "credit",
+        "date": "11-11-2025",
+        "account": "392932052116",
+        "merchant": "google",
+        "category": "shopping"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2265.1331424713135
+    },
+    {
+      "bank": "phonepe",
+      "expected": {
+        "amount": "1108",
+        "type": "debit",
+        "date": "27/12/2025",
+        "account": "9004",
+        "reference": "549769295925",
+        "merchant": "dmart",
+        "category": "grocery"
+      },
+      "predicted": {
+        "amount": "1108",
+        "type": "debit",
+        "date": "27/12/2025",
+        "account": "3099",
+        "reference": "549769295925",
+        "merchant": "dmart",
+        "category": "grocery"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2540.2798652648926
+    },
+    {
+      "bank": "sbi",
+      "expected": {
+        "amount": "4044",
+        "type": "credit",
+        "date": "22112025",
+        "account": "3532",
+        "reference": "923004474410"
+      },
+      "predicted": {
+        "amount": "4044",
+        "type": "credit",
+        "date": "22112025",
+        "account": "3532",
+        "reference": "923004474410"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2006.8140029907227
+    },
+    {
+      "bank": "icici",
+      "expected": {
+        "amount": "1820",
+        "type": "credit",
+        "date": "30/12/2025",
+        "account": "7396",
+        "reference": "101627677155"
+      },
+      "predicted": {
+        "amount": "1820",
+        "type": "credit",
+        "date": "30/12/2025",
+        "account": "7396",
+        "reference": "101627677155"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2096.690893173218
+    },
+    {
+      "bank": "sbi",
+      "expected": {
+        "amount": "1722",
+        "type": "credit",
+        "date": "23-11-25",
+        "account": "4728",
+        "reference": "975402538007"
+      },
+      "predicted": {
+        "amount": "1722",
+        "type": "credit",
+        "date": "23-11-25",
+        "account": "4728",
+        "reference": "975402538007"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2052.6599884033203
+    },
+    {
+      "bank": "phonepe",
+      "expected": {
+        "amount": "1147",
+        "type": "debit",
+        "date": "10/10/2025",
+        "account": "8933",
+        "reference": "337045863496",
+        "merchant": "myntra",
+        "category": "shopping"
+      },
+      "predicted": {
+        "amount": "1147",
+        "type": "debit",
+        "date": "10/10/2025",
+        "account": "8933",
+        "reference": "337045863496",
+        "merchant": "myntra",
+        "category": "shopping"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2572.690963745117
+    },
+    {
+      "bank": "phonepe",
+      "expected": {
+        "amount": "155.62",
+        "type": "credit",
+        "date": "23-12-2025",
+        "account": "2213",
+        "reference": "638591937347"
+      },
+      "predicted": {
+        "amount": "155.62",
+        "type": "credit",
+        "date": "23-12-2025",
+        "account": "638591937347",
+        "reference": "638591937347"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2300.1911640167236
+    },
+    {
+      "bank": "paytm",
+      "expected": {
+        "amount": "9269",
+        "type": "debit",
+        "date": "29-10-2025",
+        "account": "4846",
+        "reference": "175666412237",
+        "merchant": "metro",
+        "category": "transport"
+      },
+      "predicted": {
+        "amount": "9269",
+        "type": "debit",
+        "date": "29-10-2025",
+        "account": "9419",
+        "reference": "175666412237",
+        "merchant": "metro",
+        "category": "transport"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2494.603157043457
+    },
+    {
+      "bank": "phonepe",
+      "expected": {
+        "amount": "956.76",
+        "type": "credit",
+        "date": "13-11-25",
+        "account": "1986",
+        "reference": "781047077731"
+      },
+      "predicted": {
+        "amount": "956.76",
+        "type": "credit",
+        "date": "13-11-25",
+        "account": "9408",
+        "reference": "600100000000"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2013.024091720581
+    },
+    {
+      "bank": "gpay",
+      "expected": {
+        "amount": "510",
+        "type": "credit",
+        "date": "23 Dec 2025",
+        "account": "3522",
+        "reference": "232916613814"
+      },
+      "predicted": {
+        "amount": "510",
+        "type": "credit",
+        "date": "23 Dec 2025",
+        "account": "3998",
+        "reference": "232916613814",
+        "merchant": "mutual fund",
+        "category": "investment"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2497.7450370788574
+    },
+    {
+      "bank": "sbi",
+      "expected": {
+        "amount": "7867",
+        "type": "debit",
+        "date": "04 Dec 2025",
+        "account": "5915",
+        "reference": "835001525541",
+        "merchant": "dmart",
+        "category": "grocery"
+      },
+      "predicted": {
+        "amount": "7867",
+        "type": "debit",
+        "date": "04 Dec 2025",
+        "account": "5915",
+        "reference": "5915",
+        "merchant": "dmart",
+        "category": "grocery"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2309.216022491455
+    },
+    {
+      "bank": "icici",
+      "expected": {
+        "amount": "1546",
+        "type": "credit",
+        "date": "27 Oct 2025",
+        "account": "5861",
+        "reference": "306823277527"
+      },
+      "predicted": {
+        "amount": "1546",
+        "type": "credit",
+        "date": "27 Oct 2025",
+        "account": "5861",
+        "reference": "306823277527"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2044.2569255828857
+    },
+    {
+      "bank": "kotak",
+      "expected": {
+        "amount": "7325.84",
+        "type": "debit",
+        "date": "01-01-2026",
+        "account": "4266",
+        "reference": "374661490981",
+        "merchant": "zepto",
+        "category": "grocery"
+      },
+      "predicted": {
+        "amount": "7325.84",
+        "type": "debit",
+        "date": "01-01-2026",
+        "account": "4266",
+        "reference": "7325.84",
+        "merchant": "zepto",
+        "category": "grocery"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2510.90407371521
+    },
+    {
+      "bank": "axis",
+      "expected": {
+        "amount": "1895",
+        "type": "debit",
+        "date": "16-12-2025",
+        "account": "6491",
+        "reference": "663859569104",
+        "merchant": "nykaa",
+        "category": "shopping"
+      },
+      "predicted": {
+        "amount": "1895",
+        "type": "debit",
+        "date": "16-12-2025",
+        "account": "6491",
+        "reference": "663859569104",
+        "merchant": "nykaa",
+        "category": "shopping"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2583.976984024048
+    },
+    {
+      "bank": "axis",
+      "expected": {
+        "amount": "5155",
+        "type": "debit",
+        "date": "13-12-25",
+        "account": "8144",
+        "reference": "877579719274",
+        "merchant": "metro",
+        "category": "transport"
+      },
+      "predicted": {
+        "amount": "5155",
+        "type": "debit",
+        "date": "13-12-25",
+        "account": "8144",
+        "reference": "10753.00",
+        "merchant": "metro",
+        "category": "transport"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2334.7651958465576
+    },
+    {
+      "bank": "hdfc",
+      "expected": {
+        "amount": "4404",
+        "type": "credit",
+        "date": "09-11-2025",
+        "account": "5315",
+        "reference": "894370590668"
+      },
+      "predicted": {
+        "amount": "4404",
+        "type": "credit",
+        "date": "09-11-2025",
+        "account": "5315",
+        "reference": "894370590668"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2088.6001586914062
+    },
+    {
+      "bank": "icici",
+      "expected": {
+        "amount": "521",
+        "type": "debit",
+        "date": "06-01-2026",
+        "account": "1964",
+        "reference": "794529888366",
+        "merchant": "uber",
+        "category": "transport"
+      },
+      "predicted": {
+        "amount": "521",
+        "type": "debit",
+        "date": "06-01-2026",
+        "account": "1964",
+        "reference": "794529888366",
+        "merchant": "bigbazaar",
+        "category": "grocery"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2559.617042541504
+    },
+    {
+      "bank": "axis",
+      "expected": {
+        "amount": "7134.57",
+        "type": "credit",
+        "date": "28-12-25",
+        "account": "6502",
+        "reference": "397359885684"
+      },
+      "predicted": {
+        "amount": "7134.57",
+        "type": "credit",
+        "date": "28-12-25",
+        "account": "6502",
+        "reference": "90943.00",
+        "merchant": "mcdonalds",
+        "category": "food"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2520.8258628845215
+    },
+    {
+      "bank": "gpay",
+      "expected": {
+        "amount": "6045",
+        "type": "debit",
+        "date": "22-10-2025",
+        "account": "6280",
+        "reference": "576266444796",
+        "merchant": "metro",
+        "category": "transport"
+      },
+      "predicted": {
+        "amount": "6045",
+        "type": "debit",
+        "date": "22-10-2025",
+        "account": "6061",
+        "reference": "576266444796",
+        "merchant": "metro",
+        "category": "transport"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2467.1380519866943
+    },
+    {
+      "bank": "hdfc",
+      "expected": {
+        "amount": "2653",
+        "type": "debit",
+        "date": "25 Dec 2025",
+        "account": "6977",
+        "reference": "599410093881",
+        "merchant": "swiggy",
+        "category": "food"
+      },
+      "predicted": {
+        "amount": "2653",
+        "type": "debit",
+        "date": "25 Dec 2025",
+        "account": "6977",
+        "reference": "599410093881",
+        "merchant": "swiggy",
+        "category": "food"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2599.6909141540527
+    },
+    {
+      "bank": "kotak",
+      "expected": {
+        "amount": "1632",
+        "type": "credit",
+        "date": "11102025",
+        "account": "1672",
+        "reference": "232308735151"
+      },
+      "predicted": {
+        "amount": "1632",
+        "type": "credit",
+        "date": "11102025",
+        "account": "1672",
+        "reference": "600000000000",
+        "merchant": "kotak",
+        "category": "transfer"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2505.812883377075
+    },
+    {
+      "bank": "axis",
+      "expected": {
+        "amount": "1477.17",
+        "type": "debit",
+        "date": "13 Dec 2025",
+        "account": "3851",
+        "reference": "844657758783",
+        "merchant": "metro",
+        "category": "transport"
+      },
+      "predicted": {
+        "amount": "1477.17",
+        "type": "debit",
+        "date": "13 Dec 2025",
+        "account": "3851",
+        "reference": "147717888098",
+        "merchant": "metro",
+        "category": "transport"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2507.797956466675
+    },
+    {
+      "bank": "hdfc",
+      "expected": {
+        "amount": "7599",
+        "type": "debit",
+        "date": "21/10/2025",
+        "account": "5010",
+        "reference": "901158030343",
+        "merchant": "ola",
+        "category": "transport"
+      },
+      "predicted": {
+        "amount": "7599",
+        "type": "debit",
+        "date": "21/10/2025",
+        "account": "5010",
+        "reference": "5010",
+        "merchant": "ola",
+        "category": "transport"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2288.4929180145264
+    },
+    {
+      "bank": "gpay",
+      "expected": {
+        "amount": "609",
+        "type": "credit",
+        "date": "06 Nov 2025",
+        "account": "3369",
+        "reference": "599263022595"
+      },
+      "predicted": {
+        "amount": "609",
+        "type": "credit",
+        "date": "20251120",
+        "account": "599263022595",
+        "reference": "599263022595",
+        "merchant": "google pay",
+        "category": "transfer"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": false,
+        "reference": true,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2949.0649700164795
+    },
+    {
+      "bank": "paytm",
+      "expected": {
+        "amount": "7596.75",
+        "type": "credit",
+        "date": "19/12/2025",
+        "account": "5161",
+        "reference": "802060293051"
+      },
+      "predicted": {
+        "amount": "7596.75",
+        "type": "debit",
+        "date": "19/12/2025",
+        "account": "6988",
+        "reference": "802060293051",
+        "merchant": "paytm",
+        "category": "shopping"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": false,
+        "date": true,
+        "reference": true,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": false,
+      "inference_time_ms": 2626.9099712371826
+    },
+    {
+      "bank": "icici",
+      "expected": {
+        "amount": "29558",
+        "type": "debit",
+        "date": "03112025",
+        "account": "7126",
+        "reference": "268358041225",
+        "merchant": "nykaa",
+        "category": "shopping"
+      },
+      "predicted": {
+        "amount": "29558",
+        "type": "debit",
+        "date": "03112025",
+        "account": "7126",
+        "reference": "268358041225",
+        "merchant": "nykaa",
+        "category": "grocery"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2559.378147125244
+    },
+    {
+      "bank": "gpay",
+      "expected": {
+        "amount": "2236",
+        "type": "credit",
+        "date": "21/10/2025",
+        "account": "6091",
+        "reference": "274847185866"
+      },
+      "predicted": {
+        "amount": "2236",
+        "type": "credit",
+        "date": "21/10/2025",
+        "account": "6091",
+        "reference": "2025102106091",
+        "merchant": "gpay",
+        "category": "transfer"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": false,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2489.237070083618
+    },
+    {
+      "bank": "icici",
+      "expected": {
+        "amount": "537.63",
+        "type": "debit",
+        "date": "10122025",
+        "account": "8744",
+        "reference": "895137224815",
+        "merchant": "dominos",
+        "category": "food"
+      },
+      "predicted": {
+        "amount": "537.63",
+        "type": "debit",
+        "date": "10122025",
+        "account": "8744",
+        "reference": "895137224815",
+        "merchant": "bigbazaar",
+        "category": "shopping"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2572.903871536255
+    },
+    {
+      "bank": "paytm",
+      "expected": {
+        "amount": "14903",
+        "type": "debit",
+        "date": "04-12-25",
+        "account": "7512",
+        "reference": "862886090135",
+        "merchant": "ajio",
+        "category": "shopping"
+      },
+      "predicted": {
+        "amount": "14903",
+        "type": "debit",
+        "date": "04-12-25",
+        "account": "1234",
+        "reference": "862886090135",
+        "merchant": "ajio",
+        "category": "shopping"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2520.9591388702393
+    },
+    {
+      "bank": "paytm",
+      "expected": {
+        "amount": "1180",
+        "type": "debit",
+        "date": "19 Nov 2025",
+        "account": "4090",
+        "reference": "456193888210",
+        "merchant": "water",
+        "category": "bills"
+      },
+      "predicted": {
+        "amount": "1180",
+        "type": "debit",
+        "date": "19 Nov 2025",
+        "account": "6988",
+        "reference": "456193888210",
+        "merchant": "water",
+        "category": "bills"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": true,
+        "reference": true,
+        "merchant": true,
+        "category": true
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2461.703300476074
+    },
+    {
+      "bank": "paytm",
+      "expected": {
+        "amount": "4356",
+        "type": "credit",
+        "date": "17-12-2025",
+        "account": "7951",
+        "reference": "428941115748"
+      },
+      "predicted": {
+        "amount": "4356",
+        "type": "credit",
+        "date": "06-12-2025",
+        "account": "7951",
+        "reference": "428941115748",
+        "merchant": "4017",
+        "category": "shopping"
+      },
+      "correct_fields": {
+        "amount": true,
+        "type": true,
+        "date": false,
+        "reference": true,
+        "merchant": false,
+        "category": false
+      },
+      "overall_correct": true,
+      "inference_time_ms": 2583.8332176208496
+    }
+  ]
+}

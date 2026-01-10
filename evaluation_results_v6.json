@@ -1,0 +1,66 @@
+{
+  "model": "models/base/phi3-finance-base",
+  "adapter": "models/adapters/finance-lora-v6",
+  "total_samples": 20,
+  "overall_accuracy": 60.0,
+  "by_bank": {
+    "paytm": {
+      "correct": 0,
+      "total": 4
+    },
+    "kotak": {
+      "correct": 1,
+      "total": 2
+    },
+    "axis": {
+      "correct": 3,
+      "total": 5
+    },
+    "sbi": {
+      "correct": 1,
+      "total": 2
+    },
+    "hdfc": {
+      "correct": 2,
+      "total": 2
+    },
+    "gpay": {
+      "correct": 1,
+      "total": 1
+    },
+    "icici": {
+      "correct": 3,
+      "total": 3
+    },
+    "phonepe": {
+      "correct": 1,
+      "total": 1
+    }
+  },
+  "by_field": {
+    "amount": {
+      "correct": 20,
+      "total": 20
+    },
+    "type": {
+      "correct": 20,
+      "total": 20
+    },
+    "date": {
+      "correct": 19,
+      "total": 20
+    },
+    "account": {
+      "correct": 17,
+      "total": 20
+    },
+    "reference": {
+      "correct": 15,
+      "total": 20
+    },
+    "merchant": {
+      "correct": 12,
+      "total": 12
+    }
+  }
+}

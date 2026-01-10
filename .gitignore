@@ -1,0 +1,120 @@
+# ============================================
+# LLM Mail Trainer - .gitignore
+# ============================================
+
+# ==================== DATA (SENSITIVE) ====================
+# Raw email data - NEVER commit!
+data/raw/
+*.mbox
+
+# Parsed emails (personal data)
+data/parsed/
+data/filtered/
+data/training/
+data/training_backup*/
+
+# ==================== MODELS ====================
+# Local model files (too large for GitHub - hosted on HuggingFace)
+models/
+fused_model/
+*.safetensors
+*.gguf
+adapter_config.json
+
+# ==================== DATA (LARGE) ====================
+# Corpus and synthetic data (too large for GitHub)
+data/corpus/
+data/pretrain_data/
+data/synthetic/
+data/benchmark/
+
+# ==================== PYTHON ====================
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+bin/
+lib/
+pyvenv.cfg
+include/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+
+# Distribution
+build/
+dist/
+eggs/
+*.egg-info/
+*.egg
+pip-log.txt
+
+# ==================== JUPYTER ====================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+*.ipynb_output/
+
+# ==================== IDE ====================
+.vscode/
+*.code-workspace
+.idea/
+*.iml
+.cursor/
+
+# ==================== OS ====================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+*~
+.directory
+
+# ==================== TESTING ====================
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+.tox/
+.nox/
+
+# ==================== LOGS & TEMP ====================
+*.log
+logs/
+*.tmp
+*.temp
+tmp/
+.temp/
+.cache/
+
+# ==================== SECRETS ====================
+.env
+.env.local
+.env.*.local
+secrets/
+*.key
+*.pem
+*.secret
+
+# ==================== ML TRACKING ====================
+mlruns/
+wandb/
+.mlx_cache/
+output/
+results/
+
+# ==================== SCHEDULER ====================
+# Don't commit scheduler logs
+scheduler_logs/
