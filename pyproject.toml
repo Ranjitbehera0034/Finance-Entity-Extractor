@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "finee"
-version = "1.0.0"
+version = "1.0.2"
 description = "Extract structured financial entities from Indian banking messages"
 readme = "README.md"
 license = "MIT"
@@ -91,11 +91,18 @@ Issues = "https://github.com/Ranjit0034/llm-mail-trainer/issues"
 [project.scripts]
 finee = "finee.cli:main"
 
-[tool.hatch.build]
-packages = ["src/finee"]
+[tool.hatch.build.targets.sdist]
+include = [
+    "/src/finee",
+    "/README.md",
+    "/LICENSE",
+]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/finee"]
+
+[tool.hatch.build.targets.wheel.sources]
+"src" = ""
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

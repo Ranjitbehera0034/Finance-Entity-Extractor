@@ -158,7 +158,7 @@ class ExtractionConfig:
     cache_max_size: int = 1000
     
     # LLM settings
-    use_llm: bool = True
+    use_llm: bool = False  # Set to True to enable LLM (requires model download)
     llm_timeout_seconds: float = 10.0
     llm_max_tokens: int = 200
     llm_temperature: float = 0.1
