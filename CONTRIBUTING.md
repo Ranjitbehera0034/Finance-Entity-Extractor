@@ -2,117 +2,175 @@
 
 Thank you for your interest in contributing! Here's how to get started.
 
-## 🌿 Branching Strategy
+## 🚨 Golden Rules
 
-We use **Git Flow** for professional development:
+1. **NEVER push directly to `main`** - All changes go through PRs
+2. **All features branch from `develop`** - Not from main
+3. **Tests MUST pass before merging** - No exceptions
+4. **Update CHANGELOG.md** - Every PR should update it
+
+## 🌿 Branching Strategy (Git Flow)
 
 ```
-main          ────●────●────●────────────●─────→  (stable releases only)
-                  │    │    │            │
-                  │    │    └──tag:v1.0.3│
-                  │    │                 │
-develop       ────●────●────●────●───────●─────→  (integration branch)
-                       │    │    │
-feature/xyz   ─────────●────●────┘               (feature branches)
+main          ──●────────────────●────────────●──→  (releases only)
+                │                │            │
+              v1.0.3          v1.0.4        v1.1.0
+                │                │            │
+develop       ──●────●────●──────●───●────●───●──→  (integration)
+                     │    │          │    │
+feature/a     ───────●────┘          │    │
+feature/b     ───────────────────────●────┘
 ```
 
-### Branches
+### Branch Types
 
-| Branch | Purpose | Merge To |
-|--------|---------|----------|
-| `main` | Stable releases only | - |
-| `develop` | Integration & testing | `main` (via PR) |
-| `feature/*` | New features | `develop` (via PR) |
-| `fix/*` | Bug fixes | `develop` (via PR) |
-| `hotfix/*` | Urgent production fixes | `main` + `develop` |
+| Branch | Source | Merges To | Naming |
+|--------|--------|-----------|--------|
+| `main` | - | - | Protected, releases only |
+| `develop` | `main` | `main` | Integration branch |
+| `feature/*` | `develop` | `develop` | `feature/add-kotak-support` |
+| `fix/*` | `develop` | `develop` | `fix/unicode-amount-parsing` |
+| `hotfix/*` | `main` | `main` + `develop` | `hotfix/critical-regex-bug` |
 
-### Workflow
+## 🔄 Development Workflow
 
-1. **New Feature**:
-   ```bash
-   git checkout develop
-   git pull origin develop
-   git checkout -b feature/my-feature
-   # ... make changes ...
-   git push -u origin feature/my-feature
-   # Create PR to develop
-   ```
-
-2. **Bug Fix**:
-   ```bash
-   git checkout develop
-   git checkout -b fix/issue-123
-   # ... fix bug ...
-   git push -u origin fix/issue-123
-   # Create PR to develop
-   ```
-
-3. **Release**:
-   ```bash
-   git checkout main
-   git merge develop
-   git tag -a v1.x.x -m "Release v1.x.x"
-   git push origin main --tags
-   ```
-
-## 🧪 Running Tests
+### 1. Start a New Feature
 
 ```bash
-# Install dev dependencies
-pip install -e ".[dev]"
+# Always start from develop
+git checkout develop
+git pull origin develop
 
-# Run all tests
-pytest tests/ -v
+# Create feature branch
+git checkout -b feature/my-awesome-feature
 
-# Run specific test
-pytest tests/test_regex_engine.py -v
+# Make changes...
+# Write tests...
+# Update CHANGELOG.md under [Unreleased]
 
-# Run with coverage
-pytest tests/ --cov=finee --cov-report=html
+# Commit with conventional messages
+git commit -m "feat: add support for Paytm VPA patterns"
+
+# Push and create PR
+git push -u origin feature/my-awesome-feature
+# Create PR: feature/my-awesome-feature → develop
 ```
 
-## 📝 Code Style
-
-- **Black** for formatting (line length: 100)
-- **Ruff** for linting
-- **Type hints** for all public functions
+### 2. Fix a Bug
 
 ```bash
-# Format code
-black src/ tests/
+git checkout develop
+git pull origin develop
+git checkout -b fix/issue-123-unicode-error
 
-# Lint
-ruff check src/ tests/
+# Fix the bug...
+# Add test to prevent regression...
 
-# Type check
-mypy src/finee/
+git commit -m "fix: handle ₹ symbol in amount parsing"
+git push -u origin fix/issue-123-unicode-error
+# Create PR: fix/issue-123-unicode-error → develop
 ```
 
-## 🚀 Publishing
+### 3. Create a Release
 
-Only maintainers can publish to PyPI:
+**Use the release script:**
 
 ```bash
-# Bump version in pyproject.toml
-# Build
-python -m build
+# Preview what will happen
+python scripts/release.py 1.0.4 --dry-run
 
-# Upload
-twine upload dist/*
+# Execute release
+python scripts/release.py 1.0.4
 ```
 
-## 📋 Commit Messages
+The script will:
+1. ✅ Verify you're on `develop`
+2. ✅ Run all tests
+3. ✅ Run benchmark suite
+4. ✅ Update version in `pyproject.toml`
+5. ✅ Update `CHANGELOG.md`
+6. ✅ Merge to `main`
+7. ✅ Create git tag `v1.0.4`
+8. ✅ Build and upload to PyPI
+9. ✅ Return to `develop`
 
-Use conventional commits:
+## 🧪 Pre-Merge Checklist
+
+Before your PR can be merged:
+
+- [ ] All tests pass: `pytest tests/ -v`
+- [ ] Benchmark runs: `python benchmark.py --all`
+- [ ] CHANGELOG.md updated under `[Unreleased]`
+- [ ] Code formatted: `black src/ tests/`
+- [ ] Linting passes: `ruff check src/ tests/`
+- [ ] New features have tests
+- [ ] Documentation updated if needed
+
+## 📋 Commit Message Format
+
+Use [Conventional Commits](https://www.conventionalcommits.org/):
 
 ```
-feat: add support for Lakhs notation
-fix: handle Unicode ₹ symbol in regex
+<type>(<scope>): <description>
+
+[optional body]
+
+[optional footer]
+```
+
+### Types
+
+| Type | Description |
+|------|-------------|
+| `feat` | New feature |
+| `fix` | Bug fix |
+| `docs` | Documentation only |
+| `test` | Adding tests |
+| `refactor` | Code refactoring |
+| `perf` | Performance improvement |
+| `chore` | Maintenance tasks |
+
+### Examples
+
+```
+feat(regex): add Lakhs notation support
+fix(parser): handle missing spaces in SMS
 docs: update README with torture tests
-test: add edge case tests for truncated SMS
+test: add edge cases for Unicode symbols
 chore: move notebooks to experiments/
 ```
 
+## 📝 Changelog Guidelines
+
+Update `CHANGELOG.md` in every PR under `[Unreleased]`:
+
+```markdown
+## [Unreleased]
+### Added
+- New feature you added
+
+### Changed
+- Behavior you modified
+
+### Fixed
+- Bug you fixed
+```
+
+**Categories:**
+- **Added** - New features
+- **Changed** - Changes to existing features
+- **Deprecated** - Features to be removed
+- **Removed** - Removed features
+- **Fixed** - Bug fixes
+- **Security** - Security fixes
+
+## 🛡️ Protected Branches
+
+| Branch | Direct Push | Force Push | PR Required |
+|--------|-------------|------------|-------------|
+| `main` | ❌ | ❌ | ✅ (from develop only) |
+| `develop` | ❌ | ❌ | ✅ (from feature/fix) |
+
 ## 🙏 Thank You!
 
-Every contribution helps make FinEE better for the Indian fintech community.
+Every contribution makes FinEE better for the Indian fintech community!
