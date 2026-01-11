@@ -9,11 +9,43 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - (Next features go here)
 
-### Changed
-- (Changes to existing features)
+---
 
-### Fixed
-- (Bug fixes)
+## [1.1.0] - 2026-01-12
+### Added
+- **Complete Data Pipeline** (`scripts/data_pipeline/`)
+  - `step1_unify.py`: Unifies MBOX, JSON, CSV, XML sources
+  - `step2_filter.py`: Removes OTPs, spam, marketing messages
+  - `step3_baseline.py`: Tests regex extractor accuracy
+  - `step4_label.py`: Creates labeled training data with ground truth
+
+- **Synthetic Data Generator**
+  - `generate_synthetic.py`: Production-grade grammar-based generator
+    - 100K+ realistic Indian bank transactions
+    - All major banks (HDFC, ICICI, SBI, Axis, Kotak, PNB, BOB, etc.)
+    - Brokerages (Zerodha, Groww, Upstox, Angel One, 5Paisa, etc.)
+    - E-commerce, food, travel, utilities, entertainment categories
+  - `generate_advanced.py`: Advanced features
+    - Markov Chain for realistic message flow
+    - Real data calibration from actual samples
+    - Multilingual support (Hindi, Tamil, Telugu, Bengali, Kannada)
+    - Data augmentation and edge case oversampling
+
+- **LLM Fine-tuning Pipeline** (`scripts/finetune.py`)
+  - Supports MLX (Apple Silicon) and PyTorch backends
+  - LoRA fine-tuning with automatic data preparation
+  - Model fusion and evaluation utilities
+
+### Performance
+- Trained on 152,519 records (2,419 real + 100K synthetic + 50K multilingual)
+- Val loss: 2.42 → 0.46 (81% reduction)
+- 100% JSON parsing accuracy on test cases
+- Multilingual extraction working (Hindi, Tamil, Telugu, Bengali, Kannada)
+- Fine-tuned model: 7.6GB (Phi-3-mini + LoRA fused)
+
+### Models
+- Fine-tuned model: `finetuned-v1/` on Hugging Face
+- LoRA adapters: `lora-adapters/` on Hugging Face
 
 ---
 
